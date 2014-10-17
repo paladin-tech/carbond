@@ -10,9 +10,13 @@
  * @property string $last_change
  * @property string $valid_to
  * @property integer $active
+ * @property integer $advertiser
+ * @property string $description
  *
  * The followings are the available model relations:
+ * @property Photo[] $photos
  * @property Vehicle $vehicle
+ * @property Party $advertiser0
  */
 class VehicleAdvertisment extends CActiveRecord
 {
@@ -32,12 +36,12 @@ class VehicleAdvertisment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('vehicle_advertismentid, vehicleid', 'required'),
-			array('vehicle_advertismentid, vehicleid, active', 'numerical', 'integerOnly'=>true),
-			array('created_date, last_change, valid_to', 'safe'),
+			array('vehicleid, advertiser', 'required'),
+			array('vehicleid, active, advertiser, price', 'numerical', 'integerOnly' => true),
+			array('created_date, last_change, valid_to, description', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('vehicle_advertismentid, vehicleid, created_date, last_change, valid_to, active', 'safe', 'on'=>'search'),
+			array('vehicle_advertismentid, vehicleid, created_date, last_change, valid_to, active, advertiser, description, price', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -49,7 +53,9 @@ class VehicleAdvertisment extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'vehicle' => array(self::BELONGS_TO, 'Vehicle', 'vehicleid'),
+			'photos'      => array(self::HAS_MANY, 'Photo', 'vehicle_advertismentid'),
+			'vehicle'     => array(self::BELONGS_TO, 'Vehicle', 'vehicleid'),
+			'advertiser0' => array(self::BELONGS_TO, 'Party', 'advertiser'),
 		);
 	}
 
@@ -60,11 +66,14 @@ class VehicleAdvertisment extends CActiveRecord
 	{
 		return array(
 			'vehicle_advertismentid' => 'Vehicle Advertismentid',
-			'vehicleid' => 'Vehicleid',
-			'created_date' => 'Created Date',
-			'last_change' => 'Last Change',
-			'valid_to' => 'Valid To',
-			'active' => 'Active',
+			'vehicleid'              => 'Vehicleid',
+			'created_date'           => 'Created Date',
+			'last_change'            => 'Last Change',
+			'valid_to'               => 'Valid To',
+			'active'                 => 'Active',
+			'advertiser'             => 'Advertiser',
+			'description'            => 'Description',
+			'price'                  => 'Price',
 		);
 	}
 
@@ -84,17 +93,21 @@ class VehicleAdvertisment extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
-		$criteria->compare('vehicle_advertismentid',$this->vehicle_advertismentid);
-		$criteria->compare('vehicleid',$this->vehicleid);
-		$criteria->compare('created_date',$this->created_date,true);
-		$criteria->compare('last_change',$this->last_change,true);
-		$criteria->compare('valid_to',$this->valid_to,true);
-		$criteria->compare('active',$this->active);
+		$criteria->compare('vehicle_advertismentid', $this->vehicle_advertismentid);
+		$criteria->compare('vehicle_typeid', $this->vehicle_typeid);
+		$criteria->compare('vehicleid', $this->vehicleid);
+		$criteria->compare('created_date', $this->created_date, true);
+		$criteria->compare('last_change', $this->last_change, true);
+		$criteria->compare('valid_to', $this->valid_to, true);
+		$criteria->compare('active', $this->active);
+		$criteria->compare('advertiser', $this->advertiser);
+		$criteria->compare('description', $this->description, true);
+		$criteria->compare('price', $this->price);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+			'criteria' => $criteria,
 		));
 	}
 
@@ -104,7 +117,7 @@ class VehicleAdvertisment extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return VehicleAdvertisment the static model class
 	 */
-	public static function model($className=__CLASS__)
+	public static function model($className = __CLASS__)
 	{
 		return parent::model($className);
 	}

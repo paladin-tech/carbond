@@ -1,18 +1,44 @@
 <?php
 /* @var $this VehicleAdvertismentController */
-/* @var $model VehicleAdvertisment */
+/* @var $dataProvider CActiveDataProvider */
 
-$this->breadcrumbs=array(
-	'Vehicle Advertisments'=>array('index'),
-	'Create',
-);
+$this->widget('bootstrap.widgets.TbBreadcrumb', array(
+	'links' => array(
+		'Create Advertisment - ' . $vehicleTypeName,
+	),
+));
+?>
+<div>
+	<div style="float: left;"><a href="<?php echo $this->createUrl('create', array('vehicleTypeId' => 1)); ?>">Car</a> :: </div>
+	<div style="float: left;"><a href="<?php echo $this->createUrl('create', array('vehicleTypeId' => 2)); ?>">Motorcycle</a> :: </div>
+	<div style="float: left;"><a href="<?php echo $this->createUrl('create', array('vehicleTypeId' => 3)); ?>">Agricultural Machinery</a> :: </div>
+	<div style="float: left;"><a href="<?php echo $this->createUrl('create', array('vehicleTypeId' => 4)); ?>">Industrial Machinery</a> :: </div>
+	<div style="float: left;"><a href="<?php echo $this->createUrl('create', array('vehicleTypeId' => 5)); ?>">Boats</a> :: </div>
+	<div style="float: left;"><a href="<?php echo $this->createUrl('create', array('vehicleTypeId' => 6)); ?>">Trucks</a> :: </div>
+	<div style="float: left;"><a href="<?php echo $this->createUrl('create', array('vehicleTypeId' => 7)); ?>">Vans</a> :: </div>
+	<div style="float: left;"><a href="<?php echo $this->createUrl('create', array('vehicleTypeId' => 8)); ?>">Trailers</a> :: </div>
+	<div style="float: left;"><a href="<?php echo $this->createUrl('create', array('vehicleTypeId' => 9)); ?>">Buses</a> :: </div>
+	<div style="float: left;"><a href="<?php echo $this->createUrl('create', array('vehicleTypeId' => 10)); ?>">Campers</a></div>
+	<div style="clear: both;"></div>
+</div>
 
-$this->menu=array(
-	array('label'=>'List VehicleAdvertisment', 'url'=>array('index')),
-	array('label'=>'Manage VehicleAdvertisment', 'url'=>array('admin')),
-);
+<?php
+echo TbHtml::pageHeader('Vehicle Advertisment - ' . $vehicleTypeName, 'create');
 ?>
 
-<h1>Create VehicleAdvertisment</h1>
-
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php
+$this->renderPartial('../' . $vehicleType . '/_form', array(
+		'vehicleTypeId'                   => $vehicleTypeId,
+		'vehicleType'                     => $vehicleType,
+		'vehicleTypeName'                 => $vehicleTypeName,
+		'modelVehicleAdvertisement'       => $modelVehicleAdvertisement,
+		'modelPhysicalPerson'             => $modelPhysicalPerson,
+		'modelCompany'                    => $modelCompany,
+		'model'                           => $model,
+		'modelVehicle'                    => $modelVehicle,
+		'modelCharacteristicTypeArray'    => $modelCharacteristicTypeArray,
+		'modelVehicleCharacteristicArray' => $modelVehicleCharacteristicArray,
+		'modelPhotoArray'                 => $modelPhotoArray,
+		'modelService'                    => $modelService,
+	));
+?>

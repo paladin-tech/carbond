@@ -1,20 +1,68 @@
 <?php
-/* @var $this VehicleAdvertismentController */
+/* @var $this TruckController */
 /* @var $dataProvider CActiveDataProvider */
 
-$this->breadcrumbs=array(
-	'Vehicle Advertisments',
-);
+$yearArray = array();
+for($year = date('Y'); $year >= 1950; $year--)
+{
+	$yearArray[$year] = $year;
+}
 
-$this->menu=array(
-	array('label'=>'Create VehicleAdvertisment', 'url'=>array('create')),
-	array('label'=>'Manage VehicleAdvertisment', 'url'=>array('admin')),
-);
+$this->widget('bootstrap.widgets.TbBreadcrumb', array(
+	'links' => array(
+		'Agricultural Machinery',
+	),
+));
+
+require_once (Yii::app()->basePath . '/views/site/_categorySearchSubmenu.php');
+
+echo TbHtml::pageHeader($vehicleTypeName, 'list view');
 ?>
 
-<h1>Vehicle Advertisments</h1>
+<div style="float: left; width: 20%;">
+	<?php
+	echo TbHtml::beginFormTb();
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+	echo TbHtml::label('Make', 'make');
+	echo TbHtml::dropDownList('make', '', CHtml::listData(VehicleMake::model()->findAll(), 'makeid', 'make_name'),
+		array(
+			'ajax'  => array(
+				'type'   => 'POST',
+				'url'    => $this->createUrl('car/updateModelDropdown'),
+				'update' => '#model',
+				'data'   => array(
+					'makeId' => 'js:this.value'
+				),
+			),
+			'label' => 'Make',
+			'empty' => '',
+		)
+	);
+
+	echo TbHtml::label('Model', 'model');
+	echo TbHtml::dropDownList('model', '', array(), array('empty' => ''));
+
+	echo TbHtml::label('Fuel', 'fuel');
+	echo TbHtml::dropDownList('fuel', '', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array('0', '2'), 'characteristic_typeid' => '2')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
+
+	echo TbHtml::label('Year From', 'yearFrom');
+	echo TbHtml::dropDownList('yearFrom', '', $yearArray, array('span' => 1, 'empty' => ''));
+	echo TbHtml::label('Year To', 'yearTo');
+	echo TbHtml::dropDownList('yearTo', '', $yearArray, array('span' => 1, 'empty' => ''));
+
+	echo TbHtml::formActions(array(
+		TbHtml::submitButton('Search', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)),
+	));
+
+	echo TbHtml::endForm();
+	?>
+</div>
+<div style="float: left; width: 80%;">
+	<?php
+	$this->widget('bootstrap.widgets.TbListView', array(
+		'dataProvider' => $dataProvider,
+		'itemView'     => '/' . $vehicleTypeNameCamel . '/_' . $vehicleTypeNameCamel . 'Item',
+	));
+	?>
+</div>
+<div style="clear: both"></div>

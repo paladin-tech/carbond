@@ -29,10 +29,11 @@ class VehicleType extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('vehicle_type', 'length', 'max'=>45),
+			array('vehicle_type', 'length', 'max' => 45),
+			array('vehicle_type', 'required'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('vehicle_typeid, vehicle_type', 'safe', 'on'=>'search'),
+			array('vehicle_typeid, vehicle_type', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -44,7 +45,7 @@ class VehicleType extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'vehicles' => array(self::HAS_MANY, 'Vehicle', 'vehicle_typeid'),
+			'vehicles'          => array(self::HAS_MANY, 'Vehicle', 'vehicle_typeid'),
 			'vehicleProperties' => array(self::HAS_MANY, 'VehicleProperty', 'vehicle_typeid'),
 		);
 	}
@@ -56,7 +57,7 @@ class VehicleType extends CActiveRecord
 	{
 		return array(
 			'vehicle_typeid' => 'Vehicle Typeid',
-			'vehicle_type' => 'Vehicle Type',
+			'vehicle_type'   => 'Vehicle Type',
 		);
 	}
 
@@ -76,13 +77,13 @@ class VehicleType extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
-		$criteria->compare('vehicle_typeid',$this->vehicle_typeid);
-		$criteria->compare('vehicle_type',$this->vehicle_type,true);
+		$criteria->compare('vehicle_typeid', $this->vehicle_typeid);
+		$criteria->compare('vehicle_type', $this->vehicle_type, true);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+			'criteria' => $criteria,
 		));
 	}
 
@@ -92,7 +93,7 @@ class VehicleType extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return VehicleType the static model class
 	 */
-	public static function model($className=__CLASS__)
+	public static function model($className = __CLASS__)
 	{
 		return parent::model($className);
 	}

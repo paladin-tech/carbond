@@ -2,20 +2,15 @@
 /* @var $this VehicleTypeController */
 /* @var $model VehicleType */
 
-$this->breadcrumbs=array(
-	'Vehicle Types'=>array('index'),
-	$model->vehicle_typeid=>array('view','id'=>$model->vehicle_typeid),
-	'Update',
-);
-
-$this->menu=array(
-	array('label'=>'List VehicleType', 'url'=>array('index')),
-	array('label'=>'Create VehicleType', 'url'=>array('create')),
-	array('label'=>'View VehicleType', 'url'=>array('view', 'id'=>$model->vehicle_typeid)),
-	array('label'=>'Manage VehicleType', 'url'=>array('admin')),
-);
+$this->widget('bootstrap.widgets.TbBreadcrumb', array(
+	'links' => array(
+		'Vehicle Types'      => array('index'),
+		$model->vehicle_type => array('view', 'id' => $model->vehicle_typeid),
+		'Update',
+	),
+));
 ?>
 
-<h1>Update VehicleType <?php echo $model->vehicle_typeid; ?></h1>
+<?php echo TbHtml::pageHeader($model->vehicle_type, 'update view'); ?>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model' => $model)); ?>

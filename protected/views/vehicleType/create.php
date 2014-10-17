@@ -2,17 +2,14 @@
 /* @var $this VehicleTypeController */
 /* @var $model VehicleType */
 
-$this->breadcrumbs=array(
-	'Vehicle Types'=>array('index'),
-	'Create',
-);
-
-$this->menu=array(
-	array('label'=>'List VehicleType', 'url'=>array('index')),
-	array('label'=>'Manage VehicleType', 'url'=>array('admin')),
-);
+$this->widget('bootstrap.widgets.TbBreadcrumb', array(
+	'links' => array(
+		'Vehicle Types' => array('index'),
+		'Create',
+	),
+));
 ?>
 
-<h1>Create VehicleType</h1>
+<?php echo TbHtml::pageHeader('New Vehicle Type', 'create view'); ?>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model' => $model)); ?>

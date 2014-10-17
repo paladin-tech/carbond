@@ -91,6 +91,7 @@ class SiteController extends Controller
 		{
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
+//			var_dump(Yii::app()->user->returnUrl);die();
 			if($model->validate() && $model->login())
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
@@ -106,4 +107,12 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+	public function actionCategorySubmenu()
+	{
+
+		$this->render('_categorySubmenu');
+
+	}
+
 }

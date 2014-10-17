@@ -12,13 +12,17 @@
  * @property integer $stearing_wheel_side
  * @property integer $enterier
  * @property integer $enterier_color
+ * @property integer $transmission_type
+ * @property integer $climate_control
  *
  * The followings are the available model relations:
- * @property VehicleProperty $carosseryType
- * @property VehicleProperty $enterier0
- * @property VehicleProperty $enterierColor
- * @property VehicleProperty $noOfDoors
- * @property VehicleProperty $stearingWheelSide
+ * @property Characteristic $carosseryType
+ * @property Characteristic $climateControl
+ * @property Characteristic $enterier0
+ * @property Characteristic $enterierColor
+ * @property Characteristic $noOfDoors
+ * @property Characteristic $stearingWheelSide
+ * @property Characteristic $transmissionType
  * @property Vehicle $vehicle
  */
 class Car extends CActiveRecord
@@ -39,11 +43,11 @@ class Car extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('carid, vehicleid', 'required'),
-			array('carid, vehicleid, carossery_type, no_of_doors, no_of_seats, stearing_wheel_side, enterier, enterier_color', 'numerical', 'integerOnly'=>true),
+			array('vehicleid, transmission_type, climate_control', 'required'),
+			array('vehicleid, carossery_type, no_of_doors, no_of_seats, stearing_wheel_side, enterier, enterier_color, transmission_type, climate_control', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('carid, vehicleid, carossery_type, no_of_doors, no_of_seats, stearing_wheel_side, enterier, enterier_color', 'safe', 'on'=>'search'),
+			array('carid, vehicleid, carossery_type, no_of_doors, no_of_seats, stearing_wheel_side, enterier, enterier_color, transmission_type, climate_control', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,11 +59,13 @@ class Car extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'carosseryType' => array(self::BELONGS_TO, 'VehicleProperty', 'carossery_type'),
-			'enterier0' => array(self::BELONGS_TO, 'VehicleProperty', 'enterier'),
-			'enterierColor' => array(self::BELONGS_TO, 'VehicleProperty', 'enterier_color'),
-			'noOfDoors' => array(self::BELONGS_TO, 'VehicleProperty', 'no_of_doors'),
-			'stearingWheelSide' => array(self::BELONGS_TO, 'VehicleProperty', 'stearing_wheel_side'),
+			'carosseryType' => array(self::BELONGS_TO, 'Characteristic', 'carossery_type'),
+			'climateControl' => array(self::BELONGS_TO, 'Characteristic', 'climate_control'),
+			'enterier0' => array(self::BELONGS_TO, 'Characteristic', 'enterier'),
+			'enterierColor' => array(self::BELONGS_TO, 'Characteristic', 'enterier_color'),
+			'noOfDoors' => array(self::BELONGS_TO, 'Characteristic', 'no_of_doors'),
+			'stearingWheelSide' => array(self::BELONGS_TO, 'Characteristic', 'stearing_wheel_side'),
+			'transmissionType' => array(self::BELONGS_TO, 'Characteristic', 'transmission_type'),
 			'vehicle' => array(self::BELONGS_TO, 'Vehicle', 'vehicleid'),
 		);
 	}
@@ -70,14 +76,16 @@ class Car extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'carid' => 'Carid',
-			'vehicleid' => 'Vehicleid',
-			'carossery_type' => 'Carossery Type',
-			'no_of_doors' => 'No Of Doors',
-			'no_of_seats' => 'No Of Seats',
-			'stearing_wheel_side' => 'Stearing Wheel Side',
-			'enterier' => 'Enterier',
-			'enterier_color' => 'Enterier Color',
+			'carid' => 'Car ID',
+			'vehicleid' => 'Vehicle ID',
+			'carossery_type' => 'Body Type',
+			'no_of_doors' => 'No of Doors',
+			'no_of_seats' => 'No of Seats',
+			'stearing_wheel_side' => 'Steering Wheel Side',
+			'enterier' => 'Interior',
+			'enterier_color' => 'Interior Color',
+			'transmission_type' => 'Transmission Type',
+			'climate_control' => 'Climate Control',
 		);
 	}
 
@@ -107,6 +115,8 @@ class Car extends CActiveRecord
 		$criteria->compare('stearing_wheel_side',$this->stearing_wheel_side);
 		$criteria->compare('enterier',$this->enterier);
 		$criteria->compare('enterier_color',$this->enterier_color);
+		$criteria->compare('transmission_type',$this->transmission_type);
+		$criteria->compare('climate_control',$this->climate_control);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

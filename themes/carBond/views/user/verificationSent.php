@@ -1,0 +1,2 @@
+<h1>Advertisement Submitted successfully</h1>
+<p>Thank you for submitting your advertisement. Verification e-mail is sent to your e-mail address. Please check your e-mail address for the confirmation link.</p>

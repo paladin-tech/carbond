@@ -1,7 +1,7 @@
 <?php
 
 // change the following paths if necessary
-$yii    = dirname(__FILE__) . '/../yii-1.1.15/framework/yii.php';
+$yii    = dirname(__FILE__) . '/yii/framework/yii.php';
 $config = dirname(__FILE__) . '/protected/config/main.php';
 
 ini_set('xdebug.var_display_max_depth', -1);

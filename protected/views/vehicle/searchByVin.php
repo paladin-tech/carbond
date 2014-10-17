@@ -39,7 +39,7 @@ echo TbHtml::pageHeader('Search Vehicles by VIN', 'detail view');
 
 <div class="row">
 	<div class="col-md-12 bottom_bar search-vin">
-		<span class="vin"><strong>Number: </strong><?php echo (isset($model) && $model != 'notSet') ? $model->vin : ''; ?></span>
+		<span class="vin"><strong>VIN: </strong><?php echo (isset($model) && $model != 'notSet') ? $model->vin : ''; ?></span>
 		<?php
 		echo TbHtml::beginFormTb();
 

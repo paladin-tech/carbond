@@ -18,8 +18,30 @@
 		)
 	);
 	echo $form->dropDownListControlGroup($modelVehicle, 'modelid', array(), array('empty' => ''));
-	echo $form->textFieldControlGroup($modelVehicle, 'production_year');
-	echo $form->textFieldControlGroup($modelVehicle, 'first_registration');
+	echo $form->dropDownListControlGroup($modelVehicle, 'production_year', Helper::getYearsArray(), array('span' => 1, 'empty' => ''));
+//	echo $form->textFieldControlGroup($modelVehicle, 'first_registration');
+	?>
+	<div class="control-group">
+	<?php
+	echo $form->labelEx($modelVehicle, 'first_registration', array('class' => 'control-label'));
+	?>
+		<div class="controls">
+		<?php
+		$this->widget('zii.widgets.jui.CJuiDatePicker', array(
+	// 'name'=>'birthdate',
+			'name'    => 'first_registration', // the name of the field
+			'value'   => $modelVehicle->first_registration, // pre-fill the value
+			// additional javascript options for the date picker plugin
+			'options' => array(
+				'showAnim'   => 'fold',
+				'dateFormat' => 'yy-mm-dd', // optional Date formatting
+				'debug'      => true,
+			)
+		));
+		?>
+		</div>
+	</div>
+	<?php
 	echo $form->textFieldControlGroup($modelVehicle, 'variant');
 	echo $form->textFieldControlGroup($modelVehicle, 'km');
 	echo $form->textFieldControlGroup($modelVehicle, 'engine_ccm');
@@ -32,7 +54,28 @@
 		'0' => 'No',
 		'1' => 'Yes',
 	));
-	echo $form->textFieldControlGroup($modelVehicle, 'registration_valid_to');
+	?>
+	<div class="control-group">
+	<?php
+	echo $form->labelEx($modelVehicle, 'registration_valid_to', array('class' => 'control-label'));
+	?>
+		<div class="controls">
+			<?php
+			$this->widget('zii.widgets.jui.CJuiDatePicker', array(
+				// 'name'=>'birthdate',
+				'name'    => 'registration_valid_to', // the name of the field
+				'value'   => $modelVehicle->registration_valid_to, // pre-fill the value
+				// additional javascript options for the date picker plugin
+				'options' => array(
+					'showAnim'   => 'fold',
+					'dateFormat' => 'yy-mm-dd', // optional Date formatting
+					'debug'      => true,
+				)
+			));
+			?>
+		</div>
+	</div>
+	<?php
 	echo $form->dropDownListControlGroup($modelVehicle, 'vehicle_origin', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array(0, $vehicleTypeId), 'characteristic_typeid' => '10')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
 	echo $form->dropDownListControlGroup($modelVehicle, 'damages', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array(0, $vehicleTypeId), 'characteristic_typeid' => '11')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
 

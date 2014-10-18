@@ -133,10 +133,10 @@ if(!isset(Yii::app()->user->id)) {
     <div class="accordion">
     <?php
     // Vehicle data
-    require_once (Yii::app()->basePath . '/views/vehicle/_form.php');
+    require_once (Yii::app()->theme->basePath . '/views/vehicle/_form.php');
     
     if($model != '')
-        require_once (Yii::app()->basePath . '/views/' . $vehicleType . '/_form.php');
+        require_once (Yii::app()->theme->basePath . '/views/' . $vehicleType . '/_form.php');
     ?>
     </div>
 </div>

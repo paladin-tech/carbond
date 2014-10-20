@@ -63,12 +63,12 @@ class Vehicle extends CActiveRecord
 		return array(
 			array('vin, modelid, engine_number, km, engine_ccm, engine_power, fuel_typeid', 'required', 'on' => 'createAdvertisement'),
 			array('vin, modelid, km, engine_ccm, engine_power, fuel_typeid', 'required', 'on' => 'createServiceData'),
-			array('vehicle_typeid, modelid, production_year, first_registration, km, engine_ccm, engine_power, fuel_typeid, engine_emission_class, gear_type, color, registered, vehicle_origin, damages', 'numerical', 'integerOnly' => true),
+			array('vehicle_typeid, modelid, production_year, km, engine_ccm, engine_power, fuel_typeid, engine_emission_class, gear_type, color, registered, vehicle_origin, damages', 'numerical', 'integerOnly' => true),
 			array('engine_number, variant', 'length', 'max' => 45),
 			array('vin', 'length', 'min' => 17),
 			array('vin', 'length', 'max' => 17),
 			array('vin', 'unique', 'allowEmpty' => false, 'attributeName' => 'vin', 'caseSensitive' => false),
-			array('registration_valid_to', 'date', 'format'=>'yyyy-m-d'),
+			array('first_registration, registration_valid_to', 'date', 'format'=>'yyyy-m-d'),
 			array('registration_valid_to', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

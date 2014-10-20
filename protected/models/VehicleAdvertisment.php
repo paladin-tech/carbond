@@ -36,7 +36,7 @@ class VehicleAdvertisment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('vehicleid, advertiser', 'required'),
+			array('price', 'required'),
 			array('vehicleid, active, advertiser, price', 'numerical', 'integerOnly' => true),
 			array('created_date, last_change, valid_to, description', 'safe'),
 			// The following rule is used by search().
@@ -65,8 +65,8 @@ class VehicleAdvertisment extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'vehicle_advertismentid' => 'Vehicle Advertismentid',
-			'vehicleid'              => 'Vehicleid',
+			'vehicle_advertismentid' => 'Vehicle Advertisment ID',
+			'vehicleid'              => 'Vehicle ID',
 			'created_date'           => 'Created Date',
 			'last_change'            => 'Last Change',
 			'valid_to'               => 'Valid To',

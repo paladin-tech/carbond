@@ -35,15 +35,16 @@ class PhysicalPerson extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('partyid, country, district, zip_code', 'required'),
-			array('partyid, zip_code', 'numerical', 'integerOnly'=>true),
-			array('first_name, last_name, city', 'length', 'max'=>50),
-			array('mobile', 'length', 'max'=>45),
-			array('email', 'length', 'max'=>255),
-			array('country, district', 'length', 'max'=>100),
+			array('first_name, last_name, email, country, zip_code', 'required'),
+			array('partyid, zip_code', 'numerical', 'integerOnly' => true),
+			array('first_name, last_name, city', 'length', 'max' => 50),
+			array('mobile', 'length', 'max' => 45),
+			array('email', 'length', 'max' => 255),
+			array('email', 'unique'),
+			array('country, district', 'length', 'max' => 100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('partyid, first_name, last_name, mobile, email, city, country, district, zip_code', 'safe', 'on'=>'search'),
+			array('partyid, first_name, last_name, mobile, email, city, country, district, zip_code', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -65,15 +66,15 @@ class PhysicalPerson extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'partyid' => 'Partyid',
+			'partyid'    => 'Partyid',
 			'first_name' => 'First Name',
-			'last_name' => 'Last Name',
-			'mobile' => 'Mobile',
-			'email' => 'Email',
-			'city' => 'City',
-			'country' => 'Country',
-			'district' => 'District',
-			'zip_code' => 'Zip Code',
+			'last_name'  => 'Last Name',
+			'mobile'     => 'Mobile',
+			'email'      => 'Email',
+			'city'       => 'City',
+			'country'    => 'Country',
+			'district'   => 'District',
+			'zip_code'   => 'Zip Code',
 		);
 	}
 
@@ -93,20 +94,20 @@ class PhysicalPerson extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
-		$criteria->compare('partyid',$this->partyid);
-		$criteria->compare('first_name',$this->first_name,true);
-		$criteria->compare('last_name',$this->last_name,true);
-		$criteria->compare('mobile',$this->mobile,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('city',$this->city,true);
-		$criteria->compare('country',$this->country,true);
-		$criteria->compare('district',$this->district,true);
-		$criteria->compare('zip_code',$this->zip_code);
+		$criteria->compare('partyid', $this->partyid);
+		$criteria->compare('first_name', $this->first_name, true);
+		$criteria->compare('last_name', $this->last_name, true);
+		$criteria->compare('mobile', $this->mobile, true);
+		$criteria->compare('email', $this->email, true);
+		$criteria->compare('city', $this->city, true);
+		$criteria->compare('country', $this->country, true);
+		$criteria->compare('district', $this->district, true);
+		$criteria->compare('zip_code', $this->zip_code);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+			'criteria' => $criteria,
 		));
 	}
 
@@ -116,7 +117,7 @@ class PhysicalPerson extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return PhysicalPerson the static model class
 	 */
-	public static function model($className=__CLASS__)
+	public static function model($className = __CLASS__)
 	{
 		return parent::model($className);
 	}

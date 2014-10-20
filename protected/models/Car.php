@@ -43,7 +43,7 @@ class Car extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('vehicleid, transmission_type, climate_control', 'required'),
+			array('transmission_type, climate_control', 'required'),
 			array('vehicleid, carossery_type, no_of_doors, no_of_seats, stearing_wheel_side, enterier, enterier_color, transmission_type, climate_control', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

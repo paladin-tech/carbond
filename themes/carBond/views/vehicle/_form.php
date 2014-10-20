@@ -29,7 +29,8 @@
 		<?php
 		$this->widget('zii.widgets.jui.CJuiDatePicker', array(
 	// 'name'=>'birthdate',
-			'name'    => 'first_registration', // the name of the field
+			'id' => 'Vehicle_first_registration',
+			'name'    => 'Vehicle[first_registration]', // the name of the field
 			'value'   => $modelVehicle->first_registration, // pre-fill the value
 			// additional javascript options for the date picker plugin
 			'options' => array(
@@ -91,3 +92,10 @@
 	}
 	?>
 </fieldset>
+<script>
+	$(document).ready(function() {
+		$('#Vehicle_production_year').change(function() {
+			$('#Vehicle_first_registration').val($(this).val() + '-01-01');
+		});
+	});
+</script>

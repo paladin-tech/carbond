@@ -102,10 +102,20 @@ class VehicleAdvertismentController extends Controller
 			$modelServiceArray[] = new ServicingData;
 		}
 
+		if (isset($_POST['ajax']) && $_POST['ajax'] === 'yw0') {
+			echo CActiveForm::validate($model);
+			echo CActiveForm::validate($modelVehicle);
+			echo CActiveForm::validate($modelPhysicalPerson);
+			echo CActiveForm::validate($modelVehicleAdvertisement);
+			Yii::app()->end();
+		}
+
 		if (isset($_POST['Vehicle'])) {
 
 			// Valid flag for validating multiple models
 			$formValid = true;
+
+			$transaction = Yii::app()->db->beginTransaction();
 
 			// Check if User already exists and is logged in
 			if (isset(Yii::app()->user->id)) {
@@ -143,7 +153,7 @@ class VehicleAdvertismentController extends Controller
 			$modelVehicle->scenario = 'createAdvertisement';
 			$modelVehicle->attributes     = $_POST['Vehicle'];
 			$modelVehicle->vehicle_typeid = $vehicleTypeId;
-			if ($modelVehicle->validate())
+			if ($formValid && $modelVehicle->validate())
 				$modelVehicle->save(false);
 			else
 				$formValid = false;
@@ -174,7 +184,6 @@ class VehicleAdvertismentController extends Controller
 			$modelVehicleAdvertisement->created_date = date('Y-m-d H:i:s');
 			$modelVehicleAdvertisement->active       = 1;
 			$modelVehicleAdvertisement->advertiser   = $partyId;
-//			die(var_dump($modelVehicleAdvertisement->attributes, $modelVehicleAdvertisement->validate(), $modelVehicleAdvertisement->getErrors()));
 			if ($formValid && $modelVehicleAdvertisement->validate())
 				$modelVehicleAdvertisement->save(false);
 			else
@@ -244,7 +253,12 @@ class VehicleAdvertismentController extends Controller
 			}
 
 			if ($formValid)
+			{
+				$transaction->commit();
 				$this->redirect(array('/user/sendValidationMail', 'userId' => $userId));
+			} else {
+				$transaction->rollback();
+			}
 
 		}
 

@@ -67,27 +67,25 @@ $(document).ready(function () {
 		});
 	});
 
-	$('#newServicingData').click(function() {
-		$('#servicingDataFieldset').clone().appendTo('#servicingDataFieldset:last');
-	});
-
 });
 </script>
 
 <div class="row"><?php
 $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	'layout'                 => TbHtml::FORM_LAYOUT_HORIZONTAL,
-	'enableAjaxValidation'   => false,
+	'enableAjaxValidation'   => true,
+//	'enableClientValidation'   => true,
 	'htmlOptions'            => array('enctype' => 'multipart/form-data'),
 ));
 ?>
-
+<div>
 <?php
 // Validate PhysicalPerson / Company models only if there is no logged-in User
 echo (isset(Yii::app()->user->id)) ?
-	$form->errorSummary(array($modelPhysicalPerson, $modelCompany, $modelVehicleAdvertisement, $modelVehicle)) :
-	$form->errorSummary(array($modelVehicleAdvertisement, $modelVehicle));
+	CHtml::errorSummary(array($model, $modelVehicle, $modelPhysicalPerson, $modelVehicleAdvertisement)) :
+	CHtml::errorSummary(array($model, $modelVehicle, $modelVehicleAdvertisement));
 ?>
+</div>
 <div class="col-md-4">
 <?php
 if(!isset(Yii::app()->user->id)) {
@@ -106,13 +104,13 @@ if(!isset(Yii::app()->user->id)) {
 	<div id="physicalPerson">
 		<?php
 		// Physical Person data
-		require_once (Yii::app()->basePath . '/views/physicalPerson/_form.php');
+		require_once (Yii::app()->theme->basePath . '/views/physicalPerson/_form.php');
 		?>
 	</div>
 	<div id="company" style="display: none">
 		<?php
 		// Company data
-		require_once (Yii::app()->basePath . '/views/company/_form.php');
+		require_once (Yii::app()->theme->basePath . '/views/company/_form.php');
 		?>
 	</div>
     </div>
@@ -122,7 +120,7 @@ if(!isset(Yii::app()->user->id)) {
     <div class="accordion">
     <?php
     // Vehicle Advertisement data
-    require_once (Yii::app()->basePath . '/views/vehicleAdvertisment/_form.php');
+    require_once (Yii::app()->theme->basePath . '/views/vehicleAdvertisment/_form.php');
     ?>
     </div>
 </div>

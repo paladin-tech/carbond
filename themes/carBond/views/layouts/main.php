@@ -52,6 +52,7 @@ $cs
 			            array('label' => 'Vehicle Sale', 'url' => array('/vehicleAdvertisment/create', 'vehicleTypeId' => 1)),
 			            array('label' => 'Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1)),
 			            array('label' => 'Servicing Data', 'url' => array('/servicer/addServicingData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isOfficialService'])),
+			            array('label' => 'Damage Data', 'url' => array('/insuranceHouse/addDamageData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isInsuranceHouse'])),
 			            array('label' => 'Login', 'url' => array('/site/login'), 'itemOptions' => array('class' => 'last'), 'visible' => Yii::app()->user->isGuest),
 			            array('label' => 'Logout', 'itemOptions' => array('class' => 'last'), 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
 		            ),

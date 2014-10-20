@@ -7,8 +7,7 @@ class Helper extends CApplicationComponent
 	{
 
 		$yearArray = array();
-		for($year = date('Y'); $year >= 1950; $year--)
-		{
+		for ($year = date('Y'); $year >= 1950; $year--) {
 			$yearArray[$year] = $year;
 		}
 		return $yearArray;
@@ -18,10 +17,10 @@ class Helper extends CApplicationComponent
 	public static function getVehicleTypeData($vehicleTypeId)
 	{
 
-		$vehicleTypeName              = VehicleType::model()->findByPk($vehicleTypeId)->vehicle_type;
-		$modelClass                   = str_replace(' ', '', ucwords($vehicleTypeName));
-		$vehicleType                  = lcfirst(str_replace(' ', '', ucwords($modelClass)));
-		$vehicleTypeName              = ucwords($vehicleTypeName);
+		$vehicleTypeName = VehicleType::model()->findByPk($vehicleTypeId)->vehicle_type;
+		$modelClass      = str_replace(' ', '', ucwords($vehicleTypeName));
+		$vehicleType     = lcfirst(str_replace(' ', '', ucwords($modelClass)));
+		$vehicleTypeName = ucwords($vehicleTypeName);
 
 		return array('vehicleTypeId' => $vehicleTypeId, 'vehicleTypeName' => $vehicleTypeName, 'modelClass' => $modelClass, 'vehicleType' => $vehicleType);
 
@@ -38,13 +37,12 @@ class Helper extends CApplicationComponent
 			'isVehicleOfficialDistributor' => false,
 			'isOfficialService'            => false,
 			'isUnofficialService'          => false,
+			'isInsuranceHouse'             => false,
 		);
 
-		foreach($userRoles as $roleId => $roleName)
-		{
+		foreach ($userRoles as $roleId => $roleName) {
 
-			switch (array_keys($roleName)[0])
-			{
+			switch (array_keys($roleName)[0]) {
 				case 1:
 					$roleListArray['isPhysicalPerson'] = true;
 					break;
@@ -65,6 +63,9 @@ class Helper extends CApplicationComponent
 					break;
 				case 7:
 					$roleListArray['isUnofficialService'] = true;
+					break;
+				case 8:
+					$roleListArray['isInsuranceHouse'] = true;
 					break;
 			}
 		}

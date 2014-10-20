@@ -156,7 +156,7 @@ require_once (Yii::app()->basePath . '/views/servicingData/_form.php');
 <div class="col-md-4 action-button">
 <?php echo TbHtml::formActions(array(
 	TbHtml::submitButton($modelVehicle->isNewRecord ? 'Create' : 'Save', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)),
-	TbHtml::linkButton('Cancel', array('url' => Yii::app()->createUrl('car/index'))),
+	TbHtml::linkButton('Cancel', array('url' => Yii::app()->createUrl('vehicleAdvertisment/index', array('vehicleTypeId' => '1')))),
 )); ?>
 </div>
 <?php $this->endWidget(); ?></div>

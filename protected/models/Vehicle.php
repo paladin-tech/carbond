@@ -29,6 +29,7 @@
  * @property Bus[] $buses
  * @property Camper[] $campers
  * @property Car[] $cars
+ * @property DamageData[] $damageDatas
  * @property ServicingData[] $servicingDatas
  * @property Trailer[] $trailers
  * @property Truck[] $trucks
@@ -68,7 +69,7 @@ class Vehicle extends CActiveRecord
 			array('vin', 'length', 'min' => 17),
 			array('vin', 'length', 'max' => 17),
 			array('vin', 'unique', 'allowEmpty' => false, 'attributeName' => 'vin', 'caseSensitive' => false),
-			array('first_registration, registration_valid_to', 'date', 'format'=>'yyyy-m-d'),
+			array('first_registration, registration_valid_to', 'date', 'format' => 'yyyy-m-d'),
 			array('registration_valid_to', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -88,6 +89,7 @@ class Vehicle extends CActiveRecord
 			'buses'                  => array(self::HAS_MANY, 'Bus', 'vehicleid'),
 			'campers'                => array(self::HAS_MANY, 'Camper', 'vehicleid'),
 			'cars'                   => array(self::HAS_MANY, 'Car', 'vehicleid'),
+			'damageDatas'            => array(self::HAS_MANY, 'DamageData', 'vehicleid'),
 			'servicingDatas'         => array(self::HAS_MANY, 'ServicingData', 'vehicleid'),
 			'trailers'               => array(self::HAS_MANY, 'Trailer', 'vehicleid'),
 			'trucks'                 => array(self::HAS_MANY, 'Truck', 'vehicleid'),

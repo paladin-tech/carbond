@@ -35,7 +35,7 @@ class PhysicalPerson extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('first_name, last_name, email, country, zip_code', 'required'),
+			array('first_name, last_name, email, city, zip_code', 'required'),
 			array('partyid, zip_code', 'numerical', 'integerOnly' => true),
 			array('first_name, last_name, city', 'length', 'max' => 50),
 			array('mobile', 'length', 'max' => 45),
@@ -57,6 +57,7 @@ class PhysicalPerson extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'party' => array(self::BELONGS_TO, 'Party', 'partyid'),
+			'city' => array(self::BELONGS_TO, 'City', 'cityid'),
 		);
 	}
 

@@ -115,4 +115,16 @@ class SiteController extends Controller
 
 	}
 
+	public function actionUpdateCityDropdown()
+	{
+
+		$data = City::model()->findAll('countryid = :countryId', array(':countryId' => (int)$_POST['countryId']));
+		$data = CHtml::listData($data, 'cityid', 'city_name');
+
+		echo '<option value="">Select City</option>';
+		foreach ($data as $value => $city_name)
+			echo CHtml::tag('option', array('value' => $value), CHtml::encode($city_name), true);
+
+	}
+
 }

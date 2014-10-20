@@ -10,12 +10,6 @@ for($year = date('Y'); $year >= 1950; $year--)
 
 require_once (Yii::app()->theme->basePath . '/views/site/_categorySearchSubmenu.php');
 
-$this->widget('bootstrap.widgets.TbBreadcrumb', array(
-	'links' => array(
-		'Agricultural Machinery',
-	),
-));
-
 echo TbHtml::pageHeader($vehicleTypeName, 'list view');
 ?>
 <aside class="col-md-3">

@@ -7,7 +7,16 @@ body{
 background-color:#F4F9FD	
 
 }
-
+.form-control{
+	color:#96A9B4 !important
+}
+.form-control::-moz-placeholder{
+	color:inherit !important
+}
+.btn-default{
+	background:#FFF;
+	margin-left:10px
+}
 h1#logotipo{
 
 	margin:0	
@@ -16,23 +25,35 @@ h1#logotipo{
 
 h1#logotipo a{
 
-	background:url(../images/logo.gif) no-repeat;
+	background:url(../images/logo.png) no-repeat;
 
 	display:block;
 
-	height:135px;
+	height:128px;
 
-	width:140px;
+	width:135px;
 
 	text-indent:-9999px;
 
-	font-size:0px
+	font-size:0px;
+	margin:10px 0 0 35px;
 
 }
-
+.vehicleAdvertisment header{
+	border-bottom: 8px solid #FFF !important
+}
+.vehicleAdvertisment .principal{
+	background:url(../images/white-band.gif) repeat-x center -124px
+}
+.vehicleAdvertisment.view header{
+	border-bottom: 8px solid #f4f9fd !important
+}
+.vehicleAdvertisment.view .principal{
+	background:none
+}
 header{
 
-	background-color:#CBD3D8;
+	background-color:#C9D1D7;
 
 	position:fixed;
 
@@ -40,8 +61,9 @@ header{
 
 	z-index:99998;
 
-	top:0	
-
+	top:0;
+		
+	border-bottom: 8px solid #f4f9fd
 }
 
 
@@ -84,7 +106,7 @@ ul#menu li.last a{
 
 ul#menu li a{
 
-	color: #5D7683;	
+	color: #526670;	
 
 	font-weight:bold;
 
@@ -192,6 +214,7 @@ ul#menu li a:active{
 }
 
 .sub-group{margin-bottom:20px}
+.sub-group ul{padding-left:0px}
 
 .sub-group ul li a.b{
 
@@ -463,25 +486,31 @@ ul#menu li a:active{
 
 	background-color:#B11116	;
 
-	padding:10px;
+	padding:8px 10px 10px 10px;
 
 	position:fixed;
 
 	bottom:0px;
 
-	width:100%
+	width:100%;
+	color:#F2F7FB;
+	height:50px
 
 }
 
-ul.redes-sociais{list-style:none}
+ul.redes-sociais{
+	list-style:none;
+	margin:0 0 0 20px;
+	padding:0
+	}
 
 ul.redes-sociais li a{
 
 	display:block;
 
-	height:54px;
+	height:37px;
 
-	width:54px;
+	width:36px;
 
 	float:left;
 
@@ -489,7 +518,8 @@ ul.redes-sociais li a{
 
 	font-size:0px;
 
-	list-style:none
+	list-style:none;
+	margin-right:10px
 
 }
 
@@ -535,9 +565,14 @@ ul.pag li a{
 
 }
 
-.copyright{color:#FFF; text-align:center}
+.copyright{
+	color: #f2f7fb;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;	
+}
 
-.principal{padding-top:10px; margin-top:-137px;margin-bottom:40px}
+.principal{padding-top:10px; margin-bottom:40px}
 
 ul.pag li a:hover{
 
@@ -581,13 +616,13 @@ ul.pag li a.next{
 
 a.forum{
 
-	padding:20px;
+
 
 	background:url(../images/forum.png) no-repeat;
 
 	color: #fff;
 
-    padding: 22px 0 22px 66px;
+    padding: 11px 0 22px 49px;
 
     font-weight:bold;
 
@@ -772,9 +807,10 @@ span .input-group-btn.glyphicons.search{margin-left:20px}
 .row.cars ul li.right{text-align:right}
 
 .slimScrollBar{
-
-	z-index:99999 !important	
-
+	z-index:99999 !important;		
+}
+.slimScrollRail{
+	
 }
 
 .wrap{
@@ -784,18 +820,23 @@ span .input-group-btn.glyphicons.search{margin-left:20px}
 }
 
 .slimScrollDiv{
-
-	margin-top:170px;
-
-	
-
+	margin-top:154px;
+}
+.slimScrollRail{
+	width:1px !important;	
+	right:23px !important
+}
+.slimScrollBar{
+	opacity:1 !important	
 }
 
 /*fieldset collapsible*/
 .btn.btn-primary{
 	color:#FFF;
 	background:#B11116 !important;
-	border:none
+	border:none;
+	padding:3px 12px;
+	margin-left:10px
 }
 .accordion legend{display:none}
 .accordion .nav-tabs{
@@ -883,7 +924,8 @@ span .input-group-btn.glyphicons.search{margin-left:20px}
 .collapsible fieldset .group_info input[type="text"]{
 	border:none;
 	background:none;
-	padding-top:6px
+	padding-top:6px;
+	width:118px 
 }
 
 /*end */
@@ -931,18 +973,50 @@ span .input-group-btn.glyphicons.search{margin-left:20px}
 	margin:0;
 	padding:0
 }
-#yw0.list-view div{
-	border:none !important;
-	padding:2px 0
+/*remove borda*/
+#yw0.list-view div div{
+	border-left:none !important;
+	border-right:none !important;
+	width:auto !important;	
+	color:#3D4F59;
+	padding-top:5px;
+	padding-bottom:2px;
+	border-bottom:1px solid #EDF0F2 !important;
+	border-top:1px solid #F9FCFE !important
+}
+#yw0.list-view div div div{
+		margin-bottom:auto !important;
+		border:none !important
+}
+/*titulo carro*/
+#yw0.list-view div div div div{
+	display: inline-block;
+    font-size: 18px !important;
+    font-weight: bold;
+    padding: 0 0 5px 16px;
+    width: 100% !important;
+}
+/*atributos carro*/
+#yw0.list-view div div div div div{
+	display: inline-block !important;
+    font-size: 14px !important;
+    font-weight: lighter !important;
+    padding: 0 20px 0 0 !important;
+    width: 33% !important;
 }
 #yw0.list-view img{
 	border:1px solid #CCC;
-	padding:3px;
-	background:#FFF
+	padding:5px;
+	background:#FFF !important;
+	float:left
 }
 #yw0.list-view a{
-	color:#b11116 
+	color:#b11116 ;
+	position:absolute;
+	right:0px
 }
+
+
 @media (max-width: 767px) {
 
 	.row.cars ul{width:100%; margin-bottom:20px}	
@@ -987,5 +1061,12 @@ span .input-group-btn.glyphicons.search{margin-left:20px}
 
 	.wrap{height:auto !important; overflow:auto !important}
 
+ }
+ @media (min-width: 960px) { 
+ 	/*fixed elements*/
+	.fixed-layout-header, .fixed-layout-content{
+		width:800px;
+		margin:0 auto;
+	}
  }
 

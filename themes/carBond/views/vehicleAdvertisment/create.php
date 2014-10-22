@@ -61,9 +61,12 @@ $(document).ready(function () {
 		});
 	});
 
-	$('div.control-group.error').each(function() {
-		$(this).parent()
+	$('#Vehicle_production_year').change(function() {
+		$('#Vehicle_first_registration').val($(this).val() + '-01-01');
 	});
+
+	$('div.control-group.error div.controls').show();
+	$('div.group_info').show();
 
 });
 </script>
@@ -79,68 +82,183 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 <div>
 <?php
 // Validate PhysicalPerson / Company models only if there is no logged-in User
-echo (isset(Yii::app()->user->id)) ?
-	CHtml::errorSummary(array($modelPhysicalPerson, $modelVehicle, $modelVehicleAdvertisement)) :
-	CHtml::errorSummary(array($modelVehicle, $modelVehicleAdvertisement));
+//echo (isset(Yii::app()->user->id)) ?
+//	CHtml::errorSummary(array($modelPhysicalPerson, $modelVehicle, $modelVehicleAdvertisement)) :
+//	CHtml::errorSummary(array($modelVehicle, $modelVehicleAdvertisement));
 ?>
 </div>
 <div class="col-md-4">
 <?php
 if(!isset(Yii::app()->user->id)) {
 ?>
-<div class="collapsible"><fieldset>
+<div class="collapsible">
+	<fieldset>
 	<legend>Owner Data</legend>
 	<div class="group_info">
-    <div>
-		<?php
-		echo TbHtml::radioButtonList('optionsPhysicalCompany', 'physical', array(
-			'physical' => 'Physical Person',
-			'company'  => 'Company',
-		));
-		?>
-	</div>
-	<div id="physicalPerson">
-		<?php
-		// Physical Person data
-		require_once (Yii::app()->theme->basePath . '/views/physicalPerson/_form.php');
-		?>
-	</div>
-	<div id="company" style="display: none">
-		<?php
-		// Company data
-		require_once (Yii::app()->theme->basePath . '/views/company/_form.php');
-		?>
-	</div>
+	    <div>
+			<?php
+			echo TbHtml::radioButtonList('optionsPhysicalCompany', 'physical', array(
+				'physical' => 'Physical Person',
+				'company'  => 'Company',
+			));
+			?>
+		</div>
+		<div id="physicalPerson">
+			<?php
+			echo $form->textFieldControlGroup($modelPhysicalPerson, 'first_name', array('readonly' => (isset(Yii::app()->user->id))));
+			echo $form->textFieldControlGroup($modelPhysicalPerson, 'last_name', array('readonly' => (isset(Yii::app()->user->id))));
+			echo $form->textFieldControlGroup($modelPhysicalPerson, 'mobile', array('readonly' => (isset(Yii::app()->user->id))));
+			echo $form->textFieldControlGroup($modelPhysicalPerson, 'email', array('readonly' => (isset(Yii::app()->user->id))));
+			echo TbHtml::dropDownListControlGroup('country', '', CHtml::listData(Country::model()->findAll(), 'countryid', 'country_name'),
+				array(
+					'ajax'  => array(
+						'type'   => 'POST',
+						'url'    => $this->createUrl('site/updateCityDropdown'),
+						'update' => '#PhysicalPerson_city',
+						'data'   => array(
+							'countryId' => 'js:this.value'
+						),
+					),
+					'label' => 'Country',
+					'empty' => '',
+				)
+			);
+			echo $form->dropDownListControlGroup($modelPhysicalPerson, 'city', array(), array('empty' => ''));
+			echo $form->textFieldControlGroup($modelPhysicalPerson, 'district', array('readonly' => (isset(Yii::app()->user->id))));
+			echo $form->textFieldControlGroup($modelPhysicalPerson, 'zip_code', array('readonly' => (isset(Yii::app()->user->id))));
+			?>
+		</div>
+		<div id="company" style="display: none">
+			<?php
+			echo $form->textFieldControlGroup($modelCompany, 'company_name', array('size' => 60, 'maxlength' => 100));
+			echo $form->textFieldControlGroup($modelCompany, 'address', array('size' => 60, 'maxlength' => 254));
+			echo $form->textFieldControlGroup($modelCompany, 'city', array('size' => 50, 'maxlength' => 50));
+			echo $form->textFieldControlGroup($modelCompany, 'tax_number', array('size' => 45, 'maxlength' => 45));
+			echo $form->textFieldControlGroup($modelCompany, 'registration_number', array('size' => 45, 'maxlength' => 45));
+			echo $form->textFieldControlGroup($modelCompany, 'contact_person', array('size' => 60, 'maxlength' => 100));
+			echo $form->textFieldControlGroup($modelCompany, 'email', array('size' => 60, 'maxlength' => 320));
+			echo $form->textFieldControlGroup($modelCompany, 'phone_number', array('size' => 45, 'maxlength' => 45));
+			?>
+		</div>
     </div>
-</fieldset></div>
+	</fieldset>
+</div>
 
 <?php } ?>
     <div class="accordion">
-    <?php
-    // Vehicle Advertisement data
-    require_once (Yii::app()->theme->basePath . '/views/vehicleAdvertisment/_form.php');
-    ?>
+	    <?php
+	    echo $form->textAreaControlGroup($modelVehicleAdvertisement, 'description', array('span' => 8, 'rows' => 5));
+	    echo $form->textFieldControlGroup($modelVehicleAdvertisement, 'price');
+	    ?>
     </div>
 </div>
 
-
-
 <div class="col-md-4">
     <div class="accordion">
+	    <?php
+	    echo $form->textFieldControlGroup($modelVehicle, 'vin', array('size' => 45, 'maxlength' => 45));
+	    echo $form->textFieldControlGroup($modelVehicle, 'engine_number', array('size' => 45, 'maxlength' => 45));
+	    echo TbHtml::dropDownListControlGroup('make', '', CHtml::listData(VehicleMake::model()->with(array('vehicleTypes' => array('condition' => 'vehicleTypes.vehicle_typeid = ' . $vehicleTypeId)))->findAll(), 'makeid', 'make_name'),
+		    array(
+			    'ajax'  => array(
+				    'type'   => 'POST',
+				    'url'    => $this->createUrl('car/updateModelDropdown'),
+				    'update' => '#Vehicle_modelid',
+				    'data'   => array(
+					    'makeId' => 'js:this.value'
+				    ),
+			    ),
+			    'label' => 'Make',
+			    'empty' => '',
+		    )
+	    );
+	    echo $form->dropDownListControlGroup($modelVehicle, 'modelid', array(), array('empty' => ''));
+	    echo $form->dropDownListControlGroup($modelVehicle, 'production_year', Helper::getYearsArray(), array('span' => 1, 'empty' => ''));
+	    //	echo $form->textFieldControlGroup($modelVehicle, 'first_registration');
+	    ?>
+	    <div class="control-group">
+		    <?php
+		    echo $form->labelEx($modelVehicle, 'first_registration', array('class' => 'control-label'));
+		    ?>
+		    <div class="controls">
+			    <?php
+			    $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+				    // 'name'=>'birthdate',
+				    'id' => 'Vehicle_first_registration',
+				    'name'    => 'Vehicle[first_registration]', // the name of the field
+				    'value'   => $modelVehicle->first_registration, // pre-fill the value
+				    // additional javascript options for the date picker plugin
+				    'options' => array(
+					    'showAnim'   => 'fold',
+					    'dateFormat' => 'yy-mm-dd', // optional Date formatting
+					    'debug'      => true,
+				    )
+			    ));
+			    ?>
+		    </div>
+	    </div>
+	    <?php
+	    echo $form->textFieldControlGroup($modelVehicle, 'variant');
+	    echo $form->textFieldControlGroup($modelVehicle, 'km');
+	    echo $form->textFieldControlGroup($modelVehicle, 'engine_ccm');
+	    echo $form->textFieldControlGroup($modelVehicle, 'engine_power');
+	    echo $form->dropDownListControlGroup($modelVehicle, 'fuel_typeid', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array(0, $vehicleTypeId), 'characteristic_typeid' => '2')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
+	    echo $form->dropDownListControlGroup($modelVehicle, 'engine_emission_class', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array(0, $vehicleTypeId), 'characteristic_typeid' => '3')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
+	    echo $form->dropDownListControlGroup($modelVehicle, 'gear_type', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array(0, $vehicleTypeId), 'characteristic_typeid' => '7')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
+	    echo $form->dropDownListControlGroup($modelVehicle, 'color', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array(0, $vehicleTypeId), 'characteristic_typeid' => '5')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
+	    echo $form->radioButtonListControlGroup($modelVehicle, 'registered', array(
+		    '0' => 'No',
+		    '1' => 'Yes',
+	    ));
+	    ?>
+	    <div class="control-group">
+		    <?php
+		    echo $form->labelEx($modelVehicle, 'registration_valid_to', array('class' => 'control-label'));
+		    ?>
+		    <div class="controls">
+			    <?php
+			    $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+				    // 'name'=>'birthdate',
+				    'name'    => 'registration_valid_to', // the name of the field
+				    'value'   => $modelVehicle->registration_valid_to, // pre-fill the value
+				    // additional javascript options for the date picker plugin
+				    'options' => array(
+					    'showAnim'   => 'fold',
+					    'dateFormat' => 'yy-mm-dd', // optional Date formatting
+					    'debug'      => true,
+				    )
+			    ));
+			    ?>
+		    </div>
+	    </div>
+	    <?php
+	    echo $form->dropDownListControlGroup($modelVehicle, 'vehicle_origin', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array(0, $vehicleTypeId), 'characteristic_typeid' => '10')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
+	    echo $form->dropDownListControlGroup($modelVehicle, 'damages', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array(0, $vehicleTypeId), 'characteristic_typeid' => '11')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
+
+
+	    foreach ($modelCharacteristicTypeArray as $i => $characteristicType) {
+		    $vehicleCharacteristic = $modelVehicleCharacteristicArray[$i];
+		    echo $form->dropDownListControlGroup(
+			    $vehicleCharacteristic,
+			    "[$i]characteristicid",
+			    CHtml::listData($characteristicType->characteristics, 'characteristicid', 'characteristic_name'),
+			    array('label' => $characteristicType->characteristic_type_name, 'empty' => '')
+		    );
+	    }
+	    ?>
     <?php
-    // Vehicle data
-    require_once (Yii::app()->theme->basePath . '/views/vehicle/_form.php');
-    
     if($model != '')
         require_once (Yii::app()->theme->basePath . '/views/' . $vehicleType . '/_form.php');
     ?>
     </div>
 </div>
 <div class="col-md-4 ">
-<div class="collapsible"><?php
-// Photos
-require_once (Yii::app()->basePath . '/views/photo/_form.php');
-?></div>
+	<div class="collapsible">
+		<?php
+	// Photos
+	require_once (Yii::app()->basePath . '/views/photo/_form.php');
+	?>
+	</div>
 </div>
 <div class="col-md-4">
 <div class="accordion">

@@ -5,104 +5,67 @@
 echo TbHtml::pageHeader('Advertisement', 'detail view');
 ?>
 
-<div>
-	<?php
-	$this->widget('bootstrap.widgets.TbDetailView', array(
-		'type'       => array(TbHtml::DETAIL_TYPE_STRIPED),
-		'data'       => $model,
-		'attributes' => array(
-			array(
-				'type' => 'raw',
-				'value' => html_entity_decode(CHtml::image(Yii::app()->request->baseUrl . '/images/vehicle/normal/vehicle-' . $model->vehicle_advertismentid . '.jpg', 'alt')),
-			),
-			array(
-				'name' => 'vin',
-				'value' => $model->vehicle->vin,
-			),
-			array(
-				'name' => 'description',
-				'value' => $model->description,
-			),
-			array(
-				'name' => 'price',
-				'value' => number_format($model->price),
-			),
-			array(
-				'name' => 'Make / Model',
-				'type' => 'text',
-				'value' => $model->vehicle->model->make->make_name . ' - ' . $model->vehicle->model->model_name,
-			),
-			array(
-				'name' => 'Production Year',
-				'type' => 'text',
-				'value' => $model->vehicle->production_year,
-			),
-			array(
-				'name' => 'KM',
-				'type' => 'text',
-				'value' => number_format($model->vehicle->km),
-			),
-			array(
-				'name' => 'engine_ccm',
-				'value' => $model->vehicle->engine_ccm,
-			),
-			array(
-				'name' => 'engine_power',
-				'value' => $model->vehicle->engine_power,
-			),
-			array(
-				'name' => 'first_registration',
-				'value' => $model->vehicle->first_registration,
-			),
-			array(
-				'name' => 'variant',
-				'value' => $model->vehicle->variant,
-			),
-			array(
-				'name' => 'registered',
-				'value' => ($model->vehicle->registered) ? 'Yes' : 'No',
-			),
-			array(
-				'name' => 'registration_valid_to',
-				'value' => date('d.m.Y.', strtotime($model->vehicle->registration_valid_to)),
-			),
-			array(
-				'name' => 'vehicle_origin',
-				'value' => ($model->vehicle->vehicleOrigin) ? $model->vehicle->vehicleOrigin->characteristic_name : '',
-			),
-			array(
-				'name' => 'gear_type',
-				'value' => ($model->vehicle->gearType) ? $model->vehicle->gearType->characteristic_name : '',
-			),
-			array(
-				'name' => 'damages',
-				'value' => ($model->vehicle->damages) ? 'Yes' : 'No',
-			),
-			array(
-				'name' => 'Fuel Type',
-				'type' => 'text',
-				'value' => $model->vehicle->fuelType->characteristic_name,
-			),
-			array(
-				'name' => 'Engine Emission Type',
-				'type' => 'text',
-				'value' => ($model->vehicle->engine_emission_class) ? $model->vehicle->engineEmissionClass->characteristic_name : '',
-			),
-			array(
-				'name' => 'Color',
-				'type' => 'text',
-				'value' => ($model->vehicle->color) ? $model->vehicle->color0->characteristic_name : '',
-			),
-		),
-	));
-	?>
-	<h4>Servicing Data</h4>
-	<?php
-	$this->widget('bootstrap.widgets.TbListView', array(
-		'dataProvider' => $servicingData,
-		'itemView'     => '/servicingData/_servicingDataItem',
-	));
-	?>
-
+<div style="float: left; width: 150px;">
+	banners
+</div>
+<div style="float: left;">
+	<div style="float: left;">
+		<?php echo CHtml::image(Yii::app()->request->baseUrl . '/images/vehicle/thumb/vehicleThumb-' . $model->vehicle_advertismentid . '.jpg', 'alt'); ?>
+	</div>
+	<div style="float: left;">
+		<p><?php echo $model->vehicle->model->make->make_name ?></p>
+		<p><?php echo $model->vehicle->model->model_name ?></p>
+		<p><?php echo $model->vehicle->production_year ?></p>
+		<p><?php echo $model->vehicle->km ?></p>
+		<p><?php echo $model->vehicle->fuelType->characteristic_name ?></p>
+		<p><?php echo $model->vehicle->vehicleOrigin->characteristic_name ?></p>
+	</div>
+	<div style="float: left;">
+		<p>cena <?php echo number_format($model->price) ?> &euro;</p>
+		<?php
+		if(!empty($model->advertiser0->company)) { ?>
+		<p><?php echo $model->advertiser0->company->company_name ?></p>
+		<?php
+		}
+		?>
+		<?php
+		if(!empty($model->advertiser0->physicalPerson)) { ?>
+			<p><?php echo $model->advertiser0->physicalPerson->first_name ?> <?php echo $model->advertiser0->physicalPerson->last_name ?></p>
+		<?php
+		}
+		?>
+	</div>
+	<div style="clear: both;"></div>
+	<div>
+		<div style="float: left;">
+			<h4>Dodatne informacije</h4>
+			<p>Kubikaža: <?php echo $model->vehicle->engine_ccm ?></p>
+			<p>Snaga: <?php echo $model->vehicle->engine_power ?></p>
+			<p>Emisiona klasa motora: <?php echo ($model->vehicle->engine_emission_class) ? $model->vehicle->engineEmissionClass->characteristic_name : '' ?></p>
+			<p>Pogon: <?php echo (isset($model->vehicle->cars) && isset($model->vehicle->cars->transmissionType)) ? $model->vehicle->cars->transmissionType->characteristic_name : '' ?></p>
+			<p>Menjač: <?php echo ($model->vehicle->gearType) ? $model->vehicle->gearType->characteristic_name : '' ?></p>
+			<p>Broj vrata: <?php echo ($model->vehicle->cars) ? $model->vehicle->cars->no_of_doors : '' ?></p>
+			<p>Broj sedišta: <?php echo ($model->vehicle->cars) ? $model->vehicle->cars->no_of_seats : '' ?></p>
+			<p>Strana volana: <?php echo ($model->vehicle->cars) ? $model->vehicle->cars->stearing_wheel_side : '' ?></p>
+			<p>Klima: <?php echo (isset($model->vehicle->cars) && isset($model->vehicle->cars->climateControl)) ? $model->vehicle->cars->climateControl->characteristic_name : '' ?></p>
+			<p>Boja: <?php echo ($model->vehicle->color0) ? $model->vehicle->color0->characteristic_name : '' ?></p>
+			<p>Registrovan do: <?php echo date('d.m.Y.', strtotime($model->vehicle->registration_valid_to)) ?></p>
+			<p>Materijal enterijera: <?php echo (isset($model->vehicle->cars) && isset($model->vehicle->cars->enterier0)) ? $model->vehicle->cars->enterier0->characteristic_name : '' ?></p>
+		</div>
+		<div style="float: left;">
+			<h4>Oprema</h4>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	<div>
+		<h4>Servicing Data</h4>
+		<?php
+		$this->widget('bootstrap.widgets.TbListView', array(
+			'dataProvider' => $servicingData,
+			'itemView'     => '/servicingData/_servicingDataItem',
+		));
+		?>
+	</div>
+	<div style="clear: both"></div>
 </div>
 <div style="clear: both"></div>

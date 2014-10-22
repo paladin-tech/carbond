@@ -88,7 +88,7 @@ class Vehicle extends CActiveRecord
 			'boats'                  => array(self::HAS_MANY, 'Boat', 'vehicleid'),
 			'buses'                  => array(self::HAS_MANY, 'Bus', 'vehicleid'),
 			'campers'                => array(self::HAS_MANY, 'Camper', 'vehicleid'),
-			'cars'                   => array(self::HAS_MANY, 'Car', 'vehicleid'),
+			'cars'                   => array(self::HAS_ONE, 'Car', 'vehicleid'),
 			'damageDatas'            => array(self::HAS_MANY, 'DamageData', 'vehicleid'),
 			'servicingDatas'         => array(self::HAS_MANY, 'ServicingData', 'vehicleid'),
 			'trailers'               => array(self::HAS_MANY, 'Trailer', 'vehicleid'),

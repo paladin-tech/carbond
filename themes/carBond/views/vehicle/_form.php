@@ -3,7 +3,7 @@
 	<?php
 	echo $form->textFieldControlGroup($modelVehicle, 'vin', array('size' => 45, 'maxlength' => 45));
 	echo $form->textFieldControlGroup($modelVehicle, 'engine_number', array('size' => 45, 'maxlength' => 45));
-	echo TbHtml::dropDownListControlGroup('make', '', CHtml::listData(VehicleMake::model()->findAll(), 'makeid', 'make_name'),
+	echo TbHtml::dropDownListControlGroup('make', '', CHtml::listData(VehicleMake::model()->with(array('vehicleTypes' => array('condition' => 'vehicleTypes.vehicle_typeid = ' . $vehicleTypeId)))->findAll(), 'makeid', 'make_name'),
 		array(
 			'ajax'  => array(
 				'type'   => 'POST',

@@ -25,7 +25,7 @@ class ServicerController extends Controller
 	{
 		return array(
 			array('allow', // allow all users to perform 'index' and 'view' actions
-				'actions' => array('index', 'view', 'create', 'addServicingData', 'brands'),
+				'actions' => array('index', 'view', 'create', 'addServicingData', 'brands', 'listByBrand'),
 				'users'   => array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -42,30 +42,23 @@ class ServicerController extends Controller
 		);
 	}
 
-	public function actionBrands()
+	public function actionBrands($vehicleTypeId = 1)
 	{
 
-//		$vehicleTypeName      = ucwords(VehicleType::model()->findByPk($vehicleTypeId)->vehicle_type);
-//		$vehicleTypeNameCamel = lcfirst(str_replace(' ', '', $vehicleTypeName));
-//
-//		$model = new SearchAdvertisment('search');
-//
-//		$model->unsetAttributes(); // clear any default values
-//
-//		$model->vehicle_typeid = $vehicleTypeId;
-//
-//		if (isset($_POST['yt0'])) {
-//			$model->makeid   = $_POST['make'];
-//			$model->modelid  = $_POST['model'];
-//			$model->yearFrom = $_POST['yearFrom'];
-//			$model->yearTo   = $_POST['yearTo'];
-//		}
-
-		$model = new VehicleMake('search');
+		$model                = new VehicleMake('search');
+		$model->vehicleTypeId = $vehicleTypeId;
 
 		$this->render('brands', array(
-			'dataProvider' => $model->search(),
+			'dataProvider'  => $model->search(),
+			'vehicleTypeId' => $vehicleTypeId,
 		));
+
+	}
+
+	public function actionListByBrand($makeId, $vehicleTypeId = 1)
+	{
+
+		$this->render('listByBrand');
 
 	}
 

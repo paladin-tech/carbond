@@ -8,8 +8,13 @@
  * @property string $vehicle_type
  *
  * The followings are the available model relations:
+ * @property Characteristic[] $characteristics
+ * @property CharacteristicType[] $characteristicTypes
+ * @property ServicerVehicleMakeType[] $servicerVehicleMakeTypes
  * @property Vehicle[] $vehicles
- * @property VehicleProperty[] $vehicleProperties
+ * @property VehicleCategory[] $vehicleCategories
+ * @property VehicleMake[] $vehicleMakes
+ * @property VehicleModel[] $vehicleModels
  */
 class VehicleType extends CActiveRecord
 {
@@ -45,8 +50,13 @@ class VehicleType extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'vehicles'          => array(self::HAS_MANY, 'Vehicle', 'vehicle_typeid'),
-			'vehicleProperties' => array(self::HAS_MANY, 'VehicleProperty', 'vehicle_typeid'),
+			'characteristics'          => array(self::HAS_MANY, 'Characteristic', 'vehicle_typeid'),
+			'characteristicTypes'      => array(self::HAS_MANY, 'CharacteristicType', 'vehicle_typeid'),
+			'servicerVehicleMakeTypes' => array(self::HAS_MANY, 'ServicerVehicleMakeType', 'vehicle_typeid'),
+			'vehicles'                 => array(self::HAS_MANY, 'Vehicle', 'vehicle_typeid'),
+			'vehicleCategories'        => array(self::HAS_MANY, 'VehicleCategory', 'vehicle_typeid'),
+			'vehicleMakes'             => array(self::MANY_MANY, 'VehicleMake', 'vehicle_make_type(vehicle_typeid, vehicle_makeid)'),
+			'vehicleModels'            => array(self::HAS_MANY, 'VehicleModel', 'vehicle_typeid'),
 		);
 	}
 

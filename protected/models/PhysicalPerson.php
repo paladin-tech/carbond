@@ -9,13 +9,13 @@
  * @property string $last_name
  * @property string $mobile
  * @property string $email
- * @property string $city
- * @property string $country
+ * @property string $cityid
  * @property string $district
  * @property integer $zip_code
  *
  * The followings are the available model relations:
  * @property Party $party
+ * @property City $city
  */
 class PhysicalPerson extends CActiveRecord
 {
@@ -36,15 +36,15 @@ class PhysicalPerson extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('first_name, last_name, email, city, zip_code', 'required'),
-			array('partyid, zip_code', 'numerical', 'integerOnly' => true),
+			array('partyid, cityid, zip_code', 'numerical', 'integerOnly' => true),
 			array('first_name, last_name, city', 'length', 'max' => 50),
 			array('mobile', 'length', 'max' => 45),
 			array('email', 'length', 'max' => 255),
 			array('email', 'unique'),
-			array('country, district', 'length', 'max' => 100),
+			array('district', 'length', 'max' => 100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('partyid, first_name, last_name, mobile, email, city, country, district, zip_code', 'safe', 'on' => 'search'),
+			array('partyid, first_name, last_name, mobile, email, cityid, district, zip_code', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -57,7 +57,7 @@ class PhysicalPerson extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'party' => array(self::BELONGS_TO, 'Party', 'partyid'),
-			'city' => array(self::BELONGS_TO, 'City', 'cityid'),
+			'city'  => array(self::BELONGS_TO, 'City', 'cityid'),
 		);
 	}
 
@@ -67,13 +67,12 @@ class PhysicalPerson extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'partyid'    => 'Partyid',
+			'partyid'    => 'Party',
 			'first_name' => 'First Name',
 			'last_name'  => 'Last Name',
 			'mobile'     => 'Mobile',
 			'email'      => 'Email',
-			'city'       => 'City',
-			'country'    => 'Country',
+			'cityid'     => 'City',
 			'district'   => 'District',
 			'zip_code'   => 'Zip Code',
 		);
@@ -102,8 +101,7 @@ class PhysicalPerson extends CActiveRecord
 		$criteria->compare('last_name', $this->last_name, true);
 		$criteria->compare('mobile', $this->mobile, true);
 		$criteria->compare('email', $this->email, true);
-		$criteria->compare('city', $this->city, true);
-		$criteria->compare('country', $this->country, true);
+		$criteria->compare('cityid', $this->cityid, true);
 		$criteria->compare('district', $this->district, true);
 		$criteria->compare('zip_code', $this->zip_code);
 

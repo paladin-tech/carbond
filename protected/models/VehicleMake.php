@@ -8,10 +8,16 @@
  * @property string $make_name
  *
  * The followings are the available model relations:
+ * @property MakeVin[] $makeVins
+ * @property ServicerVehicleMakeType[] $servicerVehicleMakeTypes
+ * @property VehicleType[] $vehicleTypes
  * @property VehicleModel[] $vehicleModels
  */
 class VehicleMake extends CActiveRecord
 {
+
+	public $vehicleTypeId;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -32,7 +38,7 @@ class VehicleMake extends CActiveRecord
 			array('make_name', 'required'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('makeid, make_name', 'safe', 'on' => 'search'),
+			array('makeid, make_name, vehicleTypeId', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -44,7 +50,10 @@ class VehicleMake extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'vehicleModels' => array(self::HAS_MANY, 'VehicleModel', 'makeid'),
+			'makeVins'                 => array(self::HAS_MANY, 'MakeVin', 'makeid'),
+			'servicerVehicleMakeTypes' => array(self::HAS_MANY, 'ServicerVehicleMakeType', 'makeid'),
+			'vehicleTypes'             => array(self::MANY_MANY, 'VehicleType', 'vehicle_make_type(vehicle_makeid, vehicle_typeid)'),
+			'vehicleModels'            => array(self::HAS_MANY, 'VehicleModel', 'makeid'),
 		);
 	}
 
@@ -77,6 +86,9 @@ class VehicleMake extends CActiveRecord
 
 		$criteria = new CDbCriteria;
 
+		$criteria->with = array('vehicleTypes');
+		$criteria->together = true;
+		$criteria->compare('vehicleTypes.vehicle_typeid', $this->vehicleTypeId);
 		$criteria->compare('makeid', $this->makeid);
 		$criteria->compare('make_name', $this->make_name, true);
 

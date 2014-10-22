@@ -16,6 +16,10 @@
  *
  * The followings are the available model relations:
  * @property Party $party
+ * @property City $city0
+ * @property DamageData[] $damageDatas
+ * @property ServicerVehicleMakeType[] $servicerVehicleMakeTypes
+ * @property ServicingData[] $servicingDatas
  */
 class Company extends CActiveRecord
 {
@@ -36,15 +40,15 @@ class Company extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('partyid, company_name, address, city, tax_number, registration_number, contact_person, email, phone_number', 'required'),
-			array('partyid', 'numerical', 'integerOnly'=>true),
-			array('company_name, contact_person', 'length', 'max'=>100),
-			array('address', 'length', 'max'=>254),
-			array('city', 'length', 'max'=>50),
-			array('tax_number, registration_number, phone_number', 'length', 'max'=>45),
-			array('email', 'length', 'max'=>320),
+			array('partyid', 'numerical', 'integerOnly' => true),
+			array('company_name, contact_person', 'length', 'max' => 100),
+			array('address', 'length', 'max' => 254),
+			array('city', 'length', 'max' => 50),
+			array('tax_number, registration_number, phone_number', 'length', 'max' => 45),
+			array('email', 'length', 'max' => 320),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('partyid, company_name, address, city, tax_number, registration_number, contact_person, email, phone_number', 'safe', 'on'=>'search'),
+			array('partyid, company_name, address, city, tax_number, registration_number, contact_person, email, phone_number', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -56,7 +60,11 @@ class Company extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'party' => array(self::BELONGS_TO, 'Party', 'partyid'),
+			'party'                    => array(self::BELONGS_TO, 'Party', 'partyid'),
+			'city0'                    => array(self::BELONGS_TO, 'City', 'city'),
+			'damageDatas'              => array(self::HAS_MANY, 'DamageData', 'insuranceid'),
+			'servicerVehicleMakeTypes' => array(self::HAS_MANY, 'ServicerVehicleMakeType', 'servicerid'),
+			'servicingDatas'           => array(self::HAS_MANY, 'ServicingData', 'serviceid'),
 		);
 	}
 
@@ -66,15 +74,15 @@ class Company extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'partyid' => 'Partyid',
-			'company_name' => 'Company Name',
-			'address' => 'Address',
-			'city' => 'City',
-			'tax_number' => 'Tax Number',
+			'partyid'             => 'Party ID',
+			'company_name'        => 'Company Name',
+			'address'             => 'Address',
+			'city'                => 'City',
+			'tax_number'          => 'Tax Number',
 			'registration_number' => 'Registration Number',
-			'contact_person' => 'Contact Person',
-			'email' => 'Email',
-			'phone_number' => 'Phone Number',
+			'contact_person'      => 'Contact Person',
+			'email'               => 'Email',
+			'phone_number'        => 'Phone Number',
 		);
 	}
 
@@ -94,20 +102,20 @@ class Company extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
-		$criteria->compare('partyid',$this->partyid);
-		$criteria->compare('company_name',$this->company_name,true);
-		$criteria->compare('address',$this->address,true);
-		$criteria->compare('city',$this->city,true);
-		$criteria->compare('tax_number',$this->tax_number,true);
-		$criteria->compare('registration_number',$this->registration_number,true);
-		$criteria->compare('contact_person',$this->contact_person,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('phone_number',$this->phone_number,true);
+		$criteria->compare('partyid', $this->partyid);
+		$criteria->compare('company_name', $this->company_name, true);
+		$criteria->compare('address', $this->address, true);
+		$criteria->compare('city', $this->city, true);
+		$criteria->compare('tax_number', $this->tax_number, true);
+		$criteria->compare('registration_number', $this->registration_number, true);
+		$criteria->compare('contact_person', $this->contact_person, true);
+		$criteria->compare('email', $this->email, true);
+		$criteria->compare('phone_number', $this->phone_number, true);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+			'criteria' => $criteria,
 		));
 	}
 
@@ -117,7 +125,7 @@ class Company extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return Company the static model class
 	 */
-	public static function model($className=__CLASS__)
+	public static function model($className = __CLASS__)
 	{
 		return parent::model($className);
 	}

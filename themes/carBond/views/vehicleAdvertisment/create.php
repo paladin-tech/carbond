@@ -3,12 +3,6 @@
 /* @var $dataProvider CActiveDataProvider */
 
 require_once (Yii::app()->theme->basePath . '/views/site/_categoryCreateSubmenu.php');
-
-$this->widget('bootstrap.widgets.TbBreadcrumb', array(
-	'links' => array(
-		'Create Advertisment - ' . $vehicleTypeName,
-	),
-));
 ?>
 
 <?php
@@ -67,6 +61,10 @@ $(document).ready(function () {
 		});
 	});
 
+	$('div.control-group.error').each(function() {
+		$(this).parent()
+	});
+
 });
 </script>
 
@@ -82,8 +80,8 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 <?php
 // Validate PhysicalPerson / Company models only if there is no logged-in User
 echo (isset(Yii::app()->user->id)) ?
-	CHtml::errorSummary(array($model, $modelVehicle, $modelPhysicalPerson, $modelVehicleAdvertisement)) :
-	CHtml::errorSummary(array($model, $modelVehicle, $modelVehicleAdvertisement));
+	CHtml::errorSummary(array($modelPhysicalPerson, $modelVehicle, $modelVehicleAdvertisement)) :
+	CHtml::errorSummary(array($modelVehicle, $modelVehicleAdvertisement));
 ?>
 </div>
 <div class="col-md-4">

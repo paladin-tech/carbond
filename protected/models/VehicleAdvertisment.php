@@ -12,11 +12,12 @@
  * @property integer $active
  * @property integer $advertiser
  * @property string $description
+ * @property integer $price
  *
  * The followings are the available model relations:
  * @property Photo[] $photos
- * @property Vehicle $vehicle
  * @property Party $advertiser0
+ * @property Vehicle $vehicle
  */
 class VehicleAdvertisment extends CActiveRecord
 {
@@ -36,7 +37,7 @@ class VehicleAdvertisment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('price', 'required'),
+			array('price, advertiser', 'required'),
 			array('vehicleid, active, advertiser, price', 'numerical', 'integerOnly' => true),
 			array('created_date, last_change, valid_to, description', 'safe'),
 			// The following rule is used by search().
@@ -54,8 +55,8 @@ class VehicleAdvertisment extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'photos'      => array(self::HAS_MANY, 'Photo', 'vehicle_advertismentid'),
-			'vehicle'     => array(self::BELONGS_TO, 'Vehicle', 'vehicleid'),
 			'advertiser0' => array(self::BELONGS_TO, 'Party', 'advertiser'),
+			'vehicle'     => array(self::BELONGS_TO, 'Vehicle', 'vehicleid'),
 		);
 	}
 
@@ -96,7 +97,6 @@ class VehicleAdvertisment extends CActiveRecord
 		$criteria = new CDbCriteria;
 
 		$criteria->compare('vehicle_advertismentid', $this->vehicle_advertismentid);
-		$criteria->compare('vehicle_typeid', $this->vehicle_typeid);
 		$criteria->compare('vehicleid', $this->vehicleid);
 		$criteria->compare('created_date', $this->created_date, true);
 		$criteria->compare('last_change', $this->last_change, true);

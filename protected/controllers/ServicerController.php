@@ -58,7 +58,18 @@ class ServicerController extends Controller
 	public function actionListByBrand($makeId, $vehicleTypeId = 1)
 	{
 
-		$this->render('listByBrand');
+		$model                 = new SearchServicers('search');
+		$model->vehicle_typeid = $vehicleTypeId;
+		$model->makeid         = $makeId;
+
+		if (isset($_POST['yt0'])) {
+			$model->countryId = $_POST['country'];
+			$model->cityId    = $_POST['city'];
+		}
+
+		$this->render('listByBrand', array(
+			'dataProvider' => $model->search(),
+		));
 
 	}
 

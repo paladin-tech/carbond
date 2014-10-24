@@ -78,9 +78,8 @@ $cs
             </div>
         </div>
     </div>
-
 </header>
-<div class="wrap" >
+<div class="wrap">
 	<!--<div class="faixa-branca clearfix">
 	</div>-->
 	<div class="container-fluid principal">

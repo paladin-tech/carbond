@@ -133,8 +133,19 @@ class VehicleController extends Controller
 		// $this->performAjaxValidation($model);
 
 		if (isset($_POST['yt0'])) {
+
 			$model         = Vehicle::model()->findByAttributes(array('vin' => $_POST['vin']));
 			$servicingData = (isset($model)) ? new CArrayDataProvider($model->servicingDatas, array('keyField' => 'servicing_dataid')) : '';
+
+			// Save VIN Search Log
+			$success                   = (isset($model)) ? 1 : 0;
+			$vinSearchLog              = new VinSearchLog;
+			$vinSearchLog->userid      = Yii::app()->user->id;
+			$vinSearchLog->search_date = date('Y-m-d H:i:s');
+			$vinSearchLog->vin         = $_POST['vin'];
+			$vinSearchLog->success     = $success;
+			$vinSearchLog->save();
+
 			$this->render('searchByVin', array(
 				'model'         => $model,
 				'servicingData' => $servicingData,
@@ -169,8 +180,8 @@ class VehicleController extends Controller
 
 		if (strlen($VIN) == 17) {
 			$formatValid = true;
-			$vinPattern = substr($VIN, 0, 3);
-			$make       = MakeVin::model()->findByAttributes(array('vin_pattern' => $vinPattern));
+			$vinPattern  = substr($VIN, 0, 3);
+			$make        = MakeVin::model()->findByAttributes(array('vin_pattern' => $vinPattern));
 			if (!empty($make))
 				$makeVin = $make->makeid;
 		} else {
@@ -185,17 +196,17 @@ class VehicleController extends Controller
 			$activeAds           = (!empty($advertisement));
 			$response            = array(
 				'formatValid' => true,
-				'vinCheck'  => true,
-				'activeAds' => $activeAds,
-				'modelId'   => $vehicle->modelid,
-				'makeId'    => (isset($makeVin)) ? $makeVin : $vehicle->model->makeid
+				'vinCheck'    => true,
+				'activeAds'   => $activeAds,
+				'modelId'     => $vehicle->modelid,
+				'makeId'      => (isset($makeVin)) ? $makeVin : $vehicle->model->makeid
 			);
 		} else {
 			$response = array(
 				'formatValid' => $formatValid,
-				'vinCheck'  => false,
-				'activeAds' => false,
-				'makeId'    => (isset($makeVin)) ? $makeVin : ''
+				'vinCheck'    => false,
+				'activeAds'   => false,
+				'makeId'      => (isset($makeVin)) ? $makeVin : ''
 			);
 		}
 

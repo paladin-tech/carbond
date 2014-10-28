@@ -28,15 +28,11 @@ $cs
 		"$(\"#slide-left\").PikaChoose();"
 		, CClientScript::POS_READY);
 
-$this->widget('bootstrap.widgets.TbBreadcrumb', array(
-	'links' => array(
-		'Vehicle',
-	),
-));
-
 echo TbHtml::pageHeader('Search Vehicles by VIN', 'detail view');
 ?>
-
+<?php
+if($searchAllowed) {
+?>
 <div class="row">
 	<div class="col-md-12 bottom_bar search-vin">
 		<span class="vin"><strong>VIN: </strong><?php echo (isset($model) && $model != 'notSet') ? $model->vin : ''; ?></span>
@@ -174,3 +170,10 @@ echo TbHtml::pageHeader('Search Vehicles by VIN', 'detail view');
 	</div>
 </div>
 <div style="clear: both"></div>
+<?php
+} else {
+?>
+<h4><?php echo $searchNotAllowedMessage ?></h4>
+<?php
+}
+?>

@@ -2,6 +2,9 @@
 
 class VehicleController extends Controller
 {
+
+	const VIN_SEARCH_LIMIT = 3;
+
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -132,28 +135,53 @@ class VehicleController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+		$searchAllowed = !Yii::app()->user->isGuest;
+		$searchNotAllowedMessage = 'You are not allowed to make VIN database queries. Please login.';
+
 		if (isset($_POST['yt0'])) {
 
-			$model         = Vehicle::model()->findByAttributes(array('vin' => $_POST['vin']));
-			$servicingData = (isset($model)) ? new CArrayDataProvider($model->servicingDatas, array('keyField' => 'servicing_dataid')) : '';
+			$criteria            = new CDbCriteria;
+			$criteria->condition = 'search_date >= (NOW() - INTERVAL 1 MONTH)';
+			$searchLogCheck      = count(VinSearchLog::model()->findAll(array(
+				'condition' => 'search_date >= (NOW() - INTERVAL 1 MONTH) AND userid = :userId',
+				'params'    => array(':userId' => Yii::app()->user->id),
+			)));
 
-			// Save VIN Search Log
-			$success                   = (isset($model)) ? 1 : 0;
-			$vinSearchLog              = new VinSearchLog;
-			$vinSearchLog->userid      = Yii::app()->user->id;
-			$vinSearchLog->search_date = date('Y-m-d H:i:s');
-			$vinSearchLog->vin         = $_POST['vin'];
-			$vinSearchLog->success     = $success;
-			$vinSearchLog->save();
+			if ($searchLogCheck >= $this::VIN_SEARCH_LIMIT) {
+				$searchNotAllowedMessage = 'You already made ' . $searchLogCheck . ' queries, exceeding your monthly limit.';
+				$searchAllowed           = false;
+				$model                   = 'notSet';
+			}
 
-			$this->render('searchByVin', array(
-				'model'         => $model,
-				'servicingData' => $servicingData,
-			));
-			Yii::app()->end();
+			if($searchAllowed) {
+				$model         = Vehicle::model()->findByAttributes(array('vin' => $_POST['vin']));
+				$servicingData = (isset($model)) ? new CArrayDataProvider($model->servicingDatas, array('keyField' => 'servicing_dataid')) : '';
+
+				// Save VIN Search Log
+				$success                   = (isset($model)) ? 1 : 0;
+				$vinSearchLog              = new VinSearchLog;
+				$vinSearchLog->userid      = Yii::app()->user->id;
+				$vinSearchLog->search_date = date('Y-m-d H:i:s');
+				$vinSearchLog->vin         = $_POST['vin'];
+				$vinSearchLog->success     = $success;
+				$vinSearchLog->save();
+
+				$this->render('searchByVin', array(
+					'searchAllowed'           => $searchAllowed,
+					'searchNotAllowedMessage' => $searchNotAllowedMessage,
+					'model'                   => $model,
+					'servicingData'           => $servicingData,
+				));
+				Yii::app()->end();
+			}
+
 		}
 
-		$this->render('searchByVin', array('model' => 'notSet'));
+		$this->render('searchByVin', array(
+			'searchAllowed'           => $searchAllowed,
+			'searchNotAllowedMessage' => $searchNotAllowedMessage,
+			'model'                   => 'notSet',
+		));
 
 	}
 

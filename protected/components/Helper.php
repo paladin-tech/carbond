@@ -38,6 +38,7 @@ class Helper extends CApplicationComponent
 			'isOfficialService'            => false,
 			'isUnofficialService'          => false,
 			'isInsuranceHouse'             => false,
+			'isAdmin'                      => false,
 		);
 
 		foreach ($userRoles as $roleId => $roleName) {
@@ -66,6 +67,9 @@ class Helper extends CApplicationComponent
 					break;
 				case 8:
 					$roleListArray['isInsuranceHouse'] = true;
+					break;
+				case 9:
+					$roleListArray['isAdmin'] = true;
 					break;
 			}
 		}

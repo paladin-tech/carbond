@@ -35,15 +35,15 @@ class SearchServicers extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('partyid, makeid, vehicle_typeid, city_Name, country_Name', 'required'),
-			array('partyid, makeid, vehicle_typeid, cityId, countryId', 'numerical', 'integerOnly'=>true),
-			array('company_name, city_Name', 'length', 'max'=>100),
-			array('address', 'length', 'max'=>254),
-			array('phone_number', 'length', 'max'=>45),
-			array('email', 'length', 'max'=>320),
-			array('country_Name', 'length', 'max'=>50),
+			array('partyid, makeid, vehicle_typeid, cityId, countryId', 'numerical', 'integerOnly' => true),
+			array('company_name, city_Name', 'length', 'max' => 100),
+			array('address', 'length', 'max' => 254),
+			array('phone_number', 'length', 'max' => 45),
+			array('email', 'length', 'max' => 320),
+			array('country_Name', 'length', 'max' => 50),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('partyid, company_name, address, phone_number, email, makeid, vehicle_typeid, cityId, countryId, city_Name, country_Name', 'safe', 'on'=>'search'),
+			array('partyid, company_name, address, phone_number, email, makeid, vehicle_typeid, cityId, countryId, city_Name, country_Name', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -54,8 +54,7 @@ class SearchServicers extends CActiveRecord
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
-		return array(
-		);
+		return array();
 	}
 
 	/**
@@ -64,17 +63,17 @@ class SearchServicers extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'partyid' => 'Partyid',
-			'company_name' => 'Company Name',
-			'address' => 'Address',
-			'phone_number' => 'Phone Number',
-			'email' => 'Email',
-			'makeid' => 'Makeid',
+			'partyid'        => 'Partyid',
+			'company_name'   => 'Company Name',
+			'address'        => 'Address',
+			'phone_number'   => 'Phone Number',
+			'email'          => 'Email',
+			'makeid'         => 'Makeid',
 			'vehicle_typeid' => 'Vehicle Typeid',
-			'cityId' => 'City',
-			'countryId' => 'Country',
-			'city_Name' => 'City Name',
-			'country_Name' => 'Country Name',
+			'cityId'         => 'City',
+			'countryId'      => 'Country',
+			'city_Name'      => 'City Name',
+			'country_Name'   => 'Country Name',
 		);
 	}
 
@@ -94,22 +93,22 @@ class SearchServicers extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
-		$criteria->compare('partyid',$this->partyid);
-		$criteria->compare('company_name',$this->company_name,true);
-		$criteria->compare('address',$this->address,true);
-		$criteria->compare('phone_number',$this->phone_number,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('makeid',$this->makeid);
-		$criteria->compare('vehicle_typeid',$this->vehicle_typeid);
-		$criteria->compare('cityId',$this->cityId);
-		$criteria->compare('countryId',$this->countryId);
-		$criteria->compare('city_Name',$this->city_Name,true);
-		$criteria->compare('country_Name',$this->country_Name,true);
+		$criteria->compare('partyid', $this->partyid);
+		$criteria->compare('company_name', $this->company_name, true);
+		$criteria->compare('address', $this->address, true);
+		$criteria->compare('phone_number', $this->phone_number, true);
+		$criteria->compare('email', $this->email, true);
+		$criteria->compare('makeid', $this->makeid);
+		$criteria->compare('vehicle_typeid', $this->vehicle_typeid);
+		$criteria->compare('cityId', $this->cityId);
+		$criteria->compare('countryId', $this->countryId);
+		$criteria->compare('city_Name', $this->city_Name, true);
+		$criteria->compare('country_Name', $this->country_Name, true);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+			'criteria' => $criteria,
 		));
 	}
 
@@ -119,7 +118,7 @@ class SearchServicers extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return SearchServicers the static model class
 	 */
-	public static function model($className=__CLASS__)
+	public static function model($className = __CLASS__)
 	{
 		return parent::model($className);
 	}

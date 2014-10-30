@@ -29,7 +29,7 @@ class UserController extends Controller
 		return array(
 			array('allow', // allow all users to perform 'index' and 'view' actions
 				'actions' => array('index', 'view', 'sendValidationMail', 'registrationValidation'),
-				'users'   => array('*'),
+				'expression' => "Yii::app()->user->getState('userRoles')['isAdmin']",
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions' => array('create', 'update'),
@@ -97,10 +97,9 @@ class UserController extends Controller
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate($userType, $id)
+	public function actionUpdate($id)
 	{
 		$modelUser = $this->loadModel($id);
-		$modelUserType = $userType::model()->findByPk($modelUser->partyid);
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -112,7 +111,7 @@ class UserController extends Controller
 		}
 
 		$this->render('update', array(
-			'model' => $modelUser, 'modelUserType' => $modelUserType,
+			'model' => $modelUser,
 		));
 	}
 
@@ -135,11 +134,16 @@ class UserController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$model = new User('search');
-		$dataProvider = new CActiveDataProvider('User');
+
+		$model = new SearchUsers('search');
+		$model->unsetAttributes(); // clear any default values
+		if (isset($_GET['SearchUsers']))
+			$model->attributes = $_GET['SearchUsers'];
+
 		$this->render('index', array(
-			'dataProvider' => $dataProvider, 'model' => $model,
+			'model' => $model,
 		));
+
 	}
 
 	/**

@@ -11,17 +11,32 @@ $this->widget('bootstrap.widgets.TbGridView', array(
 	'template'     => '{summary}{items}{pager}',
 	'columns'      => array(
 		'name',
-		'role_name',
 		array(
-			'name'  => 'active',
-			'type'  => 'raw',
-			'value' => '($data->active == 1) ? "Yes" : "No"',
+			'name'   => 'role_name',
+			'filter' => CHtml::dropDownList('SearchUsers[role_name]', $model->role_name, CHtml::listData(Role::model()->findAll(), 'role_name', 'role_name'), array('empty' => '')),
 		),
-		'last_login_time',
 		array(
-			'header' => '#',
+			'name'   => 'active',
 			'type'   => 'raw',
-			'value'  => 'CHtml::link("details", Yii::app()->createUrl("user/view", array("id" => $data->userid)))',
+			'value'  => '($data->active == 1) ? "Yes" : "No"',
+			'filter' => CHtml::dropDownList('SearchUsers[active]', $model->active, array('0' => 'No', '1' => 'Yes'), array('empty' => '')),
+		),
+		array(
+			'class'    => 'CButtonColumn',
+			'template' => '{view}{update}',
+			'buttons'  => array
+			(
+				'view' => array
+				(
+					'label'    => 'View User',
+					'url'      => 'Yii::app()->createUrl("user/view", array("id" => $data->userid))',
+				),
+				'update' => array
+				(
+					'label'    => 'Update User',
+					'url'      => 'Yii::app()->createUrl("user/adminUpdate", array("id" => $data->userid))',
+				),
+			),
 		),
 	),
 )); ?>

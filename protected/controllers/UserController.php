@@ -28,7 +28,7 @@ class UserController extends Controller
 	{
 		return array(
 			array('allow', // allow all users to perform 'index' and 'view' actions
-				'actions' => array('index', 'view', 'sendValidationMail', 'registrationValidation'),
+				'actions' => array('index', 'view', 'sendValidationMail', 'registrationValidation', 'adminUpdate'),
 				'expression' => "Yii::app()->user->getState('userRoles')['isAdmin']",
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -113,6 +113,50 @@ class UserController extends Controller
 		$this->render('update', array(
 			'model' => $modelUser,
 		));
+	}
+
+	public function actionAdminUpdate($id)
+	{
+
+		$modelUser = $this->loadModel($id);
+		$partyRole = $modelUser->party->partyRoles[0]->roleid;
+
+		switch ($partyRole) {
+			case 1:
+				$modelUserTypeName = 'PhysicalPerson';
+				break;
+			default:
+				$modelUserTypeName = '';
+		}
+
+		if ($modelUserTypeName != '')
+			$modelUserType = $modelUserTypeName::model()->findByPk($modelUser->party->partyid);
+		else
+			$modelUserType = '';
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if (isset($_POST['User'])) {
+			$modelUser->attributes = $_POST['User'];
+			if ($modelUserTypeName != '')
+				$modelUserType->attributes = $_POST[$modelUserTypeName];
+
+			if ($modelUser->validate())
+			{
+				$modelUser->save();
+				if ($modelUserTypeName != '' && $modelUserType->validate())
+				{
+					$modelUser->save();
+					$this->redirect(array('index'));
+				}
+			}
+		}
+
+		$this->render('adminUpdate', array(
+			'modelUser' => $modelUser, 'modelUserType' => $modelUserType,
+		));
+
 	}
 
 	/**

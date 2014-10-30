@@ -37,7 +37,7 @@ class PhysicalPerson extends CActiveRecord
 		return array(
 			array('first_name, last_name, email, city, zip_code', 'required'),
 			array('partyid, cityid, zip_code', 'numerical', 'integerOnly' => true),
-			array('first_name, last_name, city', 'length', 'max' => 50),
+			array('first_name, last_name', 'length', 'max' => 50),
 			array('mobile', 'length', 'max' => 45),
 			array('email', 'length', 'max' => 255),
 			array('email', 'unique'),

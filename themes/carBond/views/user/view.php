@@ -15,7 +15,7 @@ $this->widget('zii.widgets.CDetailView', array(
 		array(
 			'name' => 'Name',
 			'type' => 'raw',
-			'value' => ($model->party->partyRoles[0]->roleid == 1) ? $model->party->physicalPerson->first_name . ' ' . $model->party->physicalPerson->last_name : $model->company->company_name,
+			'value' => ($model->party->partyRoles[0]->roleid == 1) ? $model->party->physicalPerson->first_name . ' ' . $model->party->physicalPerson->last_name : $model->party->company->company_name,
 		),
 	),
 )); ?>

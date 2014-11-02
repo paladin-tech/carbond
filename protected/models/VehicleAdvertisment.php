@@ -21,6 +21,14 @@
  */
 class VehicleAdvertisment extends CActiveRecord
 {
+
+	public $vehicleTypeId = 1;
+	public $makeId;
+	public $modelId;
+	public $yearFrom;
+	public $yearTo;
+	public $fuelTypeId;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -96,15 +104,17 @@ class VehicleAdvertisment extends CActiveRecord
 
 		$criteria = new CDbCriteria;
 
-		$criteria->compare('vehicle_advertismentid', $this->vehicle_advertismentid);
-		$criteria->compare('vehicleid', $this->vehicleid);
-		$criteria->compare('created_date', $this->created_date, true);
-		$criteria->compare('last_change', $this->last_change, true);
-		$criteria->compare('valid_to', $this->valid_to, true);
-		$criteria->compare('active', $this->active);
-		$criteria->compare('advertiser', $this->advertiser);
-		$criteria->compare('description', $this->description, true);
-		$criteria->compare('price', $this->price);
+		$criteria->with = array(
+			'vehicle',
+			'vehicle.cars'               => array('alias' => 'veh_car'),
+			'vehicle.cars.carosseryType' => array('alias' => 'car_crs'),
+			'vehicle.model'              => array('alias' => 'veh_mod'),
+			array('order' => 'price ASC'),
+		);
+
+		$criteria->compare('vehicle.vehicle_typeId', $this->vehicleTypeId);
+		$criteria->compare('vehicle.modelid', $this->modelId);
+		$criteria->compare('vehicle.fuel_typeid', $this->fuelTypeId);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,
@@ -121,4 +131,5 @@ class VehicleAdvertisment extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
 }

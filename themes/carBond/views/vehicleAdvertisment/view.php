@@ -10,15 +10,15 @@ echo TbHtml::pageHeader('Advertisement', 'detail view');
 </div>
 <div style="float: left;">
 	<div style="float: left;">
-		<?php echo CHtml::image(Yii::app()->request->baseUrl . '/images/vehicle/thumb/vehicleThumb-' . $model->vehicle_advertismentid . '.jpg', 'alt'); ?>
+		<?php echo CHtml::image(Yii::app()->request->baseUrl . '/images/vehicle/normal/vehicle-' . $model->photos[0]->photo_id . '.' . $model->photos[0]->file_name, 'alt', array('style' => 'width: 300px')); ?>
 	</div>
 	<div style="float: left;">
-		<p><?php echo $model->vehicle->model->make->make_name ?></p>
-		<p><?php echo $model->vehicle->model->model_name ?></p>
+		<p><?php echo ($model->vehicle->model) ? $model->vehicle->model->make->make_name : '' ?></p>
+		<p><?php echo ($model->vehicle->model) ? $model->vehicle->model->model_name : '' ?></p>
 		<p><?php echo $model->vehicle->production_year ?></p>
 		<p><?php echo $model->vehicle->km ?></p>
-		<p><?php echo $model->vehicle->fuelType->characteristic_name ?></p>
-		<p><?php echo $model->vehicle->vehicleOrigin->characteristic_name ?></p>
+		<p><?php echo ($model->vehicle->fuelType) ? $model->vehicle->fuelType->characteristic_name : '' ?></p>
+		<p><?php echo ($model->vehicle->vehicleOrigin) ? $model->vehicle->vehicleOrigin->characteristic_name : '' ?></p>
 	</div>
 	<div style="float: left;">
 		<p>cena <?php echo number_format($model->price) ?> &euro;</p>

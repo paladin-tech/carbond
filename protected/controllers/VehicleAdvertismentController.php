@@ -224,9 +224,9 @@ class VehicleAdvertismentController extends Controller
 					$photo->file_name              = $imageExtension;
 					if ($formValid && $photo->validate()) {
 						$photo->save(false);
-						$imageFile          = 'images/vehicle/normal/vehicle-' . $vehicleAdvertisementId . '.' . $imageExtension;
-						$imageFileThumb     = 'images/vehicle/thumb/vehicleThumb-' . $vehicleAdvertisementId . '.' . $imageExtension;
-						$imageFileTinyThumb = 'images/vehicle/tinyThumb/vehicleTinyThumb-' . $vehicleAdvertisementId . '.' . $imageExtension;
+						$imageFile          = 'images/vehicle/normal/vehicle-' . $photo->photo_id . '.' . $imageExtension;
+						$imageFileThumb     = 'images/vehicle/thumb/vehicleThumb-' . $photo->photo_id . '.' . $imageExtension;
+						$imageFileTinyThumb = 'images/vehicle/tinyThumb/vehicleTinyThumb-' . $photo->photo_id . '.' . $imageExtension;
 						$image              = CUploadedFile::getInstanceByName("Photo[$i][file_name]");
 						$image->saveAs($imageFile);
 						$imageResized = new Image($imageFile);
@@ -332,15 +332,16 @@ class VehicleAdvertismentController extends Controller
 		$vehicleTypeName      = ucwords(VehicleType::model()->findByPk($vehicleTypeId)->vehicle_type);
 		$vehicleTypeNameCamel = lcfirst(str_replace(' ', '', $vehicleTypeName));
 
-		$model = new SearchAdvertisment('search');
+		$model = new VehicleAdvertisment('search');
 
 		$model->unsetAttributes(); // clear any default values
 
-		$model->vehicle_typeid = $vehicleTypeId;
+		$model->vehicleTypeId = $vehicleTypeId;
 
 		if (isset($_POST['yt0'])) {
-			$model->makeid   = $_POST['make'];
-			$model->modelid  = $_POST['model'];
+			$model->makeId   = $_POST['make'];
+			$model->modelId  = $_POST['model'];
+			$model->fuelTypeId  = $_POST['model'];
 			$model->yearFrom = $_POST['yearFrom'];
 			$model->yearTo   = $_POST['yearTo'];
 		}
@@ -397,9 +398,7 @@ class VehicleAdvertismentController extends Controller
 
 	public function actionTest()
 	{
-		var_dump(Helper::getRoleList(Yii::app()->user->getState('userRoles')));
-//		Yii::app()->language = 'en';
-//		echo Yii::t('l10n', 'label');
+
 	}
 
 }

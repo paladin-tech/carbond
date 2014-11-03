@@ -1,5 +1,5 @@
 <div style="float: left; width: 250px;">
-	<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/make/thumb/makeThumb-<?php echo $makeId ?>.jpg" style="width: 250px;">
+	<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/supportIndustry/thumb/car-mechanic.jpg" style="width: 250px;">
 	<?php echo $model->company_name ?><br>
 	<?php echo $model->address ?><br>
 	<?php echo $model->city0->city_name ?><br>

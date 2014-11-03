@@ -45,18 +45,37 @@ class SupportIndustryController extends Controller
 	public function actionIndex()
 	{
 
-		$model = new Company('searchSupportIndustry');
+		$model                = new Company('searchSupportIndustry');
+		$model->serviceTypeId = 1;
 
 		if (isset($_POST['yt0'])) {
 			$model->serviceTypeId = $_POST['ServiceType'];
-			$model->countryId = $_POST['country'];
-			$model->city = $_POST['city'];
+			$model->countryId     = $_POST['country'];
+			$model->city          = $_POST['city'];
 		}
 
 		$this->render('index', array(
 			'dataProvider' => $model->searchSupportIndustry(),
 		));
 
+	}
+
+	public function actionView($id)
+	{
+
+		$model            = Company::model()->findByPk($id);
+		$SVMT             = ServicerVehicleMakeType::model()->findAllByAttributes(array('servicerid' => $id));
+		$servicerMakeList = array();
+		foreach ($SVMT as $item) {
+			$servicerMakeList[] = $item->makeid;
+		}
+		$serviceAdvertisementData = ServiceAdvertisment::model()->findAllByAttributes(array('advertiser' => $id));
+
+		$this->render('view', array(
+			'model'            => $model,
+			'servicerMakeList' => $servicerMakeList,
+			'serviceAdvertisementData' => $serviceAdvertisementData,
+		));
 	}
 
 }

@@ -83,11 +83,13 @@ class ServicerController extends Controller
 		{
 			$servicerMakeList[] = $item->makeid;
 		}
+		$serviceAdvertisementData = ServiceAdvertisment::model()->findAllByAttributes(array('advertiser' => $id));
 
 		$this->render('view', array(
 			'model' => $model,
 			'makeId' => $makeId,
 			'servicerMakeList' => $servicerMakeList,
+			'serviceAdvertisementData' => $serviceAdvertisementData,
 		));
 
 	}

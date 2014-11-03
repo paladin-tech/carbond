@@ -31,12 +31,12 @@ class City extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('countryid, city_name, zip_code', 'required'),
-			array('countryid', 'numerical', 'integerOnly'=>true),
-			array('city_name', 'length', 'max'=>100),
-			array('zip_code', 'length', 'max'=>10),
+			array('countryid', 'numerical', 'integerOnly' => true),
+			array('city_name', 'length', 'max' => 100),
+			array('zip_code', 'length', 'max' => 10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('cityid, countryid, city_name, zip_code', 'safe', 'on'=>'search'),
+			array('cityid, countryid, city_name, zip_code', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -49,6 +49,7 @@ class City extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'companies' => array(self::HAS_MANY, 'Company', 'city'),
+			'country'   => array(self::BELONGS_TO, 'Country', 'countryid'),
 		);
 	}
 
@@ -58,10 +59,10 @@ class City extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cityid' => 'Cityid',
+			'cityid'    => 'Cityid',
 			'countryid' => 'Countryid',
 			'city_name' => 'City Name',
-			'zip_code' => 'Zip Code',
+			'zip_code'  => 'Zip Code',
 		);
 	}
 
@@ -81,15 +82,15 @@ class City extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
-		$criteria->compare('cityid',$this->cityid);
-		$criteria->compare('countryid',$this->countryid);
-		$criteria->compare('city_name',$this->city_name,true);
-		$criteria->compare('zip_code',$this->zip_code,true);
+		$criteria->compare('cityid', $this->cityid);
+		$criteria->compare('countryid', $this->countryid);
+		$criteria->compare('city_name', $this->city_name, true);
+		$criteria->compare('zip_code', $this->zip_code, true);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+			'criteria' => $criteria,
 		));
 	}
 
@@ -99,7 +100,7 @@ class City extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return City the static model class
 	 */
-	public static function model($className=__CLASS__)
+	public static function model($className = __CLASS__)
 	{
 		return parent::model($className);
 	}

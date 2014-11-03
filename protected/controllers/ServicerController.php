@@ -73,6 +73,25 @@ class ServicerController extends Controller
 
 	}
 
+	public function actionView($id, $makeId)
+	{
+
+		$model = Company::model()->findByPk($id);
+		$SVMT = ServicerVehicleMakeType::model()->findAllByAttributes(array('servicerid' => $id));
+		$servicerMakeList = array();
+		foreach($SVMT as $item)
+		{
+			$servicerMakeList[] = $item->makeid;
+		}
+
+		$this->render('view', array(
+			'model' => $model,
+			'makeId' => $makeId,
+			'servicerMakeList' => $servicerMakeList,
+		));
+
+	}
+
 	public function actionAddServicingData($vehicleTypeId = 1)
 	{
 

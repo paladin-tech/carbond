@@ -149,6 +149,10 @@ if(!isset(Yii::app()->user->id)) {
 	    <?php
 	    echo $form->textAreaControlGroup($modelVehicleAdvertisement, 'description', array('span' => 8, 'rows' => 5));
 	    echo $form->textFieldControlGroup($modelVehicleAdvertisement, 'price');
+	    echo $form->radioButtonListControlGroup($modelVehicleAdvertisement, 'new_vehicle', array(
+		    '0' => 'No',
+		    '1' => 'Yes',
+	    ));
 	    ?>
     </div>
 </div>

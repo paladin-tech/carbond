@@ -23,6 +23,10 @@
  */
 class Company extends CActiveRecord
 {
+
+	public $serviceTypeId;
+	public $countryId;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -117,6 +121,29 @@ class Company extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,
 		));
+	}
+
+	public function searchSupportIndustry()
+	{
+
+		$criteria = new CDbCriteria;
+
+		$criteria->with = array(
+			'party',
+			'party.serviceAdvertisments'             => array('alias' => 'p_seradv'),
+			'party.serviceAdvertisments.serviceType' => array('alias' => 'seradv_sertyp'),
+			'city0.country'                          => array('alias' => 'c_cntr'),
+		);
+
+		$criteria->compare('seradv_sertyp.service_typeid', $this->serviceTypeId);
+		$criteria->compare('city', $this->city);
+		$criteria->compare('c_cntr.countryid', $this->countryId);
+		$criteria->together = true;
+
+		return new CActiveDataProvider($this, array(
+			'criteria' => $criteria,
+		));
+
 	}
 
 	/**

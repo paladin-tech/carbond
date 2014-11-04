@@ -54,6 +54,7 @@ $cs
 			            array('label' => 'Servicers', 'url' => array('/servicer/brands')),
 			            array('label' => 'Support Industry', 'url' => array('/supportIndustry/index')),
 			            array('label' => 'Tuning', 'url' => array('/tuning/index')),
+			            array('label' => 'Finance', 'url' => array('/financial/index')),
 			            array('label' => 'Servicing Data', 'url' => array('/servicer/addServicingData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isOfficialService'])),
 			            array('label' => 'Users', 'url' => array('/user/index'), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isAdmin'])),
 			            array('label' => 'Damage Data', 'url' => array('/insuranceHouse/addDamageData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isInsuranceHouse'])),

@@ -27,6 +27,7 @@ class Company extends CActiveRecord
 	public $serviceTypeId;
 	public $countryId;
 	public $isTuning;
+	public $roleId;
 
 	/**
 	 * @return string the associated database table name
@@ -140,6 +141,26 @@ class Company extends CActiveRecord
 		$criteria->compare('city', $this->city);
 		$criteria->compare('c_cntr.countryid', $this->countryId);
 		$criteria->compare('seradv_sertyp.is_tuning', $this->isTuning);
+
+		$criteria->together = true;
+
+		return new CActiveDataProvider($this, array(
+			'criteria' => $criteria,
+		));
+
+	}
+
+	public function searchFinancialCompanies()
+	{
+
+		$criteria = new CDbCriteria;
+
+		$criteria->with = array(
+			'party',
+			'party.partyRoles' => array('alias' => 'p_parRol'),
+		);
+
+		$criteria->compare('p_parRol.roleid', $this->roleId);
 
 		$criteria->together = true;
 

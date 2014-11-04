@@ -1,6 +1,6 @@
 <?php
 
-class SupportIndustryController extends Controller
+class TuningController extends Controller
 {
 
 	public $layout = '//layouts/column1';
@@ -47,7 +47,7 @@ class SupportIndustryController extends Controller
 
 		$model                = new Company('searchSupportIndustry');
 		$model->serviceTypeId = 1;
-		$model->isTuning      = false;
+		$model->isTuning      = true;
 
 		if (isset($_POST['yt0'])) {
 			$model->serviceTypeId = $_POST['ServiceType'];

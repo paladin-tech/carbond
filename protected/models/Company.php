@@ -26,6 +26,7 @@ class Company extends CActiveRecord
 
 	public $serviceTypeId;
 	public $countryId;
+	public $isTuning;
 
 	/**
 	 * @return string the associated database table name
@@ -138,6 +139,8 @@ class Company extends CActiveRecord
 		$criteria->compare('seradv_sertyp.service_typeid', $this->serviceTypeId);
 		$criteria->compare('city', $this->city);
 		$criteria->compare('c_cntr.countryid', $this->countryId);
+		$criteria->compare('seradv_sertyp.is_tuning', $this->isTuning);
+
 		$criteria->together = true;
 
 		return new CActiveDataProvider($this, array(

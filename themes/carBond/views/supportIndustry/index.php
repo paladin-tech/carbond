@@ -1,6 +1,3 @@
-<?php
-echo TbHtml::pageHeader('Support Industry', 'list view');
-?>
 <aside class="col-md-3">
 	<?php
 	echo TbHtml::beginFormTb();

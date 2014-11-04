@@ -1,6 +1,3 @@
-<?php
-echo TbHtml::pageHeader('Servicers - List By Brand', 'list view');
-?>
 <aside class="col-md-3">
 	<?php
 	echo TbHtml::beginFormTb();

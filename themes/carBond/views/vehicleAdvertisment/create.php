@@ -5,10 +5,6 @@
 require_once (Yii::app()->theme->basePath . '/views/site/_categoryCreateSubmenu.php');
 ?>
 
-<?php
-echo TbHtml::pageHeader('Vehicle Advertisment - ' . $vehicleTypeName, 'create');
-?>
-
 <script>
 $(document).ready(function () {
 

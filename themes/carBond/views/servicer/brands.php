@@ -1,6 +1,3 @@
-<?php
-echo TbHtml::pageHeader('Servicers - Brands', 'list view');
-?>
 <aside class="col-md-3">
 	<div class="group_info">
 	<?php

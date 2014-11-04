@@ -9,8 +9,6 @@ for($year = date('Y'); $year >= 1950; $year--)
 }
 
 require_once (Yii::app()->theme->basePath . '/views/site/_categorySearchSubmenu.php');
-
-echo TbHtml::pageHeader($vehicleTypeName, 'list view');
 ?>
 <aside class="col-md-3">
 	<form action="#" method="post" class="niceform">

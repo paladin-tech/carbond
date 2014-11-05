@@ -341,7 +341,7 @@ class VehicleAdvertismentController extends Controller
 		if (isset($_POST['yt0'])) {
 			$model->makeId   = $_POST['make'];
 			$model->modelId  = $_POST['model'];
-			$model->fuelTypeId  = $_POST['model'];
+			$model->fuelTypeId  = $_POST['fuel'];
 			$model->yearFrom = $_POST['yearFrom'];
 			$model->yearTo   = $_POST['yearTo'];
 		}

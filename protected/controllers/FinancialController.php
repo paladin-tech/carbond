@@ -56,6 +56,7 @@ class FinancialController extends Controller
 
 		$this->render('index', array(
 			'dataProvider' => $model->searchFinancialCompanies(),
+			'selectedRole' => $model->roleId,
 		));
 
 	}

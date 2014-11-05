@@ -4,7 +4,7 @@
 	?>
 	<div class="group_info">
 		<?php
-		echo TbHtml::radioButtonListControlGroup('FinancialType', 13, array('13' => 'Leasing', '14' => 'Bank', '15' => 'Agency'));
+		echo TbHtml::radioButtonListControlGroup('FinancialType', $selectedRole, array('13' => 'Leasing', '14' => 'Bank', '15' => 'Agency'));
 		?>
 	</div>
 	<div class="collapsible">

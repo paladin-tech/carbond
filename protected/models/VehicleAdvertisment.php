@@ -109,11 +109,13 @@ class VehicleAdvertisment extends CActiveRecord
 			'vehicle.cars'               => array('alias' => 'veh_car'),
 			'vehicle.cars.carosseryType' => array('alias' => 'car_crs'),
 			'vehicle.model'              => array('alias' => 'veh_mod'),
-			array('order' => 'price ASC'),
 		);
+
+		$criteria->order = 'price ASC';
 
 		$criteria->compare('vehicle.vehicle_typeId', $this->vehicleTypeId);
 		$criteria->compare('vehicle.modelid', $this->modelId);
+		$criteria->compare('veh_mod.makeid', $this->makeId);
 		$criteria->compare('vehicle.fuel_typeid', $this->fuelTypeId);
 
 		return new CActiveDataProvider($this, array(

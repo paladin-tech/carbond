@@ -37,6 +37,13 @@ $cs
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script>
+		$(document).ready(function() {
+			$('#vin').click(function() {
+				$(this).val('');
+			});
+		});
+	</script>
 </head>
 
 <body class="<?php echo Yii::app()->controller->getId() . ' ' . Yii::app()->controller->action->id; ?>">
@@ -76,15 +83,21 @@ $cs
 	            <a href="<?php echo $this->createUrl('/site/logout') ?>">Logout</a>
 	            <?php } ?>
                 <a href="#">Registracija</a>
-                <form class="search">
-                    <div class="input-group">
-                    	<input type="text" autocomplete="off" placeholder="Trazite pobroju sasije..." class="form-control query" name="q" id="query">
-                        <span class="input-group-btn glyphicons search">
-                            <button type="submit" class="btn btn-default busca"></button>
-                        </span>
-                        <div id="result-autocomplete"></div>
-                     </div>
-                </form>
+	            <?php
+	            echo TbHtml::beginFormTb('', $this->createUrl('/vehicle/searchByVin'), 'POST', array('class' => 'search'));
+				?>
+	            <div class="input-group">
+		            <?php
+		            echo TbHtml::textField('vin', 'Search using VIN...', array('class' => 'form-control query'));
+		            ?>
+	                <span class="input-group-btn glyphicons search">
+	                    <button type="submit" class="btn btn-default busca" name="yt0"></button>
+	                </span>
+		            <div id="result-autocomplete"></div>
+	            </div>
+	            <?php
+	            echo TbHtml::endForm();
+	            ?>
             </div>
         </div>
     </div>

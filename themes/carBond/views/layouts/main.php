@@ -43,7 +43,7 @@ $cs
 <header>
 	<div class="container-fluid">
 		<div class="row ">
-            <div class="col-lg-2"><h1 id="logotipo"><a href="#"><?php echo CHtml::encode(Yii::app()->name); ?></a></h1></div>
+            <div class="col-lg-2"><h1 id="logotipo"><a href="<?php echo $this->createUrl('/site/index') ?>"><?php echo CHtml::encode(Yii::app()->name); ?></a></h1></div>
             <div class="col-lg-8 col-xs-12 ">
                 <div class="fixed-layout-header"><div id="banner" ><img src="<?php print $basePath.'/images/banner_top.png'; ?>" class="img-responsive" width="100%" height="100%"/></div>
                 <?php $this->widget('zii.widgets.CMenu', array(

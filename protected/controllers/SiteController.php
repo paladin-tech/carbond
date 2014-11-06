@@ -97,6 +97,21 @@ class SiteController extends Controller
 		$this->render('login', array('model' => $model));
 	}
 
+	public function actionForgotPassword()
+	{
+
+		$model = new ForgotPasswordForm;
+
+		if(isset($_POST['ForgotPasswordForm']))
+		{
+			$this->render('forgotPassword', array('model' => $model, 'resetPassword' => true));
+			Yii::app()->end();
+
+		}
+
+		$this->render('forgotPassword', array('model' => $model));
+
+	}
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */

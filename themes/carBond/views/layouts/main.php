@@ -30,6 +30,7 @@ $cs
 		$('[data-toggle=\"popover\"]').tooltip()"
 		, CClientScript::POS_READY);
 ?>
+<?php //Yii::app()->bootstrap->register(); ?>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -58,6 +59,7 @@ $cs
 			            array('label' => 'Servicing Data', 'url' => array('/servicer/addServicingData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isOfficialService'])),
 			            array('label' => 'Users', 'url' => array('/user/index'), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isAdmin'])),
 			            array('label' => 'Damage Data', 'url' => array('/insuranceHouse/addDamageData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isInsuranceHouse'])),
+			            array('label' => 'My Carbond', 'url' => '#', 'visible' => !Yii::app()->user->isGuest),
 			            array('label' => 'Login', 'url' => array('/site/login'), 'itemOptions' => array('class' => 'last'), 'visible' => Yii::app()->user->isGuest),
 			            array('label' => 'Logout', 'itemOptions' => array('class' => 'last'), 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
 		            ),

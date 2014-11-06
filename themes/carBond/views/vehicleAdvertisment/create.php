@@ -235,15 +235,35 @@ if(!isset(Yii::app()->user->id)) {
 	    echo $form->dropDownListControlGroup($modelVehicle, 'vehicle_origin', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array(0, $vehicleTypeId), 'characteristic_typeid' => '10')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
 	    echo $form->dropDownListControlGroup($modelVehicle, 'damages', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array(0, $vehicleTypeId), 'characteristic_typeid' => '11')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
 
-
 	    foreach ($modelCharacteristicTypeArray as $i => $characteristicType) {
 		    $vehicleCharacteristic = $modelVehicleCharacteristicArray[$i];
-		    echo $form->dropDownListControlGroup(
-			    $vehicleCharacteristic,
-			    "[$i]characteristicid",
-			    CHtml::listData($characteristicType->characteristics, 'characteristicid', 'characteristic_name'),
-			    array('label' => $characteristicType->characteristic_type_name, 'empty' => '')
-		    );
+		    if($characteristicType->multiple_select == 1)
+		    {
+		    ?>
+	    <div class="control-group">
+		    <?php
+		    echo $form->labelEx($characteristicType, $characteristicType->characteristic_type_name, array('class' => 'control-label'));
+		    ?>
+<!--		    <div class="controls">-->
+		    <?php
+			    $this->widget('yiiwheels.widgets.multiselect.WhMultiSelect', array(
+				    'model' => $vehicleCharacteristic,
+				    'attribute' => "[$i]characteristicid",
+				    'data' => CHtml::listData($characteristicType->characteristics, 'characteristicid', 'characteristic_name'),
+				    'htmlOptions' => array('label' => $characteristicType->characteristic_type_name),
+			    ));
+		    ?>
+<!--		    </div>-->
+	    </div>
+		    <?php
+		    } else {
+			    echo $form->dropDownListControlGroup(
+				    $vehicleCharacteristic,
+				    "[$i]characteristicid",
+				    CHtml::listData($characteristicType->characteristics, 'characteristicid', 'characteristic_name'),
+				    array('label' => $characteristicType->characteristic_type_name, 'empty' => '')
+			    );
+		    }
 	    }
 	    ?>
     <?php
@@ -264,7 +284,7 @@ if(!isset(Yii::app()->user->id)) {
 <div class="accordion">
 <?php
 // Servicing data
-require_once (Yii::app()->basePath . '/views/servicingData/_form.php');
+require_once (Yii::app()->theme->basePath . '/views/servicingData/_form.php');
 
 ?>
 </div>

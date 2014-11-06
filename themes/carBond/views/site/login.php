@@ -2,12 +2,6 @@
 /* @var $this SiteController */
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
-
-$this->widget('bootstrap.widgets.TbBreadcrumb', array(
-	'links' => array(
-		'Login',
-	),
-));
 ?>
 
 <?php
@@ -40,6 +34,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 <?php echo TbHtml::formActions(array(
 	TbHtml::submitButton('Login', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)),
 	TbHtml::linkButton('Cancel', array('url' => Yii::app()->createUrl('site/index'))),
+	TbHtml::linkButton('Forgot Password?', array('url' => Yii::app()->createUrl('site/forgotPassword'))),
 )); ?>
 
 <?php $this->endWidget(); ?>

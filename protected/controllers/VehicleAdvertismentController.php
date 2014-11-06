@@ -53,14 +53,15 @@ class VehicleAdvertismentController extends Controller
 	 */
 	public function actionView($id)
 	{
+
 		$model         = $this->loadModel($id);
 		$servicingData = new CArrayDataProvider($model->vehicle->servicingDatas, array('keyField' => 'servicing_dataid'));
-//		echo '<pre>';
-//		die(var_dump($arrayDataProvider));
+
 		$this->render('view', array(
 			'model'         => $model,
 			'servicingData' => $servicingData,
 		));
+
 	}
 
 	/**
@@ -203,13 +204,26 @@ class VehicleAdvertismentController extends Controller
 			// Save VehicleCharacteristic model
 			foreach ($modelVehicleCharacteristicArray as $i => $vehicleCharacteristic) {
 				$characteristicId = $_POST['VehicleCharacteristic'][$i]['characteristicid'];
-				if ($characteristicId != '') {
-					$vehicleCharacteristic->vehicleid        = $modelVehicle->vehicleid;
-					$vehicleCharacteristic->characteristicid = $characteristicId;
-					if ($formValid && $vehicleCharacteristic->validate())
-						$vehicleCharacteristic->save(false);
-					else
-						$formValid = false;
+				if(is_array($characteristicId) && !empty($characteristicId))
+				{
+					foreach($characteristicId as $item)
+					{
+						$vehicleCharacteristic->vehicleid        = $modelVehicle->vehicleid;
+						$vehicleCharacteristic->characteristicid = $item;
+						if ($formValid && $vehicleCharacteristic->validate())
+							$vehicleCharacteristic->save(false);
+						else
+							$formValid = false;
+					}
+				} else {
+					if ($characteristicId != '') {
+						$vehicleCharacteristic->vehicleid        = $modelVehicle->vehicleid;
+						$vehicleCharacteristic->characteristicid = $characteristicId;
+						if ($formValid && $vehicleCharacteristic->validate())
+							$vehicleCharacteristic->save(false);
+						else
+							$formValid = false;
+					}
 				}
 			}
 
@@ -245,6 +259,7 @@ class VehicleAdvertismentController extends Controller
 				if ($_POST['ServicingData'][$i]['serviceid'] != '' || $_POST['ServicingData'][$i]['service_name'] != '') {
 					$servicingData->attributes = $_POST['ServicingData'][$i];
 					$servicingData->vehicleid  = $vehicleId;
+					$servicingData->data_provider  = $partyId;
 					if ($formValid && $servicingData->validate())
 						$servicingData->save(false);
 					else

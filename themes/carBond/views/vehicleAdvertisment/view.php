@@ -1,8 +1,6 @@
 <?php
 /* @var $this VehicleController */
 /* @var $dataProvider CActiveDataProvider */
-
-echo TbHtml::pageHeader('Advertisement', 'detail view');
 ?>
 
 <div style="float: left; width: 150px;">
@@ -10,7 +8,7 @@ echo TbHtml::pageHeader('Advertisement', 'detail view');
 </div>
 <div style="float: left;">
 	<div style="float: left;">
-		<?php echo CHtml::image(Yii::app()->request->baseUrl . '/images/vehicle/normal/vehicle-' . $model->photos[0]->photo_id . '.' . $model->photos[0]->file_name, 'alt', array('style' => 'width: 300px')); ?>
+		<?php if($model->photos) echo CHtml::image(Yii::app()->request->baseUrl . '/images/vehicle/normal/vehicle-' . $model->photos[0]->photo_id . '.' . $model->photos[0]->file_name, 'alt', array('style' => 'width: 300px')); ?>
 	</div>
 	<div style="float: left;">
 		<p><?php echo ($model->vehicle->model) ? $model->vehicle->model->make->make_name : '' ?></p>

@@ -1,14 +1,5 @@
 <?php
-
 //require_once (Yii::app()->theme->basePath . '/views/site/_categoryServicingDataSubmenu.php');
-
-$this->widget('bootstrap.widgets.TbBreadcrumb', array(
-	'links' => array(
-		'Damage Data',
-	),
-));
-
-echo TbHtml::pageHeader('Add Damage Data', $vehicleTypeData['vehicleTypeName']);
 ?>
 <?php
 if($searched && !$newModel) {
@@ -53,7 +44,7 @@ if($searched && !$newModel) {
 	echo TbHtml::beginFormTb();
 
 	echo TbHtml::label('VIN', 'vin');
-	echo TbHtml::textField('vin', '');
+	echo TbHtml::textField('vin', ($searched) ? '' : '');
 
 	echo TbHtml::formActions(array(
 		TbHtml::submitButton('Search', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)),

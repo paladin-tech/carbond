@@ -59,9 +59,9 @@ $cs
 			            array('label' => 'Servicing Data', 'url' => array('/servicer/addServicingData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isOfficialService'])),
 			            array('label' => 'Users', 'url' => array('/user/index'), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isAdmin'])),
 			            array('label' => 'Damage Data', 'url' => array('/insuranceHouse/addDamageData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isInsuranceHouse'])),
-			            array('label' => 'My Carbond', 'url' => '#', 'visible' => !Yii::app()->user->isGuest),
-			            array('label' => 'Login', 'url' => array('/site/login'), 'itemOptions' => array('class' => 'last'), 'visible' => Yii::app()->user->isGuest),
-			            array('label' => 'Logout', 'itemOptions' => array('class' => 'last'), 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
+//			            array('label' => 'My Carbond', 'url' => '#', 'visible' => !Yii::app()->user->isGuest),
+//			            array('label' => 'Login', 'url' => array('/site/login'), 'itemOptions' => array('class' => 'last'), 'visible' => Yii::app()->user->isGuest),
+//			            array('label' => 'Logout', 'itemOptions' => array('class' => 'last'), 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
 		            ),
 	            )); ?></div>
             </div>
@@ -70,7 +70,11 @@ $cs
                 <a href="#" class="tool2"><span><img src="<?php //print $basePath.'/images/detaljna-zupcanik.png'; ?>"/></span>Detaljna pretraga</a>
                 <a href="#" class="tool3">Unesite podatke ...></a>-->
                 <a href="#" class="language-swap">Srp</a>
-                <a href="#">Log-in</a>
+	            <?php if(Yii::app()->user->isGuest) { ?>
+                <a href="<?php echo $this->createUrl('/site/login') ?>">Login</a>
+	            <?php } else { ?>
+	            <a href="<?php echo $this->createUrl('/site/logout') ?>">Logout</a>
+	            <?php } ?>
                 <a href="#">Registracija</a>
                 <form class="search">
                     <div class="input-group">

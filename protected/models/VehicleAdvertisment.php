@@ -28,6 +28,7 @@ class VehicleAdvertisment extends CActiveRecord
 	public $yearFrom;
 	public $yearTo;
 	public $fuelTypeId;
+	public $sort;
 
 	/**
 	 * @return string the associated database table name
@@ -111,7 +112,7 @@ class VehicleAdvertisment extends CActiveRecord
 			'vehicle.model'              => array('alias' => 'veh_mod'),
 		);
 
-		$criteria->order = 'price ASC';
+		$criteria->order = 'price ' . $this->sort;
 
 		$criteria->compare('vehicle.vehicle_typeId', $this->vehicleTypeId);
 		$criteria->compare('vehicle.modelid', $this->modelId);

@@ -113,7 +113,7 @@ class VehicleAdvertismentController extends Controller
 
 		if (isset($_POST['Vehicle'])) {
 
-			if(isset($_POST['VehicleType']))
+			if (isset($_POST['VehicleType']))
 				$vehicleTypeId = $_POST['VehicleType'];
 
 			// Valid flag for validating multiple models
@@ -154,7 +154,7 @@ class VehicleAdvertismentController extends Controller
 			}
 
 			// Save Vehicle model
-			$modelVehicle->scenario = 'createAdvertisement';
+			$modelVehicle->scenario       = 'createAdvertisement';
 			$modelVehicle->attributes     = $_POST['Vehicle'];
 			$modelVehicle->vehicle_typeid = $vehicleTypeId;
 			if ($formValid && $modelVehicle->validate())
@@ -207,10 +207,8 @@ class VehicleAdvertismentController extends Controller
 			// Save VehicleCharacteristic model
 			foreach ($modelVehicleCharacteristicArray as $i => $vehicleCharacteristic) {
 				$characteristicId = $_POST['VehicleCharacteristic'][$i]['characteristicid'];
-				if(is_array($characteristicId) && !empty($characteristicId))
-				{
-					foreach($characteristicId as $item)
-					{
+				if (is_array($characteristicId) && !empty($characteristicId)) {
+					foreach ($characteristicId as $item) {
 						$vehicleCharacteristic->vehicleid        = $modelVehicle->vehicleid;
 						$vehicleCharacteristic->characteristicid = $item;
 						if ($formValid && $vehicleCharacteristic->validate())
@@ -260,9 +258,9 @@ class VehicleAdvertismentController extends Controller
 			// Save ServicingData model array
 			foreach ($modelServiceArray as $i => $servicingData) {
 				if ($_POST['ServicingData'][$i]['serviceid'] != '' || $_POST['ServicingData'][$i]['service_name'] != '') {
-					$servicingData->attributes = $_POST['ServicingData'][$i];
-					$servicingData->vehicleid  = $vehicleId;
-					$servicingData->data_provider  = $partyId;
+					$servicingData->attributes    = $_POST['ServicingData'][$i];
+					$servicingData->vehicleid     = $vehicleId;
+					$servicingData->data_provider = $partyId;
 					if ($formValid && $servicingData->validate())
 						$servicingData->save(false);
 					else
@@ -270,8 +268,7 @@ class VehicleAdvertismentController extends Controller
 				}
 			}
 
-			if ($formValid)
-			{
+			if ($formValid) {
 				$transaction->commit();
 				$this->redirect(array('/user/sendValidationMail', 'userId' => $userId));
 			} else {
@@ -344,30 +341,33 @@ class VehicleAdvertismentController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex($vehicleTypeId = 1)
+	public function actionIndex($vehicleTypeId = 1, $sort = 'ASC')
 	{
 
 		$vehicleTypeName      = ucwords(VehicleType::model()->findByPk($vehicleTypeId)->vehicle_type);
 		$vehicleTypeNameCamel = lcfirst(str_replace(' ', '', $vehicleTypeName));
 
-		$model = new VehicleAdvertisment('search');
+		$model       = new VehicleAdvertisment('search');
+		$model->sort = $sort;
 
 		$model->unsetAttributes(); // clear any default values
 
 		$model->vehicleTypeId = $vehicleTypeId;
 
 		if (isset($_POST['yt0'])) {
-			$model->makeId   = $_POST['make'];
-			$model->modelId  = $_POST['model'];
-			$model->fuelTypeId  = $_POST['fuel'];
-			$model->yearFrom = $_POST['yearFrom'];
-			$model->yearTo   = $_POST['yearTo'];
+			$model->makeId     = $_POST['make'];
+			$model->modelId    = $_POST['model'];
+			$model->fuelTypeId = $_POST['fuel'];
+			$model->yearFrom   = $_POST['yearFrom'];
+			$model->yearTo     = $_POST['yearTo'];
 		}
 
 		$this->render('index', array(
 			'dataProvider'         => $model->search(),
 			'vehicleTypeName'      => $vehicleTypeName,
 			'vehicleTypeNameCamel' => $vehicleTypeNameCamel,
+			'vehicleTypeId'        => $vehicleTypeId,
+			'sort'                 => $sort,
 		));
 
 	}

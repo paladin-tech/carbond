@@ -10,13 +10,22 @@ for($year = date('Y'); $year >= 1950; $year--)
 
 require_once (Yii::app()->theme->basePath . '/views/site/_categorySearchSubmenu.php');
 ?>
+<script>
+	$(document).ready(function() {
+		$('.sortControl input').click(function() {
+			window.location.href = 'index.php?r=vehicleAdvertisment/index&vehicleTypeId=1&sort=' + $(this).val();
+		});
+	});
+</script>
 <aside class="col-md-3">
 	<form action="#" method="post" class="niceform">
-		<p><input type="checkbox" name="option1" value="0" checked="true"/>
-			<span>Sortiraj po rastucim cenama</span>
+		<p class="sortControl">
+			<input type="radio" name="option" id="option1" value="ASC"<?php echo ($sort == 'ASC') ? ' checked="checked"' : '' ?>" />
+			<span>Sort ascending</span>
 			<br/>
-			<input type="checkbox" name="option2"/>
-			<span>Sortiraj po opadajucim cenama</span></p>		
+			<input type="radio" name="option" id="option2" value="DESC"<?php echo ($sort == 'DESC') ? ' checked="checked"' : '' ?>" />
+			<span>Sort descending</span>
+		</p>
 		
 	</form>
 	<?php

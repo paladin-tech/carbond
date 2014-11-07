@@ -4,7 +4,7 @@
 	?>
 	<div class="group_info">
 		<?php
-		echo TbHtml::radioButtonListControlGroup('ServiceType', 20, CHtml::listData(ServiceType::model()->findAllByAttributes(array('is_tuning' => 1)), 'service_typeid', 'service_type_name'));
+		echo TbHtml::radioButtonListControlGroup('ServiceType', $selectedServiceType, CHtml::listData(ServiceType::model()->findAllByAttributes(array('is_tuning' => 1)), 'service_typeid', 'service_type_name'));
 		?>
 	</div>
 	<div class="collapsible">

@@ -56,7 +56,8 @@ class TuningController extends Controller
 		}
 
 		$this->render('index', array(
-			'dataProvider' => $model->searchSupportIndustry(),
+			'dataProvider'        => $model->searchSupportIndustry(),
+			'selectedServiceType' => $model->serviceTypeId,
 		));
 
 	}

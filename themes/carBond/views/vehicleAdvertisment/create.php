@@ -232,10 +232,8 @@ if(!isset(Yii::app()->user->id)) {
 		    <div class="controls">
 			    <?php
 			    $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-				    // 'name'=>'birthdate',
 				    'name'    => 'registration_valid_to', // the name of the field
 				    'value'   => $modelVehicle->registration_valid_to, // pre-fill the value
-				    // additional javascript options for the date picker plugin
 				    'options' => array(
 					    'showAnim'   => 'fold',
 					    'dateFormat' => 'yy-mm-dd', // optional Date formatting

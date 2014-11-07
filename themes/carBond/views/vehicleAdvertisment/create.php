@@ -84,6 +84,20 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 ?>
 </div>
 <div class="col-md-4">
+	<?php
+	if($vehicleTypeId == 6) {
+		echo TbHtml::radioButtonListControlGroup(
+			'VehicleType',
+			7,
+			array(
+				'7' => 'Van',
+				'8' => 'Trailer',
+				'9' => 'Bus',
+				'10' => 'Camper',
+			)
+		);
+	}
+	?>
 <?php
 if(!isset(Yii::app()->user->id)) {
 ?>

@@ -72,7 +72,6 @@ if($searchAllowed) {
         </ul>
     </div>
     <div class="col-sm-12 col-md-6">
-	    <h4>Vehicle Data</h4>
         <?php
         $this->widget('bootstrap.widgets.TbDetailView', array(
             'type'       => array(TbHtml::DETAIL_TYPE_STRIPED),

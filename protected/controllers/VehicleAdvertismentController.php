@@ -113,6 +113,9 @@ class VehicleAdvertismentController extends Controller
 
 		if (isset($_POST['Vehicle'])) {
 
+			if(isset($_POST['VehicleType']))
+				$vehicleTypeId = $_POST['VehicleType'];
+
 			// Valid flag for validating multiple models
 			$formValid = true;
 

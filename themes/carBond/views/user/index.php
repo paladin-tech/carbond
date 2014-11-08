@@ -2,8 +2,11 @@
 /* @var $this UserController */
 /* @var $dataProvider CActiveDataProvider */
 
-echo TbHtml::pageHeader('User', 'list view');
-
+echo TbHtml::pageHeader('User', 'list view', array('style' => 'float: left'));
+echo TbHtml::linkButton('New Service Provider', array('url' => $this->createUrl('/servicer/create'), 'style' => 'float: right'));
+?>
+<div style="clear: both;"></div>
+<?php
 $this->widget('bootstrap.widgets.TbGridView', array(
 	'dataProvider' => $model->search(),
 	'filter'       => $model,

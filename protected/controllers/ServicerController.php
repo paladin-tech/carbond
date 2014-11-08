@@ -76,20 +76,30 @@ class ServicerController extends Controller
 	public function actionView($id, $makeId)
 	{
 
-		$model = Company::model()->findByPk($id);
-		$SVMT = ServicerVehicleMakeType::model()->findAllByAttributes(array('servicerid' => $id));
+		$model            = Company::model()->findByPk($id);
+		$SVMT             = ServicerVehicleMakeType::model()->findAllByAttributes(array('servicerid' => $id));
 		$servicerMakeList = array();
-		foreach($SVMT as $item)
-		{
+		foreach ($SVMT as $item) {
 			$servicerMakeList[] = $item->makeid;
 		}
 		$serviceAdvertisementData = ServiceAdvertisment::model()->findAllByAttributes(array('advertiser' => $id));
 
 		$this->render('view', array(
-			'model' => $model,
-			'makeId' => $makeId,
-			'servicerMakeList' => $servicerMakeList,
+			'model'                    => $model,
+			'makeId'                   => $makeId,
+			'servicerMakeList'         => $servicerMakeList,
 			'serviceAdvertisementData' => $serviceAdvertisementData,
+		));
+
+	}
+
+	public function actionCreate()
+	{
+
+		$modelCompany = new Company;
+
+		$this->render('create', array(
+			'modelCompany' => $modelCompany,
 		));
 
 	}

@@ -2,7 +2,8 @@
 /* @var $this UserController */
 /* @var $model User */
 
-echo TbHtml::pageHeader('User', 'detail view');
+echo TbHtml::pageHeader('User', 'detail view', array('style' => 'float: left'));
+echo TbHtml::linkButton('Back', array('url' => $this->createUrl('/user/index'), 'style' => 'float: right'));
 
 $this->widget('zii.widgets.CDetailView', array(
 	'data'       => $model,

@@ -3,8 +3,35 @@
 
 $this->pageTitle = Yii::app()->name;
 ?>
-
-<?php $this->widget('bootstrap.widgets.TbHeroUnit', array(
-	'heading' => 'Welcome to Car Bond',
-	'content' => '<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>' . TbHtml::button('Learn more', array('color' => TbHtml::BUTTON_COLOR_PRIMARY, 'size' => TbHtml::BUTTON_SIZE_LARGE)),
-)); ?>
+<div style="height: 250px;">
+	SLIDER
+</div>
+<div>
+	<div style="float: left; width: 250px;">
+		<div><img src="<?php echo Yii::app()->baseUrl ?>/images/Ad-Banner-Side-Bar.gif"></div>
+	</div>
+	<div style="float: left; width: 550px;">
+		<div style="padding: 20px;">
+			<div style="float: left; padding: 5px;">
+				<img src="<?php echo Yii::app()->baseUrl ?>/images/car.png">
+			</div>
+			<div style="float: left">
+				<div>Posaljite upit bankama</div>
+				<div>Neki tekst</div>
+				<div><a href="#">Opsirnije</a></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div style="padding: 20px;">
+			<div style="float: left; padding: 5px;">
+				<img src="<?php echo Yii::app()->baseUrl ?>/images/car.png">
+			</div>
+			<div style="float: left">
+				<div>Posaljite upit bankama</div>
+				<div>Neki tekst</div>
+				<div><a href="#">Opsirnije</a></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+</div>

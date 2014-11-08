@@ -293,17 +293,15 @@ if(!isset(Yii::app()->user->id)) {
 	</div>
 </div>
 <div class="col-md-4">
-<div class="accordion">
 <?php
 // Servicing data
 require_once (Yii::app()->theme->basePath . '/views/servicingData/_form.php');
 
 ?>
 </div>
-</div>
 <div class="col-md-4 action-button">
 <?php echo TbHtml::formActions(array(
-	TbHtml::submitButton($modelVehicle->isNewRecord ? 'Create' : 'Save', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)),
+	TbHtml::submitButton($modelVehicle->isNewRecord ? 'Create Advertisement' : 'Save', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)),
 	TbHtml::linkButton('Cancel', array('url' => Yii::app()->createUrl('vehicleAdvertisment/index', array('vehicleTypeId' => '1')))),
 )); ?>
 </div>

@@ -56,7 +56,7 @@ $cs
                 <?php $this->widget('zii.widgets.CMenu', array(
 		            'id'    => 'menu',
 		            'items' => array(
-			            array('label' => 'Search by VIN', 'url' => array('/vehicle/searchByVin'), 'itemOptions' => array('class' => 'first'),),
+//			            array('label' => 'Search by VIN', 'url' => array('/vehicle/searchByVin'), 'itemOptions' => array('class' => 'first'),),
 			            array('label' => 'Vehicle Sale', 'url' => array('/vehicleAdvertisment/create', 'vehicleTypeId' => 1)),
 			            array('label' => 'Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1)),
 			            array('label' => 'Servicers', 'url' => array('/servicer/brands')),

@@ -72,8 +72,8 @@ class ServicingData extends CActiveRecord
 		return array(
 			'servicing_dataid' => 'Servicing Dataid',
 			'vehicleid'        => 'Vehicleid',
-			'serviceid'        => 'Serviceid',
-			'service_name'     => 'Service Name',
+			'serviceid'        => 'Service Provider',
+			'service_name'     => 'Other Service Provider',
 			'description'      => 'Description',
 			'data_provider'    => 'Data Provider',
 			'servicing_date'   => 'Servicing Date',

@@ -61,14 +61,18 @@ class ServicerController extends Controller
 		$model                 = new SearchServicers('search');
 		$model->vehicle_typeid = $vehicleTypeId;
 		$model->makeid         = $makeId;
+		$searchFilter = array();
 
 		if (isset($_POST['yt0'])) {
 			$model->countryId = $_POST['country'];
 			$model->cityId    = $_POST['city'];
+			$searchFilter['country'] = $_POST['country'];
+			$searchFilter['city'] = $_POST['city'];
 		}
 
 		$this->render('listByBrand', array(
 			'dataProvider' => $model->search(),
+			'searchFilter' => $searchFilter,
 		));
 
 	}
@@ -93,16 +97,6 @@ class ServicerController extends Controller
 
 	}
 
-	public function actionCreate()
-	{
-
-		$modelCompany = new Company;
-
-		$this->render('create', array(
-			'modelCompany' => $modelCompany,
-		));
-
-	}
 
 	public function actionAddServicingData($vehicleTypeId = 1)
 	{

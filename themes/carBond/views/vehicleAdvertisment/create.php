@@ -124,7 +124,7 @@ if(!isset(Yii::app()->user->id)) {
 					'ajax'  => array(
 						'type'   => 'POST',
 						'url'    => $this->createUrl('site/updateCityDropdown'),
-						'update' => '#PhysicalPerson_city',
+						'update' => '#PhysicalPerson_cityid',
 						'data'   => array(
 							'countryId' => 'js:this.value'
 						),
@@ -133,7 +133,7 @@ if(!isset(Yii::app()->user->id)) {
 					'empty' => '',
 				)
 			);
-			echo $form->dropDownListControlGroup($modelPhysicalPerson, 'city', array(), array('empty' => ''));
+			echo $form->dropDownListControlGroup($modelPhysicalPerson, 'cityid', array(), array('empty' => ''));
 			echo $form->textFieldControlGroup($modelPhysicalPerson, 'district', array('readonly' => (isset(Yii::app()->user->id))));
 			echo $form->textFieldControlGroup($modelPhysicalPerson, 'zip_code', array('readonly' => (isset(Yii::app()->user->id))));
 			?>
@@ -142,7 +142,21 @@ if(!isset(Yii::app()->user->id)) {
 			<?php
 			echo $form->textFieldControlGroup($modelCompany, 'company_name', array('size' => 60, 'maxlength' => 100));
 			echo $form->textFieldControlGroup($modelCompany, 'address', array('size' => 60, 'maxlength' => 254));
-			echo $form->textFieldControlGroup($modelCompany, 'city', array('size' => 50, 'maxlength' => 50));
+			echo TbHtml::dropDownListControlGroup('country', '', CHtml::listData(Country::model()->findAll(), 'countryid', 'country_name'),
+				array(
+					'ajax'  => array(
+						'type'   => 'POST',
+						'url'    => $this->createUrl('site/updateCityDropdown'),
+						'update' => '#Company_cityid',
+						'data'   => array(
+							'countryId' => 'js:this.value'
+						),
+					),
+					'label' => 'Country',
+					'empty' => '',
+				)
+			);
+			echo $form->dropDownListControlGroup($modelPhysicalPerson, 'cityid', array(), array('empty' => ''));
 			echo $form->textFieldControlGroup($modelCompany, 'tax_number', array('size' => 45, 'maxlength' => 45));
 			echo $form->textFieldControlGroup($modelCompany, 'registration_number', array('size' => 45, 'maxlength' => 45));
 			echo $form->textFieldControlGroup($modelCompany, 'contact_person', array('size' => 60, 'maxlength' => 100));

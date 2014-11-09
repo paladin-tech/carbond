@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 echo TbHtml::pageHeader('User', 'list view', array('style' => 'float: left'));
-echo TbHtml::linkButton('New Service Provider', array('url' => $this->createUrl('/servicer/create'), 'style' => 'float: right'));
+echo TbHtml::linkButton('New Company', array('url' => $this->createUrl('/company/create'), 'style' => 'float: right'));
 ?>
 <div style="clear: both;"></div>
 <?php
@@ -37,7 +37,7 @@ $this->widget('bootstrap.widgets.TbGridView', array(
 				'update' => array
 				(
 					'label'    => 'Update User',
-					'url'      => 'Yii::app()->createUrl("user/adminUpdate", array("id" => $data->userid))',
+					'url'      => '($data->role_name == "physical_person") ? Yii::app()->createUrl("user/adminUpdate", array("id" => $data->partyid)) : Yii::app()->createUrl("company/update", array("id" => $data->partyid))',
 				),
 			),
 		),

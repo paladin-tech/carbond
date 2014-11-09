@@ -53,24 +53,78 @@ $cs
             <div class="col-lg-2"><h1 id="logotipo"><a href="<?php echo $this->createUrl('/site/index') ?>"><?php echo CHtml::encode(Yii::app()->name); ?></a></h1></div>
             <div class="col-lg-8 col-xs-12 ">
                 <div class="fixed-layout-header"><div id="banner"><img src="<?php echo Yii::app()->baseUrl ?>/images/banner_top.png" class="img-responsive" width="100%" height="100%"/></div>
-                <?php $this->widget('zii.widgets.CMenu', array(
-		            'id'    => 'menu',
-		            'items' => array(
-//			            array('label' => 'Search by VIN', 'url' => array('/vehicle/searchByVin'), 'itemOptions' => array('class' => 'first'),),
-			            array('label' => 'Vehicle Sale', 'url' => array('/vehicleAdvertisment/create', 'vehicleTypeId' => 1)),
-			            array('label' => 'Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1)),
-			            array('label' => 'Servicers', 'url' => array('/servicer/brands')),
-			            array('label' => 'Support Industry', 'url' => array('/supportIndustry/index')),
-			            array('label' => 'Tuning', 'url' => array('/tuning/index')),
-			            array('label' => 'Finance', 'url' => array('/financial/index')),
-			            array('label' => 'Servicing Data', 'url' => array('/servicer/addServicingData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isOfficialService'])),
-			            array('label' => 'Users', 'url' => array('/user/index'), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isAdmin'])),
-			            array('label' => 'Damage Data', 'url' => array('/insuranceHouse/addDamageData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isInsuranceHouse'])),
-//			            array('label' => 'My Carbond', 'url' => '#', 'visible' => !Yii::app()->user->isGuest),
-//			            array('label' => 'Login', 'url' => array('/site/login'), 'itemOptions' => array('class' => 'last'), 'visible' => Yii::app()->user->isGuest),
-//			            array('label' => 'Logout', 'itemOptions' => array('class' => 'last'), 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
-		            ),
-	            )); ?></div>
+	                <div id="mainMbMenu">
+		                <?php $this->widget('application.extensions.mbmenu.MbMenu', array(
+			                'items' => array(
+				                array('label' => 'Vehicle Database',
+				                      'items' => array(
+					                      array('label' => 'Search by VIN', 'url' => array('/vehicle/searchByVin')),
+					                      array('label' => 'General Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1)),
+					                      array('label' => 'Detailed Search', 'url' => array('/site/index')),
+					                      array('label' => 'Vehicle Sale', 'url' => array('/site/index')),
+				                      )
+				                ),
+				                array('label' => 'Vehicle Sales',
+				                      'items' => array(
+					                      array('label' => 'Used Car Dealers‎', 'url' => array('/site/index')),
+					                      array('label' => 'New Car Distributors', 'url' => array('/site/index')),
+					                      array('label' => 'Used Car Owners',
+					                            'items' => array(
+						                            array('label' => 'Persons', 'url' => array('/site/index')),
+						                            array('label' => 'Companies', 'url' => array('/site/index')),
+					                            ),
+					                      ),
+				                      ),
+				                ),
+				                array('label' => 'Servicers',
+				                      'items' => array(
+					                      array('label' => 'Authorised Servicers',
+					                            'items' => array(
+						                            array('label' => 'Search by Brand', 'url' => array('/site/index')),
+						                            array('label' => 'Search by Servicers', 'url' => array('/site/index')),
+					                            ),
+					                      ),
+					                      array('label' => 'Other Servicers',
+					                            'items' => array(
+						                            array('label' => 'Search by Brand', 'url' => array('/site/index')),
+						                            array('label' => 'Search by Servicers', 'url' => array('/site/index')),
+					                            ),
+					                      ),
+					                      array('label' => 'Support Servicers',
+					                            'items' => array(
+						                            array('label' => 'Search by Brand', 'url' => array('/site/index')),
+						                            array('label' => 'Search by Servicers', 'url' => array('/site/index')),
+					                            ),
+					                      ),
+				                      ),
+				                ),
+				                array('label' => 'Support Industry',
+				                      'items' => array(
+					                      array('label' => 'Audio', 'url' => array('/site/index')),
+					                      array('label' => 'Alarm', 'url' => array('/site/index')),
+					                      array('label' => 'Air Conditioning', 'url' => array('/site/index')),
+					                      array('label' => 'Spare Parts', 'url' => array('/site/index')),
+					                      array('label' => 'LPG Service', 'url' => array('/site/index')),
+				                      ),
+				                ),
+				                array('label' => 'Tuning',
+				                      'items' => array(
+					                      array('label' => 'Car Tuning', 'url' => array('/site/index')),
+					                      array('label' => 'Motorcycles Tuning', 'url' => array('/site/index')),
+				                      ),
+				                ),
+				                array('label' => 'Finances',
+				                      'items' => array(
+					                      array('label' => 'Finances', 'url' => array('/site/index')),
+					                      array('label' => 'Finances', 'url' => array('/site/index')),
+					                      array('label' => 'Finances', 'url' => array('/site/index')),
+					                      array('label' => 'Finances', 'url' => array('/site/index')),
+				                      ),
+				                ),
+			                ),
+		                )); ?>
+	                </div>
+                </div>
             </div>
             <div class="col-lg-2 col-xs-12">
             	<!--<a href="#" class="tool1"><span><img src="<?php //print $basePath.'/images/opsta-zupcanik.png'; ?>"/></span>Opsta pretraga</a>

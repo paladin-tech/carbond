@@ -416,7 +416,9 @@ class VehicleAdvertismentController extends Controller
 
 	public function actionTest()
 	{
-
+		$address = urlencode('Omladinskih brigada 90 beograd');
+		var_dump($address);
+		$url = 'https://maps.googleapis.com/maps/api/geocode/json?address=Omladinskih%20brigada%2090%20beograd&region=rs&key=AIzaSyBqdgJ8ejax5oDjcXiDp2ZjJ4pMH40ivH0';
 	}
 
 }

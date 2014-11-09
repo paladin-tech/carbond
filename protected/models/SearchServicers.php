@@ -95,17 +95,12 @@ class SearchServicers extends CActiveRecord
 
 		$criteria = new CDbCriteria;
 
-		$criteria->compare('partyid', $this->partyid);
-		$criteria->compare('company_name', $this->company_name, true);
-		$criteria->compare('address', $this->address, true);
-		$criteria->compare('phone_number', $this->phone_number, true);
-		$criteria->compare('email', $this->email, true);
 		$criteria->compare('makeid', $this->makeid);
 		$criteria->compare('vehicle_typeid', $this->vehicle_typeid);
-		$criteria->compare('cityId', $this->cityId);
-		$criteria->compare('countryId', $this->countryId);
-		$criteria->compare('city_Name', $this->city_Name, true);
-		$criteria->compare('country_Name', $this->country_Name, true);
+		if($this->cityId != '')
+			$criteria->compare('cityId', $this->cityId);
+		if($this->countryId != '')
+			$criteria->compare('countryId', $this->countryId);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,

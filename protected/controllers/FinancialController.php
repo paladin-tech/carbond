@@ -51,7 +51,7 @@ class FinancialController extends Controller
 		if (isset($_POST['yt0'])) {
 			$model->roleId    = $_POST['FinancialType'];
 			$model->countryId = $_POST['country'];
-			$model->city      = $_POST['city'];
+			$model->cityid    = $_POST['city'];
 		}
 
 		$this->render('index', array(

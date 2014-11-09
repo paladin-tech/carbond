@@ -35,7 +35,7 @@ class PhysicalPerson extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('first_name, last_name, email, city, zip_code', 'required'),
+			array('first_name, last_name, email, cityid, zip_code', 'required'),
 			array('partyid, cityid, zip_code', 'numerical', 'integerOnly' => true),
 			array('first_name, last_name', 'length', 'max' => 50),
 			array('mobile', 'length', 'max' => 45),

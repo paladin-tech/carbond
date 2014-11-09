@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74f7b948-ed53-41f8-994a-382a24e37e10" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/carBond/views/layouts/main.php" afterPath="$PROJECT_DIR$/themes/carBond/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/carBond/views/site/_categoryCreateSubmenu.php" afterPath="$PROJECT_DIR$/themes/carBond/views/site/_categoryCreateSubmenu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_categoryDamageData.php" afterPath="$PROJECT_DIR$/protected/views/site/_categoryDamageData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_categorySearchSubmenu.php" afterPath="$PROJECT_DIR$/protected/views/site/_categorySearchSubmenu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/carBond/views/site/_categorySearchSubmenu.php" afterPath="$PROJECT_DIR$/themes/carBond/views/site/_categorySearchSubmenu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_categoryServicingData.php" afterPath="$PROJECT_DIR$/protected/views/site/_categoryServicingData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/carBond/views/site/_categoryServicingDataSubmenu.php" afterPath="$PROJECT_DIR$/themes/carBond/views/site/_categoryServicingDataSubmenu.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CB.iws" />
@@ -26,24 +31,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VehicleAdvertisment.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/VehicleAdvertisment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="36" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.0" vertical-offset="1751" max-vertical-offset="2448">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="39" selection-start="494" selection-end="494" vertical-scroll-proportion="-0.0" vertical-offset="221" max-vertical-offset="1258">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/carBond/views/main.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,15 +77,6 @@
         <entry file="file://$PROJECT_DIR$/themes/carBond/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="59" column="82" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.2580645" vertical-offset="867" max-vertical-offset="3111">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/physicalPerson/_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="65" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -176,6 +154,12 @@
         <option value="$PROJECT_DIR$/protected/views/vehicle/searchByVin.php" />
         <option value="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/view.php" />
         <option value="$PROJECT_DIR$/themes/carBond/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/themes/carBond/views/site/_categoryServicingDataSubmenu.php" />
+        <option value="$PROJECT_DIR$/themes/carBond/views/site/_categorySearchSubmenu.php" />
+        <option value="$PROJECT_DIR$/themes/carBond/views/site/_categoryCreateSubmenu.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/_categoryServicingData.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/_categorySearchSubmenu.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/_categoryDamageData.php" />
       </list>
     </option>
   </component>
@@ -281,19 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carBond" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vehicleAdvertisment" />
+              <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,19 +279,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carBond" />
+              <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vehicle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,11 +297,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carBond" />
+              <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -345,7 +305,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,7 +409,11 @@
       <created>1415495891075</created>
       <updated>1415495891075</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed main menu items">
+      <created>1415496129932</created>
+      <updated>1415496129932</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -779,6 +743,48 @@
             <marker date="1415479364715" expanded="true" signature="826:941" placeholder="..." />
             <marker date="1415479364715" expanded="true" signature="958:970" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/carBond/views/site/_categoryServicingDataSubmenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="131" selection-start="1065" selection-end="1077" vertical-scroll-proportion="0.32258064" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/carBond/views/site/_categorySearchSubmenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="16" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.29032257" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/carBond/views/site/_categoryCreateSubmenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="240" selection-start="787" selection-end="787" vertical-scroll-proportion="0.19354838" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/_categoryServicingData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="137" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.32258064" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/_categorySearchSubmenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="147" selection-start="508" selection-end="508" vertical-scroll-proportion="0.19354838" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/_categoryDamageData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="6" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.516129" vertical-offset="0" max-vertical-offset="527">
+          <folding />
         </state>
       </provider>
     </entry>

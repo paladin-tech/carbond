@@ -57,48 +57,12 @@ $cs
 		            'id'    => 'menu',
 		            'items' => array(
 //			            array('label' => 'Search by VIN', 'url' => array('/vehicle/searchByVin'), 'itemOptions' => array('class' => 'first'),),
-                        array('label' => 'Vehicle Database', 'url' => array('#'), 'items'=>array(
-                            array('label'=>'Search by VIN', 'url'=>array('/vehicle/searchByVin')),
-                            array('label' => 'General Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1, 'searchType'=>'general')),
-                            array('label' => 'Detailed Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1,'searchType'=>'detailed')),
-                            array('label' => 'Vehicle Sale', 'url' => array('/vehicleAdvertisment/create', 'vehicleTypeId' => 1))
-                        )),
-                        array('label' => 'Vehicle Sales', 'url' => array('#'), 'items'=>array(
-                            array('label'=>'Used Car Dealers‎', 'url'=>array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1, 'advertiser'=>'dealer', 'new_vehicle'=>0)),
-                            array('label' => 'New Car Distributors', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1, 'advertiser'=>'dealer', 'new_vehicle'=>0)),
-                            array('label' => 'Used Car Owners', 'url' => array('#'), 'items'=>array(
-                                array('label' => 'Persons', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1,'advertiser'=>'person', 'new_vehicle'=>0)),
-                                array('label' => 'Companies', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1,'advertiser'=>'company', 'new_vehicle'=>0))
-                            )),
-                        )),
-                        array('label' => 'Servicers', 'url' => array('#'), 'items'=>array(
-                            array('label' => 'Authorised Servicers', 'url' => array('#'), 'items'=>array(
-                                array('label' => 'Search by Brand', 'url' => array('/servicer/brands', 'official' => 1)),
-                                array('label' => 'Search by Servicers', 'url' => array('/servicer/companies', 'official' => 1))
-                            )),
-                            array('label' => 'Other Servicers', 'url' => array('#'), 'items'=>array(
-                                array('label' => 'Search by Brand', 'url' => array('/servicer/brands', 'official' => 0)),
-                                array('label' => 'Search by Servicers', 'url' => array('/servicer/companies', 'official' => 0))
-                            )),
-			                array('label' => 'Support Servicers', 'url' => array('/servicer/support')),
-                        )),
-                        array('label' => 'Support Industry', 'url' => array('#'),'items'=>array(
-                            array('label' => 'Audio', 'url' => array('/supportIndustry/index','service_typeid'=>2)),
-                            array('label' => 'Alarm', 'url' => array('/supportIndustry/index','service_typeid'=>1)),
-                            array('label' => 'Air Conditioning', 'url' => array('/supportIndustry/index','service_typeid'=>11)),
-                            array('label' => 'Spare Parts', 'url' => array('/supportIndustry/index','service_typeid'=>8)),
-                            array('label' => 'LPG Service', 'url' => array('/supportIndustry/index','service_typeid'=>3)),
-                        )),
-			            array('label' => 'Tuning', 'url' => array('#'),'items'=>array(
-                            array('label' => 'Car Tuning', 'url' => array('/tuning/index','vehicleTypeId' => 1)),
-                            array('label' => 'Motorcycles Tuning', 'url' => array('/tuning/index','vehicleTypeId' => 2)),
-                        )),
-			            array('label' => 'Finances', 'url' =>  array('#'),'items'=>array(
-                            array('label' => 'Finances', 'url' => array('/financial/index')),
-                            array('label' => 'Finances', 'url' => array('/financial/index')),
-                            array('label' => 'Finances', 'url' => array('/financial/index')),
-                            array('label' => 'Finances', 'url' => array('/financial/index')),
-                        )),
+			            array('label' => 'Vehicle Sale', 'url' => array('/vehicleAdvertisment/create', 'vehicleTypeId' => 1)),
+			            array('label' => 'Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1)),
+			            array('label' => 'Servicers', 'url' => array('/servicer/brands')),
+			            array('label' => 'Support Industry', 'url' => array('/supportIndustry/index')),
+			            array('label' => 'Tuning', 'url' => array('/tuning/index')),
+			            array('label' => 'Finance', 'url' => array('/financial/index')),
 			            array('label' => 'Servicing Data', 'url' => array('/servicer/addServicingData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isOfficialService'])),
 			            array('label' => 'Users', 'url' => array('/user/index'), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isAdmin'])),
 			            array('label' => 'Damage Data', 'url' => array('/insuranceHouse/addDamageData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isInsuranceHouse'])),

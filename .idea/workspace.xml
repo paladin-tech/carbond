@@ -89,7 +89,7 @@
       <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/carBond/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="244" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.2580645" vertical-offset="867" max-vertical-offset="3111">
+            <state line="59" column="82" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.2580645" vertical-offset="867" max-vertical-offset="3111">
               <folding />
             </state>
           </provider>
@@ -445,7 +445,11 @@
       <created>1415491578228</created>
       <updated>1415491578228</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed main menu items">
+      <created>1415495891075</created>
+      <updated>1415495891075</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -780,7 +784,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/carBond/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="244" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.2580645" vertical-offset="867" max-vertical-offset="3111">
+        <state line="59" column="82" selection-start="2505" selection-end="2505" vertical-scroll-proportion="0.2580645" vertical-offset="867" max-vertical-offset="3111">
           <folding />
         </state>
       </provider>

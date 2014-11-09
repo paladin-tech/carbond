@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74f7b948-ed53-41f8-994a-382a24e37e10" name="Default" comment="">
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/CB.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
@@ -11,6 +12,900 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/ajax-loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/arrow-down-off.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/arrow-down-on.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/arrow_sprite_accordion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/auto-aktiv.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/auto-aktiv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/auto-off.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/auto-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/auto-over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/auto-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banner_top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/gridview/bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/car.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/checked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/checked2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/rating/delete.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/gridview/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/detaljna-zupcanik.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/gridview/down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/listview/down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_loading.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_nav_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_nav_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_shadow_e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_shadow_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_shadow_ne.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_shadow_nw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_shadow_s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_shadow_se.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_shadow_sw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_shadow_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_title_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_title_main.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_title_over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancy_title_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancybox-x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancybox-y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/fancybox.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/fb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/folder-closed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/forum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/in.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/autocomplete/indicator.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/itens-sprite.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kamion-aktiv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kamion-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/kamion-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/img/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/img/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/gridview/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/listview/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/minus.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/motor-aktiv.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/motor-aktiv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/motor-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/motor-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/motor-sprite.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/opsta-zupcanik.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/plov-aktiv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/plov-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/plov-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/plus.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/podloga-foot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/podloga-head.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/podloga-sredina.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/poljo-aktiv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/poljo-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/poljo-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/radne-aktiv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/radne-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/radne-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/raz1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/raz2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/raz3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/raz4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/raz5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/razdelna-linija-meni.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/razdelna-linija-strana.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/slajder-strelica-2-preko.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/slajder-strelica-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/slajder-strelica-preko.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/slajder-strelica.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/slajder-tacka-aktiv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/slajder-tacka-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/slajder-tacka-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/rating/star.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/treeview-black-line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/treeview-black.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/treeview-default-line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/treeview-default.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/treeview-famfamfam-line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/treeview-famfamfam.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/treeview-gray-line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/treeview-gray.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/treeview-red-line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/images/treeview-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/tw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/gridview/up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/listview/up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/gridview/update.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-121-buy-a-new-boat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-122-buy-a-new-boat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-122-download (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-122-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-132-buy-a-new-boat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-132-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-140-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-148-download (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-15-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-153-download (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-154-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-155-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-156-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-16-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-164-images (3).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-24.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-26.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-27.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-28.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-30.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-31.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-32.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-34.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-35.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-37.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-39.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-40.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-41.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-43.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-44.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-48.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-49.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-50.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-53.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-54.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-56.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-61-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-62-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-63-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-63-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-69-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-69-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-75-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-75-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-8-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-80-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-80-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/normal/vehicle-9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-122-buy-a-new-boat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-122-download (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-122-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-132-buy-a-new-boat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-132-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-140-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-148-download (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-15-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-153-download (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-154-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-155-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-156-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-16-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-164-images (3).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-24.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-26.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-27.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-28.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-30.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-31.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-32.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-34.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-35.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-39.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-40.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-41.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-43.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-44.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-48.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-49.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-50.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-53.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-54.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-56.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-69-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-69-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-75-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-75-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-8-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-80-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-80-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-vehicle-63-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/thumb/vehicleThumb-vehicle-63-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-122-buy-a-new-boat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-122-download (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-122-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-132-buy-a-new-boat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-132-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-140-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-148-download (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-15-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-153-download (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-154-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-155-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-156-download.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-16-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-164-images (3).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-24.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-26.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-27.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-28.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-30.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-31.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-32.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-34.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-35.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-39.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-40.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-41.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-43.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-44.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-48.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-49.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-50.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-53.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-54.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-56.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-69-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-69-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-75-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-75-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-8-images.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-80-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-80-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-vehicle-63-agricultural machinery manufacturers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/vehicle/tinyThumb/vehicleTinyThumb-vehicle-63-agricultural-machinery-580x435.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/gridview/view.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/59d07086/fonts/yii-debug.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/assets/fonts/yii-debug.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/59d07086/fonts/yii-debug.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/assets/fonts/yii-debug.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/59d07086/fonts/yii-debug.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/assets/fonts/yii-debug.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/59d07086/yii-debug.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/assets/yii-debug.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/yt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/AgriculturalMachineryController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Boat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/BoatController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/BootstrapCode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/BootstrapGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Bus.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/BusController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/image/CArray.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/image/CImageComponent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Camper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/CamperController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Characteristic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/CharacteristicType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit/CodeGuy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/_helpers/CodeHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Company.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/CompanyController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/controllers/DefaultController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/vendors/phpthumb/GdThumb.inc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/components/Helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/image/Image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/models/Image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/ImageModule.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/image/Image_Driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/image/drivers/Image_GD_Driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/image/drivers/Image_ImageMagick_Driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/components/Img.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/components/ImgException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/components/ImgInstaller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/components/ImgManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/components/ImgOptions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/components/ImgRecordBehavior.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/components/ImgThumb.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/IndustrialMachineryController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/controllers/InstallController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/MakeVin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/MotorcycleController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Party.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/PartyRole.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Photo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/PhotoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/vendors/phpthumb/PhpThumb.inc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/PhysicalPerson.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/PhysicalPersonController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/README.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/RoleController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/RolePriviledge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/SearchAdvertisment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/ServicerController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/ServicingData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/ServicingDataController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/ServicingType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/SetupPasswordForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbActiveForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbAffix.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbAlert.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/components/TbApi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/helpers/TbArray.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit/TbArrayTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbBreadcrumb.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbButtonColumn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbCollapse.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbDataColumn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbDetailView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/form/TbForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/form/TbFormButtonElement.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/form/TbFormInputElement.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbGridView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbHeroUnit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/helpers/TbHtml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit/TbHtmlTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbListView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbModal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbNav.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbNavbar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbPager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbScrollspy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbTabs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit/TbTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbThumbnails.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbTypeAhead.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/behaviors/TbWidget.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/_helpers/TestHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/vendors/phpthumb/ThumbBase.inc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/vendors/phpthumb/ThumbLib.inc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Trailer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/TrailerController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Truck.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/TruckController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/VanController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/VehicleCharacteristic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/VehicleMakeController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/VehicleModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/VehicleModelController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/_helpers/WebHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/YiiDebug.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/YiiDebugComponentProxy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/YiiDebugController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/YiiDebugToolbar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/YiiDebugToolbarPanel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/panels/YiiDebugToolbarPanelLogging.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/panels/YiiDebugToolbarPanelRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/panels/YiiDebugToolbarPanelSettings.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/panels/YiiDebugToolbarPanelSql.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/panels/YiiDebugToolbarPanelViews.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/widgets/YiiDebugToolbarResourceUsage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/YiiDebugToolbarRoute.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/YiiDebugViewHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/agriculturalMachinery/_agriculturalMachineryItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/boat/_boatItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit/_bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/bus/_busItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/camper/_camperItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/car/_carItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/site/_categoryCreateSubmenu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/site/_categorySearchSubmenu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/site/_categorySearchSubmenu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/site/_categoryServicingData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/site/_categoryServicingDataSubmenu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/site/_categorySubmenu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/agriculturalMachinery/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/boat/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/bus/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/camper/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/company/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/industrialMachinery/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/motorcycle/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/photo/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/physicalPerson/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/role/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/servicingData/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/trailer/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/truck/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/user/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/van/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleMake/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleModel/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/vehicle/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/industrialMachinery/_industrialMachineryItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/motorcycle/_motorcycleItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/agriculturalMachinery/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/boat/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/bus/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/camper/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/company/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/industrialMachinery/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/motorcycle/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/physicalPerson/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/role/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/servicingData/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/trailer/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/truck/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/user/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/van/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleModel/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/servicingData/_servicingDataItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/trailer/_trailerItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/truck/_truckItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/van/_vanItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/agriculturalMachinery/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/boat/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/bus/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/camper/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/company/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/industrialMachinery/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/motorcycle/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/physicalPerson/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/role/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/servicingData/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/trailer/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/truck/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/user/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/van/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleModel/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/site/pages/about.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/accordion.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/accordion.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/servicer/addServicingData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/agriculturalMachinery/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/boat/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/bus/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/camper/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/company/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/industrialMachinery/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/motorcycle/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/physicalPerson/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/servicingData/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/trailer/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/truck/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/user/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/van/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleMake/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleModel/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/panels/asset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/css/bootstrap-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/breadcrumbs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/breadcrumbs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/button-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/button-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/panels/sql/callstack.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/carousel.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/carousel.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/close.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/close.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/code.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/code.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/codeception.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/component-animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/component-animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/composer.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/config-interface.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/views/install/confirm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/site/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/messages/templates/core.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/agriculturalMachinery/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/boat/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/bus/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/camper/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/company/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/industrialMachinery/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/motorcycle/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/physicalPerson/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/role/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/servicingData/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/trailer/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/truck/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/user/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/van/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleMake/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleModel/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/styles/css3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/examples/css3/css3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/dropdowns.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/dropdowns.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/_data/dump.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/messages/templates/error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/views/install/error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/site/error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/vendors/phpthumb/thumb_plugins/gd_reflection.inc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/hero-unit.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/hero-unit.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ecff05fc/highlight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/files/htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/59d07086/icons-reference.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/assets/icons-reference.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/css/ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/views/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/views/install/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/agriculturalMachinery/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/boat/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/bus/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/camper/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/company/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/industrialMachinery/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/motorcycle/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/physicalPerson/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/role/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/servicingData/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/trailer/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/truck/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/van/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleMake/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleModel/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/site/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/messages/templates/install.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/js/jquery-ui-i18n.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/js/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.ajaxqueue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/autocomplete/jquery.autocomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.autocomplete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.ba-bbq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.ba-bbq.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.bgiframe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/jquery.fancybox-1.3.1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/fancybox/jquery.fancybox-1.3.1.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/lib/jquery.jcarousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.maskedinput.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.maskedinput.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.metadata.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.multifile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/lib/jquery.pikachoose.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/lib/jquery.pikachoose.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/rating/jquery.rating.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.rating.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.slimscroll.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slideshow/lib/jquery.touchwipe.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.treeview.async.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/treeview/jquery.treeview.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.treeview.edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.treeview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.autocomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.resizable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.selectable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jui/css/base/jquery.ui.tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.yii.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.yiiactiveform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/gridview/jquery.yiigridview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/listview/jquery.yiilistview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/yiitab/jquery.yiitab.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/jquery.yiitab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/messages/en/l10n.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/labels-badges.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/labels-badges.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/layouts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/layouts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/panels/logging.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/site/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/config/main-web.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/59d07086/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/assets/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/59d07086/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/assets/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/59d07086/main_old.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/assets/main_old.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/layouts/main_old.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/modals.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/modals.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/navs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/navs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/c266c58b/pager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/pager.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/pager.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/popovers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/popovers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/css/print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/progress-bars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/progress-bars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/punycode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/f2847e37/punycode.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/image/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/views/install/ready.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/user/registrationValidation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/panels/request.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/reset.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/reset.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/widgets/views/resources.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/responsive-1200px-min.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive-1200px-min.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/responsive-767px-max.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive-767px-max.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/responsive-768px-979px.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive-768px-979px.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/responsive-navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive-navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/responsive-utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive-utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/responsive.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/scaffolding.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/scaffolding.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/data/schema.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/css/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicle/searchByVin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/panels/sql/servers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/panels/settings.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/sprites.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/sprites.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/panels/sql.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/runtime/state.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/59d07086/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/detailview/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/gridview/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/623d5b9/listview/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/assets/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/image/assets/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/panels/sql/summary.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/thumbnails.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/thumbnails.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/223f17db/js/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/tooltip.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/tooltip.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/type.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/type.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit.suite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/agriculturalMachinery/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/boat/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/bus/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/camper/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/company/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/industrialMachinery/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/motorcycle/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/physicalPerson/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/role/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/servicingData/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/trailer/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/truck/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/user/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/van/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleMake/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleModel/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/user/verificationSent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/agriculturalMachinery/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/boat/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/bus/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/camper/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/company/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/industrialMachinery/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/motorcycle/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/physicalPerson/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/role/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/servicingData/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/trailer/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/truck/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/user/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/van/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleMake/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vehicleModel/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/views/panels/views.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/wells.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/wells.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/messages/ru/yii-debug-toolbar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/messages/simple/yii-debug-toolbar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/59d07086/fonts/yii-debug.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yii-debug-toolbar/assets/fonts/yii-debug.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/css/yiistrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/yiistrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/less/yiistrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/yiistrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/41460223/css/yiistrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/yiistrap.min.css" />
+      <change type="DELETED" beforePath="F:\www\carbond.git\protected\views\make\_form.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\www\carbond.git\protected\views\make\create.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\www\carbond.git\protected\views\make\update.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\www\carbond.git\protected\views\make\view.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CB.iml" afterPath="$PROJECT_DIR$/.idea/CB.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Car.php" afterPath="$PROJECT_DIR$/protected/models/Car.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/CarController.php" afterPath="$PROJECT_DIR$/protected/controllers/CarController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/UserIdentity.php" afterPath="$PROJECT_DIR$/protected/components/UserIdentity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Vehicle.php" afterPath="$PROJECT_DIR$/protected/models/Vehicle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/VehicleAdvertisment.php" afterPath="$PROJECT_DIR$/protected/models/VehicleAdvertisment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/VehicleAdvertismentController.php" afterPath="$PROJECT_DIR$/protected/controllers/VehicleAdvertismentController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/VehicleController.php" afterPath="$PROJECT_DIR$/protected/controllers/VehicleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/VehicleType.php" afterPath="$PROJECT_DIR$/protected/models/VehicleType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/VehicleTypeController.php" afterPath="$PROJECT_DIR$/protected/controllers/VehicleTypeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/car/_form.php" afterPath="$PROJECT_DIR$/protected/views/car/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicle/_form.php" afterPath="$PROJECT_DIR$/protected/views/vehicle/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/_form.php" afterPath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleType/_form.php" afterPath="$PROJECT_DIR$/protected/views/vehicleType/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/_search.php" afterPath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/_view.php" afterPath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleType/_view.php" afterPath="$PROJECT_DIR$/protected/views/vehicleType/_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/admin.php" afterPath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/car/create.php" afterPath="$PROJECT_DIR$/protected/views/car/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/create.php" afterPath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleType/create.php" afterPath="$PROJECT_DIR$/protected/views/vehicleType/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/car/index.php" afterPath="$PROJECT_DIR$/protected/views/car/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicle/index.php" afterPath="$PROJECT_DIR$/protected/views/vehicle/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/index.php" afterPath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleType/index.php" afterPath="$PROJECT_DIR$/protected/views/vehicleType/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/login.php" afterPath="$PROJECT_DIR$/protected/views/site/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/screen.css" afterPath="$PROJECT_DIR$/css/screen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleType/update.php" afterPath="$PROJECT_DIR$/protected/views/vehicleType/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/view.php" afterPath="$PROJECT_DIR$/protected/views/vehicleAdvertisment/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/vehicleType/view.php" afterPath="$PROJECT_DIR$/protected/views/vehicleType/view.php" />
+      <change type="MOVED" beforePath="F:\www\carbond.git\protected\controllers\MakeController.php" afterPath="$PROJECT_DIR$/protected/controllers/UserController.php" />
+      <change type="MOVED" beforePath="F:\www\carbond.git\protected\models\Make.php" afterPath="$PROJECT_DIR$/protected/models/VehicleMake.php" />
+      <change type="MOVED" beforePath="F:\www\carbond.git\protected\models\Model.php" afterPath="$PROJECT_DIR$/protected/models/Role.php" />
+      <change type="MOVED" beforePath="F:\www\carbond.git\protected\views\make\_search.php" afterPath="$PROJECT_DIR$/protected/views/vehicleMake/_search.php" />
+      <change type="MOVED" beforePath="F:\www\carbond.git\protected\views\make\_view.php" afterPath="$PROJECT_DIR$/protected/views/vehicleMake/_view.php" />
+      <change type="MOVED" beforePath="F:\www\carbond.git\protected\views\make\admin.php" afterPath="$PROJECT_DIR$/protected/views/role/admin.php" />
+      <change type="MOVED" beforePath="F:\www\carbond.git\protected\views\make\index.php" afterPath="$PROJECT_DIR$/protected/views/user/index.php" />
+>>>>>>> parent of f6d75b7... Changed main menu items
     </list>
     <ignored path="CB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,52 +928,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/carBond/views/main.php">
+=======
+      <file leaf-file-name="Helper.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/Helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="16" selection-start="3864" selection-end="3864" vertical-scroll-proportion="-8.807693" vertical-offset="1250" max-vertical-offset="2431">
-              <folding>
-                <element signature="e#3860#5650#0" expanded="false" />
-              </folding>
+            <state line="13" column="26" selection-start="228" selection-end="228" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1377">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/carBond/views/site/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="714">
-              <folding>
-                <marker date="1415479364715" expanded="true" signature="91:105" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="106:121" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="127:1001" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="142:168" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="169:266" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="281:307" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="308:994" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="324:338" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="339:647" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="356:382" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="383:458" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="475:486" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="487:602" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="619:631" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="663:677" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="678:986" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="695:721" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="722:797" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="814:825" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="826:941" placeholder="..." />
-                <marker date="1415479364715" expanded="true" signature="958:970" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/carBond/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="62" selection-start="2120" selection-end="2120" vertical-scroll-proportion="-15.692307" vertical-offset="459" max-vertical-offset="1921">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServicerController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/ServicerController.php">
+>>>>>>> parent of f6d75b7... Changed main menu items
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="28" selection-start="2161" selection-end="2161" vertical-scroll-proportion="-13.692307" vertical-offset="1038" max-vertical-offset="2159">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserIdentity.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="850">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VehicleAdvertismentController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/VehicleAdvertismentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="59" column="82" selection-start="0" selection-end="10367" vertical-scroll-proportion="0.2580645" vertical-offset="867" max-vertical-offset="3111">
+=======
+            <state line="100" column="29" selection-start="3617" selection-end="3617" vertical-scroll-proportion="0.0" vertical-offset="1533" max-vertical-offset="6732">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/physicalPerson/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="65" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
+>>>>>>> parent of f6d75b7... Changed main menu items
               <folding />
             </state>
           </provider>
@@ -87,17 +994,22 @@
       <file leaf-file-name="addServicingData.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/carBond/views/servicer/addServicingData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="9" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2210">
-              <folding />
+            <state line="6" column="9" selection-start="181" selection-end="181" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="2210">
+              <folding>
+                <marker date="1413583454931" expanded="true" signature="1514:1550" placeholder="..." />
+                <marker date="1413583454931" expanded="true" signature="1804:1857" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchByVin.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="searchByVin.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/vehicle/searchByVin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="2" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="3128">
-              <folding />
+            <state line="31" column="21" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.62219596" vertical-offset="0" max-vertical-offset="3077">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,7 +1017,7 @@
       <file leaf-file-name="VehicleController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/VehicleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="59" selection-start="3789" selection-end="3789" vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="4709">
+            <state line="144" column="59" selection-start="3864" selection-end="3864" vertical-scroll-proportion="-19.615385" vertical-offset="1938" max-vertical-offset="4046">
               <folding />
             </state>
           </provider>
@@ -143,6 +1055,7 @@
         <option value="$PROJECT_DIR$/protected/models/VehicleAdvertisment.php" />
         <option value="$PROJECT_DIR$/protected/views/vehicleAdvertisment/_form.php" />
         <option value="$PROJECT_DIR$/protected/views/vehicleAdvertisment/view.php" />
+        <option value="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/view.php" />
         <option value="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/create.php" />
         <option value="$PROJECT_DIR$/protected/models/Vehicle.php" />
         <option value="$PROJECT_DIR$/protected/views/servicingData/_form.php" />
@@ -152,8 +1065,10 @@
         <option value="$PROJECT_DIR$/themes/carBond/views/main.php" />
         <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
         <option value="$PROJECT_DIR$/protected/components/Helper.php" />
+        <option value="$PROJECT_DIR$/themes/carBond/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/themes/carBond/views/servicer/addServicingData.php" />
         <option value="$PROJECT_DIR$/protected/views/vehicle/searchByVin.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/view.php" />
         <option value="$PROJECT_DIR$/themes/carBond/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/themes/carBond/views/site/_categoryServicingDataSubmenu.php" />
@@ -162,6 +1077,8 @@
         <option value="$PROJECT_DIR$/protected/views/site/_categoryServicingData.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_categorySearchSubmenu.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_categoryDamageData.php" />
+=======
+>>>>>>> parent of f6d75b7... Changed main menu items
       </list>
     </option>
   </component>
@@ -172,10 +1089,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1384" />
-    <option name="height" value="738" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -203,6 +1120,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,7 +1135,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="from_ftp" />
+              <option name="myItemId" value="carbond.git" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -227,7 +1145,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="from_ftp" />
+              <option name="myItemId" value="carbond.git" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -241,7 +1159,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="from_ftp" />
+              <option name="myItemId" value="carbond.git" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -263,7 +1181,163 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="from_ftp" />
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carBond" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vehicleAdvertisment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carBond" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vehicle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carBond" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carBond" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carBond" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servicer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carBond" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -277,7 +1351,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="from_ftp" />
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vehicleType" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -295,7 +1391,183 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="from_ftp" />
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vehicleModel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vehicleMake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vehicleAdvertisment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vehicle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="van" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="truck" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -311,16 +1583,557 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servicingData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="role" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="physicalPerson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="motorcycle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="industrialMachinery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="car" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agriculturalMachinery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="messages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="en" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+<<<<<<< HEAD
+=======
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drivers" />
+>>>>>>> parent of f6d75b7... Changed main menu items
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+<<<<<<< HEAD
+=======
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+>>>>>>> parent of f6d75b7... Changed main menu items
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> parent of f6d75b7... Changed main menu items
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+<<<<<<< HEAD
+=======
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+>>>>>>> parent of f6d75b7... Changed main menu items
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carbond.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="site" />
+=======
+              <option name="myItemId" value="images" />
+>>>>>>> parent of f6d75b7... Changed main menu items
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../saveNeverland" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -330,6 +2143,69 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig" serverName="CarBond" serverId="1b5e44cf-2c8f-40cf-b2fb-c41e785121db">
+    <servers>
+      <server id="015df72f-0c5a-401b-ab87-ecaf827e202f">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="14660150-efce-421a-8ae9-d63b7aef96de">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="1b5e44cf-2c8f-40cf-b2fb-c41e785121db">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="25632b60-114b-4732-a8e3-6be3dbac720f">
+        <serverdata />
+      </server>
+      <server id="3b1dd4c5-a7a8-4f79-b391-31719f9bc5cb">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="822f8a4e-ff0b-4e51-a129-2c3d6be0fed5">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="ac6ac90a-42ff-44ae-a2fb-b2ef9d0c775b">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="ba7e7499-8c5e-4947-ae6e-b103f00fa4cd">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="d043c550-2342-48dd-9117-766f1b344866">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -423,37 +2299,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1384" height="738" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32519424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6718576" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14494875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23352855" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15048026" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32519424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -462,153 +2333,15 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Model" />
     <MESSAGE value="MVC" />
-    <MESSAGE value="Changed main menu items" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed main menu items" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VehicleAdvertismentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="343" column="50" selection-start="11816" selection-end="11816" vertical-scroll-proportion="0.0" vertical-offset="5831" max-vertical-offset="6970">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/VehicleAdvertisment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="36" selection-start="3115" selection-end="3115" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="39" selection-start="461" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/physicalPerson/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="65" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/carBond/views/servicer/addServicingData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/vehicle/searchByVin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="2" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="3128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VehicleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="59" selection-start="3789" selection-end="3789" vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="4709">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/servicingData/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="14" selection-start="2365" selection-end="2365" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="2074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/Helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/carBond/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="62" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ServicerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="28" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="2686" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VehicleAdvertismentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="29" selection-start="3617" selection-end="3617" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="6970">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/physicalPerson/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="65" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/carBond/views/servicer/addServicingData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/vehicle/searchByVin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="2" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="3128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VehicleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="59" selection-start="3789" selection-end="3789" vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="4709">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/servicingData/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="14" selection-start="2365" selection-end="2365" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="2074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/CarController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="9" selection-start="102" selection-end="107" vertical-scroll-proportion="0.1440678" vertical-offset="0" max-vertical-offset="6817" />
@@ -616,12 +2349,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="19" selection-start="686" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="2873" />
+        <state line="35" column="19" selection-start="686" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="2873">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ServicingDataController.php">
@@ -636,6 +2373,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/VehicleAdvertismentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="29" selection-start="3617" selection-end="3617" vertical-scroll-proportion="0.0" vertical-offset="1533" max-vertical-offset="6732">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/physicalPerson/_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="65" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
@@ -643,115 +2387,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/carBond/views/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="0" selection-start="3856" selection-end="5445" vertical-scroll-proportion="0.020531401" vertical-offset="3145" max-vertical-offset="4454">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="850">
+        <state line="16" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/carBond/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="62" selection-start="2120" selection-end="2120" vertical-scroll-proportion="-15.692307" vertical-offset="459" max-vertical-offset="1938">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ServicerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="28" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="2686" />
+        <state line="82" column="28" selection-start="2161" selection-end="2161" vertical-scroll-proportion="-13.692307" vertical-offset="1038" max-vertical-offset="2159">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/carBond/views/servicer/addServicingData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2210">
-          <folding />
+        <state line="6" column="9" selection-start="181" selection-end="181" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="2227">
+          <folding>
+            <marker date="1413583454931" expanded="true" signature="1514:1550" placeholder="..." />
+            <marker date="1413583454931" expanded="true" signature="1804:1857" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Vehicle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="18" selection-start="4412" selection-end="4417" vertical-scroll-proportion="-0.020070838" vertical-offset="1734" max-vertical-offset="3332" />
+        <state line="99" column="18" selection-start="4412" selection-end="4417" vertical-scroll-proportion="-0.020070838" vertical-offset="1734" max-vertical-offset="3332">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1462" />
+        <state line="13" column="26" selection-start="228" selection-end="228" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1377">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/VehicleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="59" selection-start="3789" selection-end="3789" vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="4709">
+        <state line="144" column="59" selection-start="3864" selection-end="3864" vertical-scroll-proportion="-19.615385" vertical-offset="1938" max-vertical-offset="4046">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/vehicle/searchByVin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="2" selection-start="1026" selection-end="1026" vertical-scroll-proportion="-0.0" vertical-offset="527" max-vertical-offset="3128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VehicleAdvertismentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="362" column="9" selection-start="12435" selection-end="12435" vertical-scroll-proportion="0.0" vertical-offset="6154" max-vertical-offset="7259">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1989">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/VehicleAdvertisment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="36" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.0" vertical-offset="1751" max-vertical-offset="2448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/carBond/views/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="16" selection-start="3864" selection-end="3864" vertical-scroll-proportion="-8.807693" vertical-offset="1250" max-vertical-offset="2431">
+        <state line="31" column="21" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.62219596" vertical-offset="0" max-vertical-offset="3077">
           <folding>
-            <element signature="e#3860#5650#0" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/carBond/views/vehicleAdvertisment/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/carBond/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="714">
-          <folding>
-            <marker date="1415479364715" expanded="true" signature="91:105" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="106:121" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="127:1001" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="142:168" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="169:266" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="281:307" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="308:994" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="324:338" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="339:647" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="356:382" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="383:458" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="475:486" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="487:602" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="619:631" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="663:677" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="678:986" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="695:721" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="722:797" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="814:825" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="826:941" placeholder="..." />
-            <marker date="1415479364715" expanded="true" signature="958:970" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/themes/carBond/views/site/_categoryServicingDataSubmenu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="131" selection-start="1065" selection-end="1077" vertical-scroll-proportion="0.32258064" vertical-offset="0" max-vertical-offset="527">
@@ -801,6 +2505,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> parent of f6d75b7... Changed main menu items
   </component>
 </project>
 

@@ -57,7 +57,7 @@ $cs
 		            'id'    => 'menu',
 		            'items' => array(
 //			            array('label' => 'Search by VIN', 'url' => array('/vehicle/searchByVin'), 'itemOptions' => array('class' => 'first'),),
-                        array('label' => 'Vehicle Database', 'url' => array('#'), 'items'=>array(
+                        array('label' => 'Vehicle Database', 'url' => array('#'), 'linkOptions '=> array('encode'=>false,'class'=>'dropdown-toggle','itemOptions '=> array('class'=>'dropdown'),'submenuOptions '=> array('class'=>'dropdown-menu'), 'data-toggle'=>'dropdown'),'items'=>array(
                             array('label'=>'Search by VIN', 'url'=>array('/vehicle/searchByVin')),
                             array('label' => 'General Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1, 'searchType'=>'general')),
                             array('label' => 'Detailed Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1,'searchType'=>'detailed')),

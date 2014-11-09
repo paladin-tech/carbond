@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74f7b948-ed53-41f8-994a-382a24e37e10" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/carBond/views/layouts/main.php" afterPath="$PROJECT_DIR$/themes/carBond/views/layouts/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CB.iws" />
@@ -88,7 +89,7 @@
       <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/carBond/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="54" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.22580644" vertical-offset="816" max-vertical-offset="3111">
+            <state line="59" column="244" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.2580645" vertical-offset="867" max-vertical-offset="3111">
               <folding />
             </state>
           </provider>
@@ -440,7 +441,11 @@
       <created>1415490439880</created>
       <updated>1415490439880</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changed main menu items">
+      <created>1415491578228</created>
+      <updated>1415491578228</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -775,7 +780,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/carBond/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="54" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.22580644" vertical-offset="816" max-vertical-offset="3111">
+        <state line="59" column="244" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.2580645" vertical-offset="867" max-vertical-offset="3111">
           <folding />
         </state>
       </provider>

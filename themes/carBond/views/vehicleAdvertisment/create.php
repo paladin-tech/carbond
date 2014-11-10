@@ -8,6 +8,18 @@ require_once (Yii::app()->theme->basePath . '/views/site/_categoryCreateSubmenu.
 <script>
 $(document).ready(function () {
 
+	$.ajax({
+		url: '<?php echo $this->createUrl('site/updateCityDropdown') ?>',
+		type: 'POST',
+		data: {
+			countryId: 33
+		}
+	})
+	.success(function(html) {
+		$('#PhysicalPerson_cityid').html(html);
+		$('#Company_cityid').html(html);
+	});
+
 	$('input[name=optionsPhysicalCompany]').change(function () {
 		if ($(this).val() == 'physical') {
 			$('#physicalPerson').show();
@@ -119,7 +131,7 @@ if(!isset(Yii::app()->user->id)) {
 			echo $form->textFieldControlGroup($modelPhysicalPerson, 'last_name', array('readonly' => (isset(Yii::app()->user->id))));
 			echo $form->textFieldControlGroup($modelPhysicalPerson, 'mobile', array('readonly' => (isset(Yii::app()->user->id))));
 			echo $form->textFieldControlGroup($modelPhysicalPerson, 'email', array('readonly' => (isset(Yii::app()->user->id))));
-			echo TbHtml::dropDownListControlGroup('country', '', CHtml::listData(Country::model()->findAll(), 'countryid', 'country_name'),
+			echo TbHtml::dropDownListControlGroup('country', 33, CHtml::listData(Country::model()->findAll(), 'countryid', 'country_name'),
 				array(
 					'ajax'  => array(
 						'type'   => 'POST',
@@ -142,7 +154,7 @@ if(!isset(Yii::app()->user->id)) {
 			<?php
 			echo $form->textFieldControlGroup($modelCompany, 'company_name', array('size' => 60, 'maxlength' => 100));
 			echo $form->textFieldControlGroup($modelCompany, 'address', array('size' => 60, 'maxlength' => 254));
-			echo TbHtml::dropDownListControlGroup('country', '', CHtml::listData(Country::model()->findAll(), 'countryid', 'country_name'),
+			echo TbHtml::dropDownListControlGroup('country', 33, CHtml::listData(Country::model()->findAll(), 'countryid', 'country_name'),
 				array(
 					'ajax'  => array(
 						'type'   => 'POST',
@@ -156,7 +168,7 @@ if(!isset(Yii::app()->user->id)) {
 					'empty' => '',
 				)
 			);
-			echo $form->dropDownListControlGroup($modelPhysicalPerson, 'cityid', array(), array('empty' => ''));
+			echo $form->dropDownListControlGroup($modelCompany, 'cityid', array(), array('empty' => ''));
 			echo $form->textFieldControlGroup($modelCompany, 'tax_number', array('size' => 45, 'maxlength' => 45));
 			echo $form->textFieldControlGroup($modelCompany, 'registration_number', array('size' => 45, 'maxlength' => 45));
 			echo $form->textFieldControlGroup($modelCompany, 'contact_person', array('size' => 60, 'maxlength' => 100));

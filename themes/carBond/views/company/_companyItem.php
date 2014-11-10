@@ -1,6 +1,6 @@
 <div>
 	<div style="float: left;">
-		<a href="<?php echo $this->createUrl('company/view', array('id' => $data->partyid)) ?>">
+		<a href="<?php echo $this->createUrl('vehicleAdvertisment/distributorOffer', array('distributorId' => $data->partyid, 'vehicleTypeId' => 1)) ?>">Offer
 <!--			<img src="--><?php //echo Yii::app()->request->baseUrl; ?><!--/images/make/thumb/makeThumb---><?php //echo $data->makeid ?><!--.jpg" style="width: 250px;">-->
 		</a>
 	</div>

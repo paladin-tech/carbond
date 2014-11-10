@@ -118,6 +118,7 @@ class VehicleAdvertisment extends CActiveRecord
 		$criteria->compare('vehicle.modelid', $this->modelId);
 		$criteria->compare('veh_mod.makeid', $this->makeId);
 		$criteria->compare('vehicle.fuel_typeid', $this->fuelTypeId);
+		$criteria->compare('advertiser', $this->advertiser);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,

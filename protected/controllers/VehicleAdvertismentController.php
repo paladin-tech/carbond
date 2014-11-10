@@ -30,7 +30,7 @@ class VehicleAdvertismentController extends Controller
 	{
 		return array(
 			array('allow', // allow all users to perform 'index' and 'view' actions
-				'actions' => array('index', 'view', 'create', 'test'),
+				'actions' => array('index', 'view', 'create', 'distributorOffer', 'test'),
 				'users'   => array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -124,7 +124,9 @@ class VehicleAdvertismentController extends Controller
 			// Check if User already exists and is logged in
 			if (isset(Yii::app()->user->id)) {
 
-				$partyId = User::model()->findByPk(Yii::app()->user->id)->partyid;
+				$user    = User::model()->findByPk(Yii::app()->user->id);
+				$partyId = $user->partyid;
+				$userId  = Yii::app()->user->id;
 
 			} else {
 
@@ -151,6 +153,15 @@ class VehicleAdvertismentController extends Controller
 					$modelPartyRole->roleid = 3;
 				}
 
+				// Save User model
+				$modelUser->username = $email;
+				$modelUser->partyid  = $partyId;
+				if ($formValid && $modelUser->validate())
+					$modelUser->save(false);
+				else
+					$formValid = false;
+				$userId = $modelUser->userid;
+
 			}
 
 			// Save Vehicle model
@@ -172,15 +183,6 @@ class VehicleAdvertismentController extends Controller
 				$modelPartyRole->save(false);
 			else
 				$formValid = false;
-
-			// Save User model
-			$modelUser->username = $email;
-			$modelUser->partyid  = $partyId;
-			if ($formValid && $modelUser->validate())
-				$modelUser->save(false);
-			else
-				$formValid = false;
-			$userId = $modelUser->userid;
 
 			// Save VehicleAdvertisement model
 			$modelVehicleAdvertisement->attributes   = $_POST['VehicleAdvertisment'];
@@ -209,6 +211,7 @@ class VehicleAdvertismentController extends Controller
 				$characteristicId = $_POST['VehicleCharacteristic'][$i]['characteristicid'];
 				if (is_array($characteristicId) && !empty($characteristicId)) {
 					foreach ($characteristicId as $item) {
+						$vehicleCharacteristic = new VehicleCharacteristic;
 						$vehicleCharacteristic->vehicleid        = $modelVehicle->vehicleid;
 						$vehicleCharacteristic->characteristicid = $item;
 						if ($formValid && $vehicleCharacteristic->validate())
@@ -339,7 +342,7 @@ class VehicleAdvertismentController extends Controller
 	}
 
 	/**
-	 * Lists all models.
+	 * TODO: Make universal search for General Advertisement search and search by Distributors
 	 */
 	public function actionIndex($vehicleTypeId = 1, $sort = 'ASC')
 	{
@@ -363,6 +366,36 @@ class VehicleAdvertismentController extends Controller
 		}
 
 		$this->render('index', array(
+			'dataProvider'         => $model->search(),
+			'vehicleTypeName'      => $vehicleTypeName,
+			'vehicleTypeNameCamel' => $vehicleTypeNameCamel,
+			'vehicleTypeId'        => $vehicleTypeId,
+			'sort'                 => $sort,
+		));
+
+	}
+
+	public function actionDistributorOffer($distributorId, $vehicleTypeId = 1, $sort = 'ASC')
+	{
+
+		$model = new VehicleAdvertisment('search');
+		$model->unsetAttributes(); // clear any default values
+		$model->advertiser    = $distributorId;
+		$model->vehicleTypeId = $vehicleTypeId;
+		$model->sort          = $sort;
+
+		if (isset($_POST['yt0'])) {
+			$model->makeId     = $_POST['make'];
+			$model->modelId    = $_POST['model'];
+			$model->fuelTypeId = $_POST['fuel'];
+			$model->yearFrom   = $_POST['yearFrom'];
+			$model->yearTo     = $_POST['yearTo'];
+		}
+
+		$vehicleTypeName      = ucwords(VehicleType::model()->findByPk($vehicleTypeId)->vehicle_type);
+		$vehicleTypeNameCamel = lcfirst(str_replace(' ', '', $vehicleTypeName));
+
+		$this->render('distributorOffer', array(
 			'dataProvider'         => $model->search(),
 			'vehicleTypeName'      => $vehicleTypeName,
 			'vehicleTypeNameCamel' => $vehicleTypeNameCamel,

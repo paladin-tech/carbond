@@ -1,5 +1,7 @@
 <?php
 
+Yii::import('application.extensions.image.Image');
+
 class CompanyController extends Controller
 {
 	/**
@@ -86,6 +88,7 @@ class CompanyController extends Controller
 			$modelCompany->attributes = $_POST['Company'];
 			$modelCompany->partyid    = $partyId;
 			$email                    = $modelCompany->email;
+
 			if ($formValid && $modelCompany->validate())
 				$modelCompany->save(false);
 			else
@@ -103,13 +106,30 @@ class CompanyController extends Controller
 				$formValid = false;
 
 			// Save User model
-			$modelUser->username  = $email;
-			$modelUser->partyid   = $partyId;
-			$modelUser->active = 1;
+			$modelUser->username = $email;
+			$modelUser->partyid  = $partyId;
+			$modelUser->active   = 1;
 			if ($formValid && $modelUser->validate())
 				$modelUser->save(false);
 			else
 				$formValid = false;
+
+			$fileName = $_FILES['Company']['logo']['name'];
+			if ($formValid && $fileName != '') {
+				$imageExtensionTmp  = explode('.', $fileName);
+				$imageExtension     = $imageExtensionTmp[sizeof($imageExtensionTmp) - 1];
+				$modelCompany->logo = $imageExtension;
+				$imageFile          = 'images/company/normal/company-' . $partyId . '.' . $imageExtension;
+				$imageFileThumb     = 'images/company/thumb/vehicleThumb-' . $partyId . '.' . $imageExtension;
+				$imageFileTinyThumb = 'images/company/tinyThumb/vehicleTinyThumb-' . $partyId . '.' . $imageExtension;
+				$image              = CUploadedFile::getInstanceByName("Company[logo]");
+				$image->saveAs($imageFile);
+				$imageResized = new Image($imageFile);
+				$imageResized->resize('100', '100');
+				$imageResized->save($imageFileThumb);
+				$imageResized->resize('60', '60');
+				$imageResized->save($imageFileTinyThumb);
+			}
 
 			if ($formValid) {
 				$transaction->commit();
@@ -150,6 +170,26 @@ class CompanyController extends Controller
 			$transaction = Yii::app()->db->beginTransaction();
 
 			$modelCompany->attributes = $_POST['Company'];
+
+			$fileName = $_FILES['Company']['name']['logo'];
+			var_dump($fileName);
+			if ($formValid && $fileName != '') {
+				$imageExtensionTmp  = explode('.', $fileName);
+				$imageExtension     = $imageExtensionTmp[sizeof($imageExtensionTmp) - 1];
+				var_dump($imageExtension);
+				$modelCompany->logo = $imageExtension;
+				$imageFile          = 'images/company/normal/company-' . $id . '.' . $imageExtension;
+				$imageFileThumb     = 'images/company/thumb/companyThumb-' . $id . '.' . $imageExtension;
+				$imageFileTinyThumb = 'images/company/tinyThumb/companyTinyThumb-' . $id . '.' . $imageExtension;
+				$image              = CUploadedFile::getInstanceByName("Company[logo]");
+				$image->saveAs($imageFile);
+				$imageResized = new Image($imageFile);
+				$imageResized->resize('100', '100');
+				$imageResized->save($imageFileThumb);
+				$imageResized->resize('60', '60');
+				$imageResized->save($imageFileTinyThumb);
+			}
+
 			if ($modelCompany->validate())
 				$modelCompany->save(false);
 			else

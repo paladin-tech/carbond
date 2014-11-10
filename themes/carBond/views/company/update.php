@@ -51,7 +51,9 @@
 		echo $form->textFieldControlGroup($modelCompany, 'web', array('size' => 45, 'maxlength' => 45));
 		echo $form->textFieldControlGroup($modelCompany, 'mobile', array('size' => 45, 'maxlength' => 45));
 		echo $form->textAreaControlGroup($modelCompany, 'company_description');
+		echo $form->fileFieldControlGroup($modelCompany, 'logo');
 	?>
+		<div><img src="<?php echo Yii::app()->baseUrl ?>/images/company/thumb/companyThumb-<?php echo $modelCompany->partyid ?>.<?php echo $modelCompany->logo ?>"></div>
 		<div class="control-group">
 			<label class="control-label" for="Company_company_description">Active</label>
 			<div class="controls">

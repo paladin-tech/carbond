@@ -7,7 +7,7 @@
  * @property integer $partyid
  * @property string $company_name
  * @property string $address
- * @property string $cityid
+ * @property integer $cityid
  * @property string $tax_number
  * @property string $registration_number
  * @property string $contact_person
@@ -18,6 +18,7 @@
  * @property string $longitude
  * @property string $latitude
  * @property string $company_description
+ * @property string $logo
  *
  * The followings are the available model relations:
  * @property City $city
@@ -58,7 +59,7 @@ class Company extends CActiveRecord
 			array('tax_number, registration_number', 'unique'),
 			array('email, web', 'length', 'max' => 320),
 			array('mobile, longitude, latitude', 'length', 'max' => 25),
-			array('longitude, latitude, company_description', 'safe'),
+			array('longitude, latitude, company_description, logo', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('partyid, company_name, address, cityid, tax_number, registration_number, contact_person, email, phone_number', 'safe', 'on' => 'search'),

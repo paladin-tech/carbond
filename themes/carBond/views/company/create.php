@@ -51,6 +51,7 @@
 		echo $form->textFieldControlGroup($modelCompany, 'web', array('size' => 45, 'maxlength' => 45));
 		echo $form->textFieldControlGroup($modelCompany, 'mobile', array('size' => 45, 'maxlength' => 45));
 		echo $form->textAreaControlGroup($modelCompany, 'company_description');
+		echo $form->fileFieldControlGroup($modelCompany, 'logo');
 
 		echo TbHtml::formActions(array(
 			TbHtml::submitButton('Save', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)),

@@ -36,7 +36,6 @@ require_once (Yii::app()->theme->basePath . '/views/site/_categorySearchSubmenu.
 	<legend>Make</legend>
 	<div class="group_info">
 	<?php
-	echo TbHtml::label('Make', 'make');
 	echo TbHtml::dropDownList('make', '', CHtml::listData(VehicleMake::model()->findAll(), 'makeid', 'make_name'),
 		array(
 			'ajax'  => array(
@@ -61,7 +60,6 @@ require_once (Yii::app()->theme->basePath . '/views/site/_categorySearchSubmenu.
 	<legend>Model</legend>
 	<div class="group_info">
 	<?php
-	echo TbHtml::label('Model', 'model');
 	echo TbHtml::dropDownList('model', '', array(), array('empty' => ''));
 	?>
 	</div>
@@ -73,7 +71,6 @@ require_once (Yii::app()->theme->basePath . '/views/site/_categorySearchSubmenu.
 	<legend>Fuel</legend>
 	<div class="group_info">
 	<?php
-	echo TbHtml::label('Fuel', 'fuel');
 	echo TbHtml::dropDownList('fuel', '', CHtml::listData(Characteristic::model()->findAllByAttributes(array('vehicle_typeid' => array('0', '2'), 'characteristic_typeid' => '2')), 'characteristicid', 'characteristic_name'), array('empty' => ''));
 	?>
 	</div>
@@ -85,7 +82,6 @@ require_once (Yii::app()->theme->basePath . '/views/site/_categorySearchSubmenu.
 	<legend>Date</legend>
 	<div class="group_info">
 	<?php
-	echo TbHtml::label('Year From', 'yearFrom');
 	echo TbHtml::dropDownList('yearFrom', '', $yearArray, array('span' => 1, 'empty' => ''));
 	echo '<br style="clear:both" />'.TbHtml::label('Year To', 'yearTo');
 	echo TbHtml::dropDownList('yearTo', '', $yearArray, array('span' => 1, 'empty' => ''));

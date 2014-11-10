@@ -12,7 +12,7 @@ $(document).ready(function () {
 		url: '<?php echo $this->createUrl('site/updateCityDropdown') ?>',
 		type: 'POST',
 		data: {
-			countryId: 33
+			countryId: 190
 		}
 	})
 	.success(function(html) {
@@ -131,7 +131,7 @@ if(!isset(Yii::app()->user->id)) {
 			echo $form->textFieldControlGroup($modelPhysicalPerson, 'last_name', array('readonly' => (isset(Yii::app()->user->id))));
 			echo $form->textFieldControlGroup($modelPhysicalPerson, 'mobile', array('readonly' => (isset(Yii::app()->user->id))));
 			echo $form->textFieldControlGroup($modelPhysicalPerson, 'email', array('readonly' => (isset(Yii::app()->user->id))));
-			echo TbHtml::dropDownListControlGroup('country', 33, CHtml::listData(Country::model()->findAll(), 'countryid', 'country_name'),
+			echo TbHtml::dropDownListControlGroup('country_pp', 190, CHtml::listData(Country::model()->findAll(), 'countryid', 'country_name'),
 				array(
 					'ajax'  => array(
 						'type'   => 'POST',
@@ -154,7 +154,7 @@ if(!isset(Yii::app()->user->id)) {
 			<?php
 			echo $form->textFieldControlGroup($modelCompany, 'company_name', array('size' => 60, 'maxlength' => 100));
 			echo $form->textFieldControlGroup($modelCompany, 'address', array('size' => 60, 'maxlength' => 254));
-			echo TbHtml::dropDownListControlGroup('country', 33, CHtml::listData(Country::model()->findAll(), 'countryid', 'country_name'),
+			echo TbHtml::dropDownListControlGroup('country_c', 190, CHtml::listData(Country::model()->findAll(), 'countryid', 'country_name'),
 				array(
 					'ajax'  => array(
 						'type'   => 'POST',

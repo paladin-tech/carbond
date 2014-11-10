@@ -13,6 +13,11 @@ $this->widget('bootstrap.widgets.TbGridView', array(
 	'type'         => TbHtml::GRID_TYPE_HOVER,
 	'template'     => '{summary}{items}{pager}',
 	'columns'      => array(
+//		array(
+//			'name'   => 'logo',
+//			'type'   => 'raw',
+//			'value'  => "CHtml::image(Yii::app()->baseUrl .'/images/company/companyTinyThumb-{$model->partyid}.{$model->logo}')",
+//		),
 		'name',
 		array(
 			'name'   => 'role_name',

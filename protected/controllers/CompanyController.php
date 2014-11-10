@@ -28,7 +28,7 @@ class CompanyController extends Controller
 	{
 		return array(
 			array('allow', // allow all users to perform 'index' and 'view' actions
-				'actions' => array('index', 'view'),
+				'actions' => array('index', 'view', 'usedCarDealers', 'newCarDistributors'),
 				'users'   => array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -85,7 +85,6 @@ class CompanyController extends Controller
 
 			$modelCompany->attributes = $_POST['Company'];
 			$modelCompany->partyid    = $partyId;
-			$modelCompany->active     = 1;
 			$email                    = $modelCompany->email;
 			if ($formValid && $modelCompany->validate())
 				$modelCompany->save(false);
@@ -104,8 +103,9 @@ class CompanyController extends Controller
 				$formValid = false;
 
 			// Save User model
-			$modelUser->username = $email;
-			$modelUser->partyid  = $partyId;
+			$modelUser->username  = $email;
+			$modelUser->partyid   = $partyId;
+			$modelUser->active = 1;
 			if ($formValid && $modelUser->validate())
 				$modelUser->save(false);
 			else
@@ -177,75 +177,113 @@ class CompanyController extends Controller
 
 	}
 
-		/**
-		 * Deletes a particular model.
-		 * If deletion is successful, the browser will be redirected to the 'admin' page.
-		 * @param integer $id the ID of the model to be deleted
-		 */
-		public
-		function actionDelete($id)
-		{
-			$this->loadModel($id)->delete();
+	public function actionUsedCarDealers()
+	{
 
-			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-			if (!isset($_GET['ajax']))
-				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		$modelCompany         = new Company('searchDistributors');
+		$modelCompany->roleId = 4;
+		$searchFilter         = array();
+
+		if (isset($_POST['yt0'])) {
+//			$modelCompany->countryId = $_POST['country'];
+//			$modelCompany->cityId    = $_POST['city'];
+//			$searchFilter['country'] = $_POST['country'];
+//			$searchFilter['city'] = $_POST['city'];
 		}
 
-		/**
-		 * Lists all models.
-		 */
-		public
-		function actionIndex()
-		{
-			$dataProvider = new CActiveDataProvider('Company');
-			$this->render('index', array(
-				'dataProvider' => $dataProvider,
-			));
+		$this->render('usedCarDealers', array(
+			'dataProvider' => $modelCompany->searchDistributors(),
+			'searchFilter' => $searchFilter,
+		));
+
+	}
+
+	public function actionNewCarDistributors()
+	{
+
+		$modelCompany         = new Company('searchDistributors');
+		$modelCompany->roleId = 5;
+		$searchFilter         = array();
+
+		if (isset($_POST['yt0'])) {
+//			$modelCompany->countryId = $_POST['country'];
+//			$modelCompany->cityId    = $_POST['city'];
+//			$searchFilter['country'] = $_POST['country'];
+//			$searchFilter['city'] = $_POST['city'];
 		}
 
-		/**
-		 * Manages all models.
-		 */
-		public
-		function actionAdmin()
-		{
-			$model = new Company('search');
-			$model->unsetAttributes(); // clear any default values
-			if (isset($_GET['Company']))
-				$model->attributes = $_GET['Company'];
+		$this->render('usedCarDealers', array(
+			'dataProvider' => $modelCompany->searchDistributors(),
+			'searchFilter' => $searchFilter,
+		));
 
-			$this->render('admin', array(
-				'model' => $model,
-			));
-		}
+	}
 
-		/**
-		 * Returns the data model based on the primary key given in the GET variable.
-		 * If the data model is not found, an HTTP exception will be raised.
-		 * @param integer $id the ID of the model to be loaded
-		 * @return Company the loaded model
-		 * @throws CHttpException
-		 */
-		public
-		function loadModel($id)
-		{
-			$model = Company::model()->findByPk($id);
-			if ($model === null)
-				throw new CHttpException(404, 'The requested page does not exist.');
-			return $model;
-		}
+	/**
+	 * Deletes a particular model.
+	 * If deletion is successful, the browser will be redirected to the 'admin' page.
+	 * @param integer $id the ID of the model to be deleted
+	 */
+	public function actionDelete($id)
+	{
+		$this->loadModel($id)->delete();
 
-		/**
-		 * Performs the AJAX validation.
-		 * @param Company $model the model to be validated
-		 */
-		protected
-		function performAjaxValidation($model)
-		{
-			if (isset($_POST['ajax']) && $_POST['ajax'] === 'company-form') {
-				echo CActiveForm::validate($model);
-				Yii::app()->end();
-			}
+		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+		if (!isset($_GET['ajax']))
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	}
+
+	/**
+	 * Lists all models.
+	 */
+	public function actionIndex()
+	{
+		$dataProvider = new CActiveDataProvider('Company');
+		$this->render('index', array(
+			'dataProvider' => $dataProvider,
+		));
+	}
+
+	/**
+	 * Manages all models.
+	 */
+	public function actionAdmin()
+	{
+		$model = new Company('search');
+		$model->unsetAttributes(); // clear any default values
+		if (isset($_GET['Company']))
+			$model->attributes = $_GET['Company'];
+
+		$this->render('admin', array(
+			'model' => $model,
+		));
+	}
+
+	/**
+	 * Returns the data model based on the primary key given in the GET variable.
+	 * If the data model is not found, an HTTP exception will be raised.
+	 * @param integer $id the ID of the model to be loaded
+	 * @return Company the loaded model
+	 * @throws CHttpException
+	 */
+	public function loadModel($id)
+	{
+		$model = Company::model()->findByPk($id);
+		if ($model === null)
+			throw new CHttpException(404, 'The requested page does not exist.');
+		return $model;
+	}
+
+	/**
+	 * Performs the AJAX validation.
+	 * @param Company $model the model to be validated
+	 */
+	protected function performAjaxValidation($model)
+	{
+		if (isset($_POST['ajax']) && $_POST['ajax'] === 'company-form') {
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
 		}
 	}
+
+}

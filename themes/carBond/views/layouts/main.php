@@ -66,8 +66,8 @@ $cs
 				                ),
 				                array('label' => 'Vehicle Sales',
 				                      'items' => array(
-					                      array('label' => 'Used Car Dealers‎', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1, 'advertiser'=>'dealer', 'new_vehicle'=>0)),
-					                      array('label' => 'New Car Distributors', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1, 'advertiser'=>'dealer', 'new_vehicle'=>0)),
+					                      array('label' => 'Used Car Dealers‎', 'url' => array('/company/usedCarDealers')),
+					                      array('label' => 'New Car Distributors', 'url' => array('/company/newCarDistributors')),
 					                      array('label' => 'Used Car Owners',
 					                            'items' => array(
 						                            array('label' => 'Persons', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1,'advertiser'=>'person', 'new_vehicle'=>0)),

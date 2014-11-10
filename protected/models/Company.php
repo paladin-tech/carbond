@@ -190,6 +190,29 @@ class Company extends CActiveRecord
 
 	}
 
+	public function searchDistributors()
+	{
+
+		$criteria = new CDbCriteria;
+
+		$criteria->with = array(
+			'party',
+			'party.partyRoles' => array('alias' => 'p_parRol'),
+//			'city.country'     => array('alias' => 'c_cntr'),
+		);
+
+		$criteria->compare('p_parRol.roleid', $this->roleId);
+//		$criteria->compare('t.cityid', $this->cityid);
+//		$criteria->compare('c_cntr.countryid', $this->countryId);
+
+		$criteria->together = true;
+
+		return new CActiveDataProvider($this, array(
+			'criteria' => $criteria,
+		));
+
+	}
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!

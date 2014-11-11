@@ -128,6 +128,52 @@ $cs
             	<!--<a href="#" class="tool1"><span><img src="<?php //print $basePath.'/images/opsta-zupcanik.png'; ?>"/></span>Opsta pretraga</a>
                 <a href="#" class="tool2"><span><img src="<?php //print $basePath.'/images/detaljna-zupcanik.png'; ?>"/></span>Detaljna pretraga</a>
                 <a href="#" class="tool3">Unesite podatke ...></a>-->
+	            <?php
+	            $model = new LoginForm();
+	            $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+		            'id'      => 'mymodal',
+		            'options' => array(
+			            'title'     => 'Modal Dialog',
+			            'width'     => 400,
+			            'height'    => 300,
+			            'autoOpen'  => false,
+			            'resizable' => false,
+			            'modal'     => true,
+			            'overlay'   => array(
+				            'backgroundColor' => '#000',
+				            'opacity'         => '0.5'
+			            ),
+			            'buttons'   => array(
+				            'OK'     => 'js:function(){alert("OK");}',
+				            'Cancel' => 'js:function(){$(this).dialog("close");}',
+			            ),
+		            ),
+	            ));
+
+	            $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+		            'layout' => TbHtml::FORM_LAYOUT_HORIZONTAL,
+		            'id'=>'login-form',
+		            'enableClientValidation'=>true,
+		            'clientOptions'=>array(
+			            'validateOnSubmit'=>true,
+		            ),
+	            ));
+
+	            echo $form->textFieldControlGroup($model, 'username');
+	            echo $form->passwordFieldControlGroup($model, 'password');
+
+	            echo TbHtml::formActions(array(
+		            TbHtml::submitButton('Login', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)),
+		            TbHtml::linkButton('Cancel', array('url' => Yii::app()->createUrl('site/index'))),
+		            TbHtml::linkButton('Forgot Password?', array('url' => Yii::app()->createUrl('site/forgotPassword'))),
+	            ));
+
+	            $this->endWidget();
+
+	            $this->endWidget('zii.widgets.jui.CJuiDialog');
+
+	            ?>
+	            <a href="#" onclick="$('#mymodal').dialog('open'); return false;">Click</a>
                 <a href="#" class="language-swap">Srp</a>
 	            <?php if(Yii::app()->user->isGuest) { ?>
                 <a href="<?php echo $this->createUrl('/site/login') ?>">Login</a>
@@ -154,7 +200,6 @@ $cs
         </div>
     </div>
 </header>
-<div class="wrap">
 	<!--<div class="faixa-branca clearfix">
 	</div>-->
 	<div class="container-fluid principal">

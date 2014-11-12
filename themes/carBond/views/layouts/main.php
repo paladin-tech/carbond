@@ -62,6 +62,8 @@ $cs
 					                      array('label' => 'General Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1, 'searchType'=>'general')),
 					                      array('label' => 'Detailed Search', 'url' => array('/vehicleAdvertisment/detailedSearch', 'vehicleTypeId' => 1)),
 					                      array('label' => 'Vehicle Sale', 'url' => array('/vehicleAdvertisment/create', 'vehicleTypeId' => 1)),
+					                      array('label' => 'Add New Vehicle', 'url' => array('/servicer/addServicingData', 'vehicleTypeId' => 1), 'visible' => (!Yii::app()->user->isGuest && Yii::app()->user->getState('userRoles')['isAdmin'])),
+
 				                      )
 				                ),
 				                array('label' => 'Vehicle Sales',

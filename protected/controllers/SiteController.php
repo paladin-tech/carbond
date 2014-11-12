@@ -121,6 +121,30 @@ class SiteController extends Controller
 		$this->redirect(Yii::app()->homeUrl);
 	}
 
+	public function actionRegister()
+	{
+
+		$modelPhysicalPerson = new PhysicalPerson();
+		$modelUser = new User();
+
+		// if it is ajax validation request
+		if (isset($_POST['ajax']) && $_POST['ajax'] === 'register-form') {
+			echo CActiveForm::validate($modelPhysicalPerson);
+			Yii::app()->end();
+		}
+
+		if (isset($_POST['PhysicalPerson'])) {
+			$modelPhysicalPerson->attributes = $_POST['PhysicalPerson'];
+			$modelUser->attributes = $_POST['User'];
+			$modelPhysicalPerson->save();
+			$modelUser->save();
+			$this->redirect('/site/index');
+		}
+
+		$this->render('register');
+
+	}
+
 	public function actionCategorySubmenu()
 	{
 

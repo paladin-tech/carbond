@@ -28,6 +28,17 @@ class VehicleAdvertisment extends CActiveRecord
 	public $yearFrom;
 	public $yearTo;
 	public $fuelTypeId;
+	public $priceFrom;
+	public $priceTo;
+	public $kmFrom;
+	public $kmTo;
+	public $engineCcmFrom;
+	public $engineCcmTo;
+	public $enginePowerFrom;
+	public $enginePowerTo;
+	public $engineEmissionClass;
+	public $gearType;
+	public $color;
 	public $sort;
 
 	/**
@@ -107,9 +118,12 @@ class VehicleAdvertisment extends CActiveRecord
 
 		$criteria->with = array(
 			'vehicle',
-			'vehicle.cars'               => array('alias' => 'veh_car'),
-			'vehicle.cars.carosseryType' => array('alias' => 'car_crs'),
-			'vehicle.model'              => array('alias' => 'veh_mod'),
+			'vehicle.cars'                => array('alias' => 'veh_car'),
+			'vehicle.cars.carosseryType'  => array('alias' => 'car_crs'),
+			'vehicle.model'               => array('alias' => 'veh_mod'),
+			'vehicle.engineEmissionClass' => array('alias' => 'veh_emc'),
+			'vehicle.gearType'            => array('alias' => 'veh_gea'),
+			'vehicle.color0'              => array('alias' => 'veh_col'),
 		);
 
 		$criteria->order = 'price ' . $this->sort;
@@ -118,7 +132,15 @@ class VehicleAdvertisment extends CActiveRecord
 		$criteria->compare('vehicle.modelid', $this->modelId);
 		$criteria->compare('veh_mod.makeid', $this->makeId);
 		$criteria->compare('vehicle.fuel_typeid', $this->fuelTypeId);
-		$criteria->compare('advertiser', $this->advertiser);
+		$criteria->compare('veh_emc.characteristic_name', $this->engineEmissionClass);
+		$criteria->compare('veh_gea.characteristic_name', $this->gearType);
+		$criteria->compare('veh_col.characteristic_name', $this->color);
+		if($this->yearFrom != '' && $this->yearTo != '')
+			$criteria->addBetweenCondition('vehicle.production_year', $this->yearFrom, $this->yearTo);
+		if($this->priceFrom != '' && $this->priceTo != '')
+			$criteria->addBetweenCondition('price', $this->priceFrom, $this->priceTo);
+		if($this->kmFrom != '' && $this->kmTo != '')
+			$criteria->addBetweenCondition('vehicle.km', $this->kmFrom, $this->kmTo);
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,

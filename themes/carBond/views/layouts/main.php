@@ -60,7 +60,7 @@ $cs
 				                      'items' => array(
 					                      array('label' => 'Search by VIN', 'url' => array('/vehicle/searchByVin')),
 					                      array('label' => 'General Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1, 'searchType'=>'general')),
-					                      array('label' => 'Detailed Search', 'url' => array('/vehicleAdvertisment/index', 'vehicleTypeId' => 1,'searchType'=>'detailed')),
+					                      array('label' => 'Detailed Search', 'url' => array('/vehicleAdvertisment/detailedSearch', 'vehicleTypeId' => 1)),
 					                      array('label' => 'Vehicle Sale', 'url' => array('/vehicleAdvertisment/create', 'vehicleTypeId' => 1)),
 				                      )
 				                ),
@@ -131,9 +131,9 @@ $cs
 	            <?php
 	            $model = new LoginForm();
 	            $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
-		            'id'      => 'mymodal',
+		            'id'      => 'loginForm',
 		            'options' => array(
-			            'title'     => 'Modal Dialog',
+			            'title'     => 'Login',
 			            'width'     => 400,
 			            'height'    => 300,
 			            'autoOpen'  => false,
@@ -143,19 +143,21 @@ $cs
 				            'backgroundColor' => '#000',
 				            'opacity'         => '0.5'
 			            ),
-			            'buttons'   => array(
-				            'OK'     => 'js:function(){alert("OK");}',
-				            'Cancel' => 'js:function(){$(this).dialog("close");}',
-			            ),
+//			            'buttons'   => array(
+//				            'OK'     => 'js:function(){alert("Login");}',
+//				            'Cancel' => 'js:function(){$(this).dialog("close");}',
+//			            ),
 		            ),
 	            ));
 
 	            $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
-		            'layout' => TbHtml::FORM_LAYOUT_HORIZONTAL,
-		            'id'=>'login-form',
-		            'enableClientValidation'=>true,
-		            'clientOptions'=>array(
-			            'validateOnSubmit'=>true,
+		            'layout'                 => TbHtml::FORM_LAYOUT_HORIZONTAL,
+		            'action'                 => Yii::app()->createUrl('site/login'),
+		            'id'                     => 'login-form',
+		            'enableClientValidation' => true,
+		            'enableAjaxValidation' => true,
+		            'clientOptions'          => array(
+			            'validateOnSubmit' => true,
 		            ),
 	            ));
 
@@ -169,18 +171,63 @@ $cs
 	            ));
 
 	            $this->endWidget();
-
 	            $this->endWidget('zii.widgets.jui.CJuiDialog');
 
+	            $modelPhysicalPerson = new PhysicalPerson();
+	            $modelUser = new User();
+	            $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+		            'id'      => 'registrationForm',
+		            'options' => array(
+			            'title'     => 'Register',
+			            'width'     => 400,
+			            'height'    => 300,
+			            'autoOpen'  => false,
+			            'resizable' => false,
+			            'modal'     => true,
+			            'overlay'   => array(
+				            'backgroundColor' => '#000',
+				            'opacity'         => '0.5'
+			            ),
+//			            'buttons'   => array(
+//				            'OK'     => 'js:function(){alert("Login");}',
+//				            'Cancel' => 'js:function(){$(this).dialog("close");}',
+//			            ),
+		            ),
+	            ));
+
+	            $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+		            'layout'                 => TbHtml::FORM_LAYOUT_HORIZONTAL,
+		            'action'                 => Yii::app()->createUrl('site/register'),
+		            'id'                     => 'register-form',
+		            'enableClientValidation' => true,
+		            'enableAjaxValidation' => true,
+		            'clientOptions'          => array(
+			            'validateOnSubmit' => true,
+		            ),
+	            ));
+
+	            echo $form->textFieldControlGroup($modelPhysicalPerson, 'first_name');
+	            echo $form->textFieldControlGroup($modelPhysicalPerson, 'last_name');
+	            echo $form->textFieldControlGroup($modelPhysicalPerson, 'cityid');
+	            echo $form->textFieldControlGroup($modelPhysicalPerson, 'zip_code');
+	            echo $form->textFieldControlGroup($modelUser, 'username');
+	            echo $form->passwordFieldControlGroup($modelUser, 'password');
+
+	            echo TbHtml::formActions(array(
+		            TbHtml::submitButton('Register', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)),
+		            TbHtml::linkButton('Cancel', array('url' => Yii::app()->createUrl('site/index'))),
+	            ));
+
+	            $this->endWidget();
+	            $this->endWidget('zii.widgets.jui.CJuiDialog');
 	            ?>
-	            <a href="#" onclick="$('#mymodal').dialog('open'); return false;">Click</a>
                 <a href="#" class="language-swap">Srp</a>
 	            <?php if(Yii::app()->user->isGuest) { ?>
-                <a href="<?php echo $this->createUrl('/site/login') ?>">Login</a>
+	            <a href="#" onclick="$('#loginForm').dialog('open'); return false;">Login</a>
 	            <?php } else { ?>
 	            <a href="<?php echo $this->createUrl('/site/logout') ?>">Logout</a>
 	            <?php } ?>
-                <a href="#">Registracija</a>
+                <a href="#" onclick="$('#registrationForm').dialog('open'); return false;">Registracija</a>
 	            <?php
 	            echo TbHtml::beginFormTb('', $this->createUrl('/vehicle/searchByVin'), 'POST', array('class' => 'search'));
 				?>

@@ -30,7 +30,7 @@ class VehicleAdvertismentController extends Controller
 	{
 		return array(
 			array('allow', // allow all users to perform 'index' and 'view' actions
-				'actions' => array('index', 'view', 'create', 'distributorOffer', 'test'),
+				'actions' => array('index', 'view', 'create', 'distributorOffer', 'detailedSearch', 'test'),
 				'users'   => array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -211,7 +211,7 @@ class VehicleAdvertismentController extends Controller
 				$characteristicId = $_POST['VehicleCharacteristic'][$i]['characteristicid'];
 				if (is_array($characteristicId) && !empty($characteristicId)) {
 					foreach ($characteristicId as $item) {
-						$vehicleCharacteristic = new VehicleCharacteristic;
+						$vehicleCharacteristic                   = new VehicleCharacteristic;
 						$vehicleCharacteristic->vehicleid        = $modelVehicle->vehicleid;
 						$vehicleCharacteristic->characteristicid = $item;
 						if ($formValid && $vehicleCharacteristic->validate())
@@ -366,6 +366,48 @@ class VehicleAdvertismentController extends Controller
 		}
 
 		$this->render('index', array(
+			'dataProvider'         => $model->search(),
+			'vehicleTypeName'      => $vehicleTypeName,
+			'vehicleTypeNameCamel' => $vehicleTypeNameCamel,
+			'vehicleTypeId'        => $vehicleTypeId,
+			'sort'                 => $sort,
+		));
+
+	}
+
+	public function actionDetailedSearch($vehicleTypeId = 1, $sort = 'ASC')
+	{
+
+		$vehicleTypeName      = ucwords(VehicleType::model()->findByPk($vehicleTypeId)->vehicle_type);
+		$vehicleTypeNameCamel = lcfirst(str_replace(' ', '', $vehicleTypeName));
+
+		$model       = new VehicleAdvertisment('search');
+		$model->sort = $sort;
+
+		$model->unsetAttributes(); // clear any default values
+
+		$model->vehicleTypeId = $vehicleTypeId;
+
+		if (isset($_POST['yt0'])) {
+			$model->makeId              = $_POST['make'];
+			$model->modelId             = $_POST['model'];
+			$model->fuelTypeId          = $_POST['fuel'];
+			$model->yearFrom            = $_POST['productionYearFrom'];
+			$model->yearTo              = $_POST['productionYearTo'];
+			$model->priceFrom           = $_POST['priceFrom'];
+			$model->priceTo             = $_POST['priceTo'];
+			$model->kmFrom              = $_POST['kmFrom'];
+			$model->kmTo                = $_POST['kmTo'];
+			$model->engineCcmFrom       = $_POST['engineCcmFrom'];
+			$model->engineCcmTo         = $_POST['engineCcmTo'];
+			$model->enginePowerFrom     = $_POST['enginePowerFrom'];
+			$model->enginePowerTo       = $_POST['enginePowerTo'];
+			$model->engineEmissionClass = $_POST['enginePowerTo'];
+			$model->gearType            = $_POST['gearType'];
+			$model->color               = $_POST['color'];
+		}
+
+		$this->render('detailedSearch', array(
 			'dataProvider'         => $model->search(),
 			'vehicleTypeName'      => $vehicleTypeName,
 			'vehicleTypeNameCamel' => $vehicleTypeNameCamel,
